@@ -11,7 +11,7 @@ A ULA consiste num conjunto de oito circuitos lógicos!
 - Comparação(=, <, >)
 
 ## Equipe
-- Ana Paula de Sá
-- [Felipe Santos]
+- [Ana Paula de Sá](https://github.com/anapsa)
+- [Felipe Santos](https://github.com/SageScroll18144)
 - Icaro Melo
-- Victor Mendonça
+- [Victor Mendonça](https://github.com/Mend25)

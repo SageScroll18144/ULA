@@ -1,0 +1,197 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/vma3/Documents/adder/simulation/qsim
+vadder
+Z1 !s110 1673465642
+!i10b 1
+!s100 aCSYzkn5>7N;>;Hj]Veil3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1FN5?HEjo]]E2^4VNF6gJ2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1673465640
+Z4 8adder.vo
+Z5 Fadder.vo
+!i122 2
+L0 32 120
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1673465642.000000
+Z8 !s107 adder.vo|
+Z9 !s90 -work|work|adder.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vadder_vlg_vec_tst
+R1
+!i10b 1
+!s100 hjJ2VaCYUQF2H`PKmokXl1
+R2
+I`;VWnHjf>4DfS95NMRkfT0
+R3
+R0
+w1673465639
+Z12 8Waveform1.vwf.vt
+Z13 FWaveform1.vwf.vt
+!i122 3
+L0 30 48
+R6
+r1
+!s85 0
+31
+R7
+Z14 !s107 Waveform1.vwf.vt|
+Z15 !s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vC2
+Z16 !s110 1674181496
+!i10b 1
+!s100 ;c`Xfg>G[X[Moz1bV@Eg02
+R2
+IglC?oNdo=Lh4X5M@4^dIG1
+R3
+Z17 d/home/lypess/Documentos/adder/simulation/qsim
+w1674181496
+R4
+R5
+!i122 14
+L0 32 230
+R6
+r1
+!s85 0
+31
+Z18 !s108 1674181496.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@c2
+vC2_vlg_vec_tst
+R16
+!i10b 1
+!s100 @XHA2JT]B^TS?BinMz41;3
+R2
+Iz_5V?lRkz^fao4V3=Q?N[0
+R3
+R17
+w1674181495
+R12
+R13
+!i122 15
+L0 30 61
+R6
+r1
+!s85 0
+31
+R18
+R14
+R15
+!i113 1
+R10
+R11
+n@c2_vlg_vec_tst
+vcircuit_subtrator_complete
+Z19 !s110 1674181752
+!i10b 1
+!s100 gG@F`_=P[[J3I;;=gofoz3
+R2
+IO68FOC=P6V0loMe09`hEB1
+R3
+R17
+w1674181752
+R4
+R5
+!i122 16
+L0 32 416
+R6
+r1
+!s85 0
+31
+Z20 !s108 1674181752.000000
+R8
+R9
+!i113 1
+R10
+R11
+vcircuit_subtrator_complete_vlg_vec_tst
+R19
+!i10b 1
+!s100 6c9_fTzZVP8USMEh0l?a20
+R2
+I@On=f5LQ4=f[hCXRzUc4e2
+R3
+R17
+w1674181751
+R12
+R13
+!i122 17
+L0 30 1089
+R6
+r1
+!s85 0
+31
+R20
+R14
+R15
+!i113 1
+R10
+R11
+vfull_adder
+Z21 !s110 1673873649
+!i10b 1
+!s100 @5NElMHF0K0<:O66IODh]1
+R2
+IzRlHXQm6gKi?lO5>MdKYT2
+R3
+Z22 dD:/Users/ffss/Documents/adder/simulation/qsim
+w1673873646
+R4
+R5
+!i122 10
+L0 32 365
+R6
+r1
+!s85 0
+31
+!s108 1673873648.000000
+R8
+R9
+!i113 1
+R10
+R11
+vfull_adder_vlg_vec_tst
+R21
+!i10b 1
+!s100 jHcY[7S4QKhJ^OS1dhjVe0
+R2
+ImCKE<[[YiP1WW6f4=hg]70
+R3
+R22
+w1673873644
+R12
+R13
+!i122 11
+L0 30 106
+R6
+r1
+!s85 0
+31
+!s108 1673873649.000000
+R14
+R15
+!i113 1
+R10
+R11

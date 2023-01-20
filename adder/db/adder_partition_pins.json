@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "BitAns[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BitAns[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BitAns[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BitAns[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BitAns[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BitAns[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BitB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BitB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BitB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BitB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BitB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BitA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BitA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BitA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BitA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BitA[4]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

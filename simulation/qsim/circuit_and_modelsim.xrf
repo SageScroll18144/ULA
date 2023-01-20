@@ -1,7 +1,0 @@
-vendor_name = ModelSim
-source_file = 1, /home/lypess/Documentos/ULA/circuit_and.bdf
-source_file = 1, /home/lypess/Documentos/ULA/db/circuit_and.cbx.xml
-design_name = circuit_and
-instance = comp, \F~output , F~output, circuit_and, 1
-instance = comp, \A~input , A~input, circuit_and, 1
-instance = comp, \B~input , B~input, circuit_and, 1

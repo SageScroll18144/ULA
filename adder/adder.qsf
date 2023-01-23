@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY circuit_subtrator_complete
+set_global_assignment -name TOP_LEVEL_ENTITY comparison_MT
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:15:01  JANUARY 11, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -61,6 +61,8 @@ set_global_assignment -name BDF_FILE C2.bdf
 set_global_assignment -name BDF_FILE equal.bdf
 set_global_assignment -name BDF_FILE bitcmp.bdf
 set_global_assignment -name BDF_FILE cmp_morethan.bdf
+set_global_assignment -name BDF_FILE cmp.bdf
+set_global_assignment -name BDF_FILE comparison_MT.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

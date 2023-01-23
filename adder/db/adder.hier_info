@@ -1,181 +1,22 @@
-|circuit_subtrator_complete
-BitAns[0] <= full_adder:inst3.Ans[0]
-BitAns[1] <= full_adder:inst3.Ans[1]
-BitAns[2] <= full_adder:inst3.Ans[2]
-BitAns[3] <= full_adder:inst3.Ans[3]
-BitAns[4] <= full_adder:inst3.Ans[4]
-BitAns[5] <= full_adder:inst3.Ans[5]
-BitA[0] => full_adder:inst3.Ai[0]
-BitA[1] => full_adder:inst3.Ai[1]
-BitA[2] => full_adder:inst3.Ai[2]
-BitA[3] => full_adder:inst3.Ai[3]
-BitA[4] => full_adder:inst3.Ai[4]
-BitB[0] => C2:inst.Number[0]
-BitB[1] => C2:inst.Number[1]
-BitB[2] => C2:inst.Number[2]
-BitB[3] => C2:inst.Number[3]
-BitB[4] => C2:inst.Number[4]
-
-
-|circuit_subtrator_complete|full_adder:inst3
-Ans[0] <= adder:inst.S
-Ans[1] <= adder:inst1.S
-Ans[2] <= adder:inst5.S
-Ans[3] <= adder:inst6.S
-Ans[4] <= adder:inst7.S
-Ans[5] <= adder:inst7.Co
-Ai[0] => adder:inst.A
-Ai[1] => adder:inst1.A
-Ai[2] => adder:inst5.A
-Ai[3] => adder:inst6.A
-Ai[4] => adder:inst7.A
-Bi[0] => adder:inst.B
-Bi[1] => adder:inst1.B
-Bi[2] => adder:inst5.B
-Bi[3] => adder:inst6.B
-Bi[4] => adder:inst7.B
-
-
-|circuit_subtrator_complete|full_adder:inst3|adder:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|full_adder:inst3|adder:inst1
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|full_adder:inst3|adder:inst5
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|full_adder:inst3|adder:inst6
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|full_adder:inst3|adder:inst7
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|C2:inst
-Negative_number[0] <= adder:inst5.S
-Negative_number[1] <= adder:inst11.S
-Negative_number[2] <= adder:inst12.S
-Negative_number[3] <= adder:inst13.S
-Negative_number[4] <= adder:inst14.S
-Number[0] => inst.IN0
-Number[1] => inst1.IN0
-Number[2] => inst2.IN0
-Number[3] => inst3.IN0
-Number[4] => inst4.IN0
-
-
-|circuit_subtrator_complete|C2:inst|adder:inst5
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|C2:inst|adder:inst11
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|C2:inst|adder:inst12
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|C2:inst|adder:inst13
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|circuit_subtrator_complete|C2:inst|adder:inst14
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst5.IN0
-A => inst2.IN0
-B => inst.IN1
-B => inst5.IN1
-B => inst2.IN1
-Ci => inst1.IN1
-Ci => inst3.IN1
-Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+|comparison_MT
+ans <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+bitB[0] => inst16.IN0
+bitB[1] => inst15.IN0
+bitB[1] => inst11.IN0
+bitB[2] => inst12.IN0
+bitB[2] => inst10.IN0
+bitB[3] => inst8.IN0
+bitB[3] => inst6.IN0
+bitB[4] => inst.IN0
+bitB[4] => inst2.IN0
+bitA[0] => inst14.IN2
+bitA[1] => inst15.IN1
+bitA[1] => inst20.IN1
+bitA[2] => inst12.IN1
+bitA[2] => inst9.IN1
+bitA[3] => inst8.IN1
+bitA[3] => inst4.IN1
+bitA[4] => inst.IN1
+bitA[4] => inst3.IN1
 
 

@@ -4,67 +4,47 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "BitAns[5]",
+					"name" : "ans",
 					"strict" : false
 				},
 				{
-					"name" : "BitAns[4]",
+					"name" : "bitA[4]",
 					"strict" : false
 				},
 				{
-					"name" : "BitAns[3]",
+					"name" : "bitB[4]",
 					"strict" : false
 				},
 				{
-					"name" : "BitAns[2]",
+					"name" : "bitA[3]",
 					"strict" : false
 				},
 				{
-					"name" : "BitAns[1]",
+					"name" : "bitB[3]",
 					"strict" : false
 				},
 				{
-					"name" : "BitAns[0]",
+					"name" : "bitA[2]",
 					"strict" : false
 				},
 				{
-					"name" : "BitB[3]",
+					"name" : "bitA[1]",
 					"strict" : false
 				},
 				{
-					"name" : "BitB[2]",
+					"name" : "bitA[0]",
 					"strict" : false
 				},
 				{
-					"name" : "BitB[1]",
+					"name" : "bitB[0]",
 					"strict" : false
 				},
 				{
-					"name" : "BitB[0]",
+					"name" : "bitB[1]",
 					"strict" : false
 				},
 				{
-					"name" : "BitB[4]",
-					"strict" : false
-				},
-				{
-					"name" : "BitA[0]",
-					"strict" : false
-				},
-				{
-					"name" : "BitA[1]",
-					"strict" : false
-				},
-				{
-					"name" : "BitA[2]",
-					"strict" : false
-				},
-				{
-					"name" : "BitA[3]",
-					"strict" : false
-				},
-				{
-					"name" : "BitA[4]",
+					"name" : "bitB[2]",
 					"strict" : false
 				}
 			]

@@ -149,14 +149,62 @@ R15
 !i113 1
 R10
 R11
+vcomparison_MT
+Z21 !s110 1674486096
+!i10b 1
+!s100 OOLFEOn^;jcY;jaRHO:KS0
+R2
+ILoEK]g>B:GA`Qb[<iLc>n0
+R3
+Z22 d/home/lypess/Documentos/ULA/adder/simulation/qsim
+w1674486095
+R4
+R5
+!i122 18
+L0 32 205
+R6
+r1
+!s85 0
+31
+Z23 !s108 1674486096.000000
+R8
+R9
+!i113 1
+R10
+R11
+ncomparison_@m@t
+vcomparison_MT_vlg_vec_tst
+R21
+!i10b 1
+!s100 N2Q8M]lNj:S>^9R0[ng_:2
+R2
+I??bkzHf=1QkS]PB^HA7=R2
+R3
+R22
+w1674486094
+R12
+R13
+!i122 19
+L0 30 1069
+R6
+r1
+!s85 0
+31
+R23
+R14
+R15
+!i113 1
+R10
+R11
+ncomparison_@m@t_vlg_vec_tst
 vfull_adder
-Z21 !s110 1673873649
+Z24 !s110 1673873649
 !i10b 1
 !s100 @5NElMHF0K0<:O66IODh]1
 R2
 IzRlHXQm6gKi?lO5>MdKYT2
 R3
-Z22 dD:/Users/ffss/Documents/adder/simulation/qsim
+Z25 dD:/Users/ffss/Documents/adder/simulation/qsim
 w1673873646
 R4
 R5
@@ -173,13 +221,13 @@ R9
 R10
 R11
 vfull_adder_vlg_vec_tst
-R21
+R24
 !i10b 1
 !s100 jHcY[7S4QKhJ^OS1dhjVe0
 R2
 ImCKE<[[YiP1WW6f4=hg]70
 R3
-R22
+R25
 w1673873644
 R12
 R13

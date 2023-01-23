@@ -1,4 +1,46 @@
-|comparison_MT
+|ula
+COMPARISON <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => comparison_MT:inst6.bitA[0]
+A[0] => comparison_LT:inst5.bitA[0]
+A[0] => equal:inst11.BIT_A[0]
+A[1] => comparison_MT:inst6.bitA[1]
+A[1] => comparison_LT:inst5.bitA[1]
+A[1] => equal:inst11.BIT_A[1]
+A[2] => comparison_MT:inst6.bitA[2]
+A[2] => comparison_LT:inst5.bitA[2]
+A[2] => equal:inst11.BIT_A[2]
+A[3] => comparison_MT:inst6.bitA[3]
+A[3] => comparison_LT:inst5.bitA[3]
+A[3] => equal:inst11.BIT_A[3]
+A[4] => comparison_MT:inst6.bitA[4]
+A[4] => comparison_LT:inst5.bitA[4]
+A[4] => equal:inst11.BIT_A[4]
+B[0] => comparison_MT:inst6.bitB[0]
+B[0] => comparison_LT:inst5.bitB[0]
+B[0] => equal:inst11.BIT_B[0]
+B[1] => comparison_MT:inst6.bitB[1]
+B[1] => comparison_LT:inst5.bitB[1]
+B[1] => equal:inst11.BIT_B[1]
+B[2] => comparison_MT:inst6.bitB[2]
+B[2] => comparison_LT:inst5.bitB[2]
+B[2] => equal:inst11.BIT_B[2]
+B[3] => comparison_MT:inst6.bitB[3]
+B[3] => comparison_LT:inst5.bitB[3]
+B[3] => equal:inst11.BIT_B[3]
+B[4] => comparison_MT:inst6.bitB[4]
+B[4] => comparison_LT:inst5.bitB[4]
+B[4] => equal:inst11.BIT_B[4]
+pin_name1 => inst8.IN1
+pin_name1 => inst9.IN1
+pin_name1 => inst.IN0
+pin_name2 => inst2.IN0
+pin_name2 => inst4.IN2
+pin_name3 => inst3.IN0
+pin_name3 => inst9.IN3
+pin_name3 => inst4.IN3
+
+
+|ula|comparison_MT:inst6
 ans <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 bitB[0] => inst16.IN0
 bitB[1] => inst15.IN0
@@ -18,5 +60,79 @@ bitA[3] => inst8.IN1
 bitA[3] => inst4.IN1
 bitA[4] => inst.IN1
 bitA[4] => inst3.IN1
+
+
+|ula|comparison_LT:inst5
+ans <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+bitA[0] => comparison_MT:inst.bitA[0]
+bitA[0] => equal:inst2.BIT_A[0]
+bitA[1] => comparison_MT:inst.bitA[1]
+bitA[1] => equal:inst2.BIT_A[1]
+bitA[2] => comparison_MT:inst.bitA[2]
+bitA[2] => equal:inst2.BIT_A[2]
+bitA[3] => comparison_MT:inst.bitA[3]
+bitA[3] => equal:inst2.BIT_A[3]
+bitA[4] => comparison_MT:inst.bitA[4]
+bitA[4] => equal:inst2.BIT_A[4]
+bitB[0] => comparison_MT:inst.bitB[0]
+bitB[0] => equal:inst2.BIT_B[0]
+bitB[1] => comparison_MT:inst.bitB[1]
+bitB[1] => equal:inst2.BIT_B[1]
+bitB[2] => comparison_MT:inst.bitB[2]
+bitB[2] => equal:inst2.BIT_B[2]
+bitB[3] => comparison_MT:inst.bitB[3]
+bitB[3] => equal:inst2.BIT_B[3]
+bitB[4] => comparison_MT:inst.bitB[4]
+bitB[4] => equal:inst2.BIT_B[4]
+
+
+|ula|comparison_LT:inst5|comparison_MT:inst
+ans <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+bitB[0] => inst16.IN0
+bitB[1] => inst15.IN0
+bitB[1] => inst11.IN0
+bitB[2] => inst12.IN0
+bitB[2] => inst10.IN0
+bitB[3] => inst8.IN0
+bitB[3] => inst6.IN0
+bitB[4] => inst.IN0
+bitB[4] => inst2.IN0
+bitA[0] => inst14.IN2
+bitA[1] => inst15.IN1
+bitA[1] => inst20.IN1
+bitA[2] => inst12.IN1
+bitA[2] => inst9.IN1
+bitA[3] => inst8.IN1
+bitA[3] => inst4.IN1
+bitA[4] => inst.IN1
+bitA[4] => inst3.IN1
+
+
+|ula|comparison_LT:inst5|equal:inst2
+equal <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BIT_B[0] => inst.IN0
+BIT_B[1] => inst2.IN0
+BIT_B[2] => inst3.IN0
+BIT_B[3] => inst4.IN0
+BIT_B[4] => inst5.IN0
+BIT_A[0] => inst.IN1
+BIT_A[1] => inst2.IN1
+BIT_A[2] => inst3.IN1
+BIT_A[3] => inst4.IN1
+BIT_A[4] => inst5.IN1
+
+
+|ula|equal:inst11
+equal <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BIT_B[0] => inst.IN0
+BIT_B[1] => inst2.IN0
+BIT_B[2] => inst3.IN0
+BIT_B[3] => inst4.IN0
+BIT_B[4] => inst5.IN0
+BIT_A[0] => inst.IN1
+BIT_A[1] => inst2.IN1
+BIT_A[2] => inst3.IN1
+BIT_A[3] => inst4.IN1
+BIT_A[4] => inst5.IN1
 
 

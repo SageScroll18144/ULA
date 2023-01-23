@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adder
-Mon Jan 23 16:37:56 2023
+Mon Jan 23 16:43:10 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,7 +10,13 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +43,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Jan 23 16:37:56 2023           ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 23 16:43:10 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; ula                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 44                                          ;
+;     Total combinational functions  ; 44                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 31                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -155,13 +161,128 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
+; circuit_subtrator_complete.bdf   ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/tmp/ULA/adder/circuit_subtrator_complete.bdf ;         ;
+; adder.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/tmp/ULA/adder/adder.bdf                      ;         ;
+; full_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/tmp/ULA/adder/full_adder.bdf                 ;         ;
+; C2.bdf                           ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/tmp/ULA/adder/C2.bdf                         ;         ;
+; equal.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/tmp/ULA/adder/equal.bdf                      ;         ;
+; comparison_MT.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/tmp/ULA/adder/comparison_MT.bdf              ;         ;
+; comparison_LT.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/tmp/ULA/adder/comparison_LT.bdf              ;         ;
+; ula.bdf                          ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/tmp/ULA/adder/ula.bdf                        ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 44         ;
+;                                             ;            ;
+; Total combinational functions               ; 44         ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 28         ;
+;     -- 3 input functions                    ; 12         ;
+;     -- <=2 input functions                  ; 4          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 44         ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 31         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; B[0]~input ;
+; Maximum fan-out                             ; 15         ;
+; Total fan-out                               ; 205        ;
+; Average fan-out                             ; 1.93       ;
++---------------------------------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name                ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+----------------------------+--------------+
+; |ula                                   ; 44 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 31   ; 0            ; |ula                                                                ; ula                        ; work         ;
+;    |C2:inst18|                         ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18                                                      ; C2                         ; work         ;
+;       |adder:inst12|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst12                                         ; adder                      ; work         ;
+;       |adder:inst13|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst13                                         ; adder                      ; work         ;
+;    |circuit_subtrator_complete:inst12| ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12                              ; circuit_subtrator_complete ; work         ;
+;       |C2:inst|                        ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|C2:inst                      ; C2                         ; work         ;
+;          |adder:inst11|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|C2:inst|adder:inst11         ; adder                      ; work         ;
+;       |full_adder:inst3|               ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|full_adder:inst3             ; full_adder                 ; work         ;
+;          |adder:inst1|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|full_adder:inst3|adder:inst1 ; adder                      ; work         ;
+;          |adder:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|full_adder:inst3|adder:inst5 ; adder                      ; work         ;
+;          |adder:inst6|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|full_adder:inst3|adder:inst6 ; adder                      ; work         ;
+;          |adder:inst7|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|full_adder:inst3|adder:inst7 ; adder                      ; work         ;
+;    |full_adder:inst1|                  ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst1                                               ; full_adder                 ; work         ;
+;       |adder:inst1|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst1|adder:inst1                                   ; adder                      ; work         ;
+;       |adder:inst5|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst1|adder:inst5                                   ; adder                      ; work         ;
+;       |adder:inst6|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst1|adder:inst6                                   ; adder                      ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+----------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 31                          ;
+; cycloneiii_lcell_comb ; 45                          ;
+;     normal            ; 45                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 28                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.69                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Jan 23 16:37:47 2023
+    Info: Processing started: Mon Jan 23 16:42:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder -c adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -200,12 +321,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file teste.b
 Info (12021): Found 1 design units, including 1 entities, in source file ula.bdf
     Info (12023): Found entity 1: ula
 Info (12127): Elaborating entity "ula" for the top level hierarchy
-Error (275044): Port "IN3" of type AND3 of instance "inst15" is missing source signal
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 5 warnings
-    Error: Peak virtual memory: 349 megabytes
-    Error: Processing ended: Mon Jan 23 16:37:56 2023
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:25
+Info (12128): Elaborating entity "comparison_MT" for hierarchy "comparison_MT:inst6"
+Info (12128): Elaborating entity "comparison_LT" for hierarchy "comparison_LT:inst5"
+Info (12128): Elaborating entity "equal" for hierarchy "comparison_LT:inst5|equal:inst2"
+Info (12128): Elaborating entity "C2" for hierarchy "C2:inst18"
+Warning (275011): Block or symbol "adder" of instance "inst11" overlaps another block or symbol
+Info (12128): Elaborating entity "adder" for hierarchy "C2:inst18|adder:inst5"
+Info (12128): Elaborating entity "circuit_subtrator_complete" for hierarchy "circuit_subtrator_complete:inst12"
+Info (12128): Elaborating entity "full_adder" for hierarchy "circuit_subtrator_complete:inst12|full_adder:inst3"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 44 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 433 megabytes
+    Info: Processing ended: Mon Jan 23 16:43:10 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:26
 
 

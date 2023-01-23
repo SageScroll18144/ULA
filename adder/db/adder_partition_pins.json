@@ -8,23 +8,71 @@
 					"strict" : false
 				},
 				{
-					"name" : "pin_name1",
+					"name" : "comp_a_2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name2",
+					"name" : "comp_a_2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name3",
+					"name" : "comp_a_2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "comp_a_2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "B[4]",
+					"name" : "comp_a_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "subans[5]",
+					"strict" : false
+				},
+				{
+					"name" : "subans[4]",
+					"strict" : false
+				},
+				{
+					"name" : "subans[3]",
+					"strict" : false
+				},
+				{
+					"name" : "subans[2]",
+					"strict" : false
+				},
+				{
+					"name" : "subans[1]",
+					"strict" : false
+				},
+				{
+					"name" : "subans[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sumans[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sumans[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sumans[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sumans[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sumans[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sumans[0]",
 					"strict" : false
 				},
 				{
@@ -36,6 +84,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[4]",
+					"strict" : false
+				},
+				{
 					"name" : "A[1]",
 					"strict" : false
 				},
@@ -44,19 +108,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
-					"strict" : false
-				},
-				{
 					"name" : "A[0]",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "pin_name1",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name3",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name2",
 					"strict" : false
 				}
 			]

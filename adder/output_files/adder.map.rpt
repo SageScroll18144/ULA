@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adder
-Fri Jan 27 14:56:18 2023
+Fri Jan 27 15:58:18 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jan 27 14:56:18 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 27 15:58:18 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; ula                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 63                                          ;
-;     Total combinational functions  ; 63                                          ;
+; Total logic elements               ; 70                                          ;
+;     Total combinational functions  ; 70                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 55                                          ;
+; Total pins                         ; 71                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -185,30 +185,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 63         ;
+; Estimated Total logic elements              ; 70         ;
 ;                                             ;            ;
-; Total combinational functions               ; 63         ;
+; Total combinational functions               ; 70         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 34         ;
+;     -- 4 input functions                    ; 41         ;
 ;     -- 3 input functions                    ; 24         ;
 ;     -- <=2 input functions                  ; 5          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 63         ;
+;     -- normal mode                          ; 70         ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 55         ;
+; I/O pins                                    ; 71         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[0]~input ;
 ; Maximum fan-out                             ; 16         ;
-; Total fan-out                               ; 312        ;
-; Average fan-out                             ; 1.80       ;
+; Total fan-out                               ; 368        ;
+; Average fan-out                             ; 1.74       ;
 +---------------------------------------------+------------+
 
 
@@ -217,8 +217,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+----------------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name                ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+----------------------------+--------------+
-; |ula                                   ; 63 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |ula                                                                ; ula                        ; work         ;
+; |ula                                   ; 70 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 71   ; 0            ; |ula                                                                ; ula                        ; work         ;
 ;    |bin_7seg:inst26|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|bin_7seg:inst26                                                ; bin_7seg                   ; work         ;
+;    |bin_7seg:inst28|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|bin_7seg:inst28                                                ; bin_7seg                   ; work         ;
 ;    |circuit_subtrator_complete:inst12| ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12                              ; circuit_subtrator_complete ; work         ;
 ;       |C2:inst|                        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|C2:inst                      ; C2                         ; work         ;
 ;          |adder:inst11|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst12|C2:inst|adder:inst11         ; adder                      ; work         ;
@@ -258,17 +259,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 55                          ;
-; cycloneiii_lcell_comb ; 67                          ;
-;     normal            ; 67                          ;
+; boundary_port         ; 71                          ;
+; cycloneiii_lcell_comb ; 75                          ;
+;     normal            ; 75                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 2                           ;
+;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 24                          ;
-;         4 data inputs ; 34                          ;
+;         4 data inputs ; 41                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.64                        ;
+; Average LUT depth     ; 3.83                        ;
 +-----------------------+-----------------------------+
 
 
@@ -287,7 +288,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Jan 27 14:56:08 2023
+    Info: Processing started: Fri Jan 27 15:58:09 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder -c adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -332,6 +333,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file and_bit
 Info (12021): Found 1 design units, including 1 entities, in source file xor_bitbit.bdf
     Info (12023): Found entity 1: xor_bitbit
 Info (12127): Elaborating entity "ula" for the top level hierarchy
+Warning (275043): Pin "sing_sum_ans" is missing source
 Info (12128): Elaborating entity "comparison_MT" for hierarchy "comparison_MT:inst6"
 Info (12128): Elaborating entity "comparison_LT" for hierarchy "comparison_LT:inst5"
 Info (12128): Elaborating entity "equal" for hierarchy "comparison_LT:inst5|equal:inst2"
@@ -348,17 +350,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Og" is stuck at VCC
     Warning (13410): Pin "Oc" is stuck at GND
     Warning (13410): Pin "Ob" is stuck at GND
+    Warning (13410): Pin "BHS" is stuck at GND
+    Warning (13410): Pin "CHS" is stuck at GND
+    Warning (13410): Pin "GHS" is stuck at VCC
+    Warning (13410): Pin "sing_sum_ans" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 141 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 63 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 429 megabytes
-    Info: Processing ended: Fri Jan 27 14:56:18 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21059): Implemented 58 output pins
+    Info (21061): Implemented 70 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 427 megabytes
+    Info: Processing ended: Fri Jan 27 15:58:18 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:25
 
 

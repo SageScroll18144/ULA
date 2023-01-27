@@ -55,14 +55,60 @@ Z15 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1
 R10
 R11
+vand_bitbit
+Z16 !s110 1674826191
+!i10b 1
+!s100 D2mczooznz2FSzJzR8b5R0
+R2
+IjInCH^GYKGbH9VI4OD1G]0
+R3
+Z17 d/home/lypess/Documentos/ULA/adder/simulation/qsim
+w1674826190
+R4
+R5
+!i122 22
+Z18 L0 32 282
+R6
+r1
+!s85 0
+31
+Z19 !s108 1674826191.000000
+R8
+R9
+!i113 1
+R10
+R11
+vand_bitbit_vlg_vec_tst
+R16
+!i10b 1
+!s100 imMc61a7g4mghoEmF_NzD1
+R2
+IVjog5i:KBOSXed^T@1kWo1
+R3
+R17
+w1674826189
+R12
+R13
+!i122 23
+L0 30 1081
+R6
+r1
+!s85 0
+31
+R19
+R14
+R15
+!i113 1
+R10
+R11
 vC2
-Z16 !s110 1674181496
+Z20 !s110 1674181496
 !i10b 1
 !s100 ;c`Xfg>G[X[Moz1bV@Eg02
 R2
 IglC?oNdo=Lh4X5M@4^dIG1
 R3
-Z17 d/home/lypess/Documentos/adder/simulation/qsim
+Z21 d/home/lypess/Documentos/adder/simulation/qsim
 w1674181496
 R4
 R5
@@ -72,7 +118,7 @@ R6
 r1
 !s85 0
 31
-Z18 !s108 1674181496.000000
+Z22 !s108 1674181496.000000
 R8
 R9
 !i113 1
@@ -80,13 +126,13 @@ R10
 R11
 n@c2
 vC2_vlg_vec_tst
-R16
+R20
 !i10b 1
 !s100 @XHA2JT]B^TS?BinMz41;3
 R2
 Iz_5V?lRkz^fao4V3=Q?N[0
 R3
-R17
+R21
 w1674181495
 R12
 R13
@@ -96,7 +142,7 @@ R6
 r1
 !s85 0
 31
-R18
+R22
 R14
 R15
 !i113 1
@@ -104,13 +150,13 @@ R10
 R11
 n@c2_vlg_vec_tst
 vcircuit_subtrator_complete
-Z19 !s110 1674181752
+Z23 !s110 1674181752
 !i10b 1
 !s100 gG@F`_=P[[J3I;;=gofoz3
 R2
 IO68FOC=P6V0loMe09`hEB1
 R3
-R17
+R21
 w1674181752
 R4
 R5
@@ -120,20 +166,20 @@ R6
 r1
 !s85 0
 31
-Z20 !s108 1674181752.000000
+Z24 !s108 1674181752.000000
 R8
 R9
 !i113 1
 R10
 R11
 vcircuit_subtrator_complete_vlg_vec_tst
-R19
+R23
 !i10b 1
 !s100 6c9_fTzZVP8USMEh0l?a20
 R2
 I@On=f5LQ4=f[hCXRzUc4e2
 R3
-R17
+R21
 w1674181751
 R12
 R13
@@ -143,20 +189,20 @@ R6
 r1
 !s85 0
 31
-R20
+R24
 R14
 R15
 !i113 1
 R10
 R11
 vcomparison_MT
-Z21 !s110 1674486096
+Z25 !s110 1674486096
 !i10b 1
 !s100 OOLFEOn^;jcY;jaRHO:KS0
 R2
 ILoEK]g>B:GA`Qb[<iLc>n0
 R3
-Z22 d/home/lypess/Documentos/ULA/adder/simulation/qsim
+R17
 w1674486095
 R4
 R5
@@ -166,7 +212,7 @@ R6
 r1
 !s85 0
 31
-Z23 !s108 1674486096.000000
+Z26 !s108 1674486096.000000
 R8
 R9
 !i113 1
@@ -174,13 +220,13 @@ R10
 R11
 ncomparison_@m@t
 vcomparison_MT_vlg_vec_tst
-R21
+R25
 !i10b 1
 !s100 N2Q8M]lNj:S>^9R0[ng_:2
 R2
 I??bkzHf=1QkS]PB^HA7=R2
 R3
-R22
+R17
 w1674486094
 R12
 R13
@@ -190,7 +236,7 @@ R6
 r1
 !s85 0
 31
-R23
+R26
 R14
 R15
 !i113 1
@@ -198,13 +244,13 @@ R10
 R11
 ncomparison_@m@t_vlg_vec_tst
 vfull_adder
-Z24 !s110 1673873649
+Z27 !s110 1673873649
 !i10b 1
 !s100 @5NElMHF0K0<:O66IODh]1
 R2
 IzRlHXQm6gKi?lO5>MdKYT2
 R3
-Z25 dD:/Users/ffss/Documents/adder/simulation/qsim
+Z28 dD:/Users/ffss/Documents/adder/simulation/qsim
 w1673873646
 R4
 R5
@@ -221,13 +267,13 @@ R9
 R10
 R11
 vfull_adder_vlg_vec_tst
-R24
+R27
 !i10b 1
 !s100 jHcY[7S4QKhJ^OS1dhjVe0
 R2
 ImCKE<[[YiP1WW6f4=hg]70
 R3
-R25
+R28
 w1673873644
 R12
 R13
@@ -238,6 +284,52 @@ r1
 !s85 0
 31
 !s108 1673873649.000000
+R14
+R15
+!i113 1
+R10
+R11
+vxor_bitbit
+Z29 !s110 1674826416
+!i10b 1
+!s100 aKNXgWAcadFBN5V:d3[4a0
+R2
+IhaCDQBo30=<MjdF5@IZJi2
+R3
+R17
+w1674826415
+R4
+R5
+!i122 24
+R18
+R6
+r1
+!s85 0
+31
+Z30 !s108 1674826416.000000
+R8
+R9
+!i113 1
+R10
+R11
+vxor_bitbit_vlg_vec_tst
+R29
+!i10b 1
+!s100 Xfhj78GIflV_4CAOd5`K[2
+R2
+I[Ec3f]lEeM`R5nVD=?j1Z3
+R3
+R17
+w1674826414
+R12
+R13
+!i122 25
+L0 30 1105
+R6
+r1
+!s85 0
+31
+R30
 R14
 R15
 !i113 1

@@ -1,32 +1,32 @@
 # do adder.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:01:36 on Jan 23,2023
+# Start time: 10:33:36 on Jan 27,2023
 # vlog -work work adder.vo 
-# -- Compiling module comparison_MT
+# -- Compiling module xor_bitbit
 # 
 # Top level modules:
-# 	comparison_MT
-# End time: 12:01:36 on Jan 23,2023, Elapsed time: 0:00:00
+# 	xor_bitbit
+# End time: 10:33:36 on Jan 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:01:36 on Jan 23,2023
+# Start time: 10:33:36 on Jan 27,2023
 # vlog -work work Waveform1.vwf.vt 
-# -- Compiling module comparison_MT_vlg_vec_tst
+# -- Compiling module xor_bitbit_vlg_vec_tst
 # 
 # Top level modules:
-# 	comparison_MT_vlg_vec_tst
-# End time: 12:01:36 on Jan 23,2023, Elapsed time: 0:00:00
+# 	xor_bitbit_vlg_vec_tst
+# End time: 10:33:36 on Jan 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.comparison_MT_vlg_vec_tst 
-# Start time: 12:01:36 on Jan 23,2023
-# Loading work.comparison_MT_vlg_vec_tst
-# Loading work.comparison_MT
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.xor_bitbit_vlg_vec_tst 
+# Start time: 10:33:36 on Jan 27,2023
+# Loading work.xor_bitbit_vlg_vec_tst
+# Loading work.xor_bitbit
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # after#25
 # ** Note: $finish    : Waveform1.vwf.vt(47)
-#    Time: 1 us  Iteration: 0  Instance: /comparison_MT_vlg_vec_tst
-# End time: 12:01:36 on Jan 23,2023, Elapsed time: 0:00:00
+#    Time: 1 us  Iteration: 0  Instance: /xor_bitbit_vlg_vec_tst
+# End time: 10:33:37 on Jan 27,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

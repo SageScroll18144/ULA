@@ -4,95 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "COMPARISON",
+					"name" : "Ans_Xor[4]",
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[4]",
+					"name" : "Ans_Xor[3]",
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[3]",
+					"name" : "Ans_Xor[2]",
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[2]",
+					"name" : "Ans_Xor[1]",
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "comp_a_2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "subans[5]",
-					"strict" : false
-				},
-				{
-					"name" : "subans[4]",
-					"strict" : false
-				},
-				{
-					"name" : "subans[3]",
-					"strict" : false
-				},
-				{
-					"name" : "subans[2]",
-					"strict" : false
-				},
-				{
-					"name" : "subans[1]",
-					"strict" : false
-				},
-				{
-					"name" : "subans[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sumans[5]",
-					"strict" : false
-				},
-				{
-					"name" : "sumans[4]",
-					"strict" : false
-				},
-				{
-					"name" : "sumans[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sumans[2]",
-					"strict" : false
-				},
-				{
-					"name" : "sumans[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sumans[0]",
-					"strict" : false
-				},
-				{
-					"name" : "A[2]",
-					"strict" : false
-				},
-				{
-					"name" : "B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[3]",
-					"strict" : false
-				},
-				{
-					"name" : "B[3]",
-					"strict" : false
-				},
-				{
-					"name" : "A[4]",
+					"name" : "Ans_Xor[0]",
 					"strict" : false
 				},
 				{
@@ -100,7 +28,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
 					"strict" : false
 				},
 				{
@@ -108,7 +52,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "A[1]",
 					"strict" : false
 				},
 				{
@@ -116,15 +60,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "pin_name1",
-					"strict" : false
-				},
-				{
-					"name" : "pin_name3",
-					"strict" : false
-				},
-				{
-					"name" : "pin_name2",
+					"name" : "A[0]",
 					"strict" : false
 				}
 			]

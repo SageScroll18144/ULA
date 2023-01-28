@@ -19,78 +19,146 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "01/28/2023 10:11:11"
+// Generated on "01/28/2023 14:42:44"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          binary_to_bcd
+// Verilog Test Bench (with test vectors) for design :                          ula
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module binary_to_bcd_vlg_vec_tst();
+module ula_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [5:0] binary;
+reg [4:0] A;
+reg [4:0] B;
+reg S0;
+reg S1;
+reg S2;
 // wires                                               
-wire [8:0] BCD;
+wire AHS;
+wire ALS;
+wire [4:0] Ans_And;
+wire [4:0] Ans_Xor;
+wire BHS;
+wire BLS;
+wire CHS;
+wire CLS;
+wire [4:0] comp_a_2;
+wire COMPARISON;
+wire DHS;
+wire DLS;
+wire EHS;
+wire ELS;
+wire FHS;
+wire FLS;
+wire GHS;
+wire GLS;
+wire sing_sum_ans;
+wire [5:0] subans;
+wire [5:0] sumans;
 
 // assign statements (if any)                          
-binary_to_bcd i1 (
+ula i1 (
 // port map - connection between master ports and signals/registers   
-	.BCD(BCD),
-	.binary(binary)
+	.A(A),
+	.AHS(AHS),
+	.ALS(ALS),
+	.Ans_And(Ans_And),
+	.Ans_Xor(Ans_Xor),
+	.B(B),
+	.BHS(BHS),
+	.BLS(BLS),
+	.CHS(CHS),
+	.CLS(CLS),
+	.comp_a_2(comp_a_2),
+	.COMPARISON(COMPARISON),
+	.DHS(DHS),
+	.DLS(DLS),
+	.EHS(EHS),
+	.ELS(ELS),
+	.FHS(FHS),
+	.FLS(FLS),
+	.GHS(GHS),
+	.GLS(GLS),
+	.S0(S0),
+	.S1(S1),
+	.S2(S2),
+	.sing_sum_ans(sing_sum_ans),
+	.subans(subans),
+	.sumans(sumans)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// binary[ 5 ]
+// A[ 4 ]
 initial
 begin
-	binary[5] = 1'b0;
+	A[4] = 1'b0;
 end 
-// binary[ 4 ]
+// A[ 3 ]
 initial
 begin
-	repeat(6)
-	begin
-		binary[4] = 1'b0;
-		binary[4] = #80000 1'b1;
-		# 80000;
-	end
-	binary[4] = 1'b0;
+	A[3] = 1'b1;
 end 
-// binary[ 3 ]
+// A[ 2 ]
 initial
 begin
-	repeat(12)
-	begin
-		binary[3] = 1'b0;
-		binary[3] = #40000 1'b1;
-		# 40000;
-	end
-	binary[3] = 1'b0;
+	A[2] = 1'b0;
 end 
-// binary[ 2 ]
-always
+// A[ 1 ]
+initial
 begin
-	binary[2] = 1'b0;
-	binary[2] = #20000 1'b1;
-	#20000;
+	A[1] = 1'b0;
 end 
-// binary[ 1 ]
-always
+// A[ 0 ]
+initial
 begin
-	binary[1] = 1'b0;
-	binary[1] = #10000 1'b1;
-	#10000;
+	A[0] = 1'b0;
 end 
-// binary[ 0 ]
-always
+// B[ 4 ]
+initial
 begin
-	binary[0] = 1'b0;
-	binary[0] = #5000 1'b1;
-	#5000;
+	B[4] = 1'b0;
+end 
+// B[ 3 ]
+initial
+begin
+	B[3] = 1'b0;
+end 
+// B[ 2 ]
+initial
+begin
+	B[2] = 1'b1;
+end 
+// B[ 1 ]
+initial
+begin
+	B[1] = 1'b0;
+end 
+// B[ 0 ]
+initial
+begin
+	B[0] = 1'b1;
+end 
+
+// S0
+initial
+begin
+	S0 = 1'b0;
+end 
+
+// S1
+initial
+begin
+	S1 = 1'b0;
+end 
+
+// S2
+initial
+begin
+	S2 = 1'b0;
 end 
 endmodule
 

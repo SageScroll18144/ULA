@@ -300,19 +300,9 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "binary[0]" (rect 184 136 231 149)(font "Intel Clear" ))
-	(pt 320 152)
-	(pt 176 152)
-)
-(connector
 	(pt 176 136)
 	(pt 176 152)
 	(bus)
-)
-(connector
-	(text "binary[1]" (rect 184 120 231 133)(font "Intel Clear" ))
-	(pt 320 136)
-	(pt 176 136)
 )
 (connector
 	(pt 176 64)
@@ -323,11 +313,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 176 120)
 	(pt 176 136)
 	(bus)
-)
-(connector
-	(text "binary[2]" (rect 184 104 231 117)(font "Intel Clear" ))
-	(pt 320 120)
-	(pt 176 120)
 )
 (connector
 	(pt 280 64)
@@ -341,11 +326,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 176 152)
 	(pt 176 192)
 	(bus)
-)
-(connector
-	(text "binary[3]" (rect 184 176 231 189)(font "Intel Clear" ))
-	(pt 480 192)
-	(pt 176 192)
 )
 (connector
 	(pt 416 152)
@@ -444,11 +424,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "binary[4]" (rect 184 272 231 285)(font "Intel Clear" ))
-	(pt 544 288)
-	(pt 176 288)
-)
-(connector
 	(pt 1336 216)
 	(pt 1336 288)
 	(bus)
@@ -535,6 +510,31 @@ https://fpgasoftware.intel.com/eula.
 	(text "BCD[5]" (rect 417 88 453 101)(font "Intel Clear" ))
 	(pt 416 104)
 	(pt 1336 104)
+)
+(connector
+	(text "binary[0]" (rect 184 272 231 285)(font "Intel Clear" ))
+	(pt 544 288)
+	(pt 176 288)
+)
+(connector
+	(text "binary[1]" (rect 184 176 231 189)(font "Intel Clear" ))
+	(pt 480 192)
+	(pt 176 192)
+)
+(connector
+	(text "binary[3]" (rect 184 120 231 133)(font "Intel Clear" ))
+	(pt 320 136)
+	(pt 176 136)
+)
+(connector
+	(text "binary[4]" (rect 184 104 231 117)(font "Intel Clear" ))
+	(pt 320 120)
+	(pt 176 120)
+)
+(connector
+	(text "binary[2]" (rect 184 136 231 149)(font "Intel Clear" ))
+	(pt 320 152)
+	(pt 176 152)
 )
 (junction (pt 176 472))
 (junction (pt 1336 480))

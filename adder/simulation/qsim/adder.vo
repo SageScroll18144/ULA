@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
-// DATE "01/28/2023 09:46:30"
+// DATE "01/28/2023 10:11:12"
 
 // 
 // Device: Altera EP4CE6E22C6 Package TQFP144
@@ -56,11 +56,11 @@ wire \BCD[2]~output_o ;
 wire \BCD[1]~output_o ;
 wire \BCD[0]~output_o ;
 wire \inst4~o ;
-wire \binary[1]~input_o ;
-wire \binary[0]~input_o ;
-wire \binary[2]~input_o ;
-wire \inst|inst5~combout ;
 wire \binary[3]~input_o ;
+wire \binary[2]~input_o ;
+wire \binary[4]~input_o ;
+wire \inst|inst5~combout ;
+wire \binary[1]~input_o ;
 wire \inst3|inst5~combout ;
 wire \inst3|inst7~combout ;
 wire \inst3|inst8~0_combout ;
@@ -185,22 +185,13 @@ defparam inst4.bus_hold = "false";
 defparam inst4.simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_io_ibuf \binary[1]~input (
-	.i(binary[1]),
+cycloneive_io_ibuf \binary[3]~input (
+	.i(binary[3]),
 	.ibar(gnd),
-	.o(\binary[1]~input_o ));
+	.o(\binary[3]~input_o ));
 // synopsys translate_off
-defparam \binary[1]~input .bus_hold = "false";
-defparam \binary[1]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \binary[0]~input (
-	.i(binary[0]),
-	.ibar(gnd),
-	.o(\binary[0]~input_o ));
-// synopsys translate_off
-defparam \binary[0]~input .bus_hold = "false";
-defparam \binary[0]~input .simulate_z_as = "z";
+defparam \binary[3]~input .bus_hold = "false";
+defparam \binary[3]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 cycloneive_io_ibuf \binary[2]~input (
@@ -212,14 +203,23 @@ defparam \binary[2]~input .bus_hold = "false";
 defparam \binary[2]~input .simulate_z_as = "z";
 // synopsys translate_on
 
+cycloneive_io_ibuf \binary[4]~input (
+	.i(binary[4]),
+	.ibar(gnd),
+	.o(\binary[4]~input_o ));
+// synopsys translate_off
+defparam \binary[4]~input .bus_hold = "false";
+defparam \binary[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
 cycloneive_lcell_comb \inst|inst5 (
 // Equation(s):
-// \inst|inst5~combout  = ((!\binary[1]~input_o  & !\binary[0]~input_o )) # (!\binary[2]~input_o )
+// \inst|inst5~combout  = ((!\binary[3]~input_o  & !\binary[2]~input_o )) # (!\binary[4]~input_o )
 
 	.dataa(gnd),
-	.datab(\binary[1]~input_o ),
-	.datac(\binary[0]~input_o ),
-	.datad(\binary[2]~input_o ),
+	.datab(\binary[3]~input_o ),
+	.datac(\binary[2]~input_o ),
+	.datad(\binary[4]~input_o ),
 	.cin(gnd),
 	.combout(\inst|inst5~combout ),
 	.cout());
@@ -228,24 +228,24 @@ defparam \inst|inst5 .lut_mask = 16'h03FF;
 defparam \inst|inst5 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneive_io_ibuf \binary[3]~input (
-	.i(binary[3]),
+cycloneive_io_ibuf \binary[1]~input (
+	.i(binary[1]),
 	.ibar(gnd),
-	.o(\binary[3]~input_o ));
+	.o(\binary[1]~input_o ));
 // synopsys translate_off
-defparam \binary[3]~input .bus_hold = "false";
-defparam \binary[3]~input .simulate_z_as = "z";
+defparam \binary[1]~input .bus_hold = "false";
+defparam \binary[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst3|inst5 (
 // Equation(s):
-// \inst3|inst5~combout  = (\binary[2]~input_o  & ((\binary[0]~input_o  & ((!\binary[1]~input_o ) # (!\binary[3]~input_o ))) # (!\binary[0]~input_o  & ((\binary[1]~input_o ))))) # (!\binary[2]~input_o  & (((!\binary[0]~input_o  & !\binary[3]~input_o )) # 
-// (!\binary[1]~input_o )))
+// \inst3|inst5~combout  = (\binary[4]~input_o  & ((\binary[2]~input_o  & ((!\binary[3]~input_o ) # (!\binary[1]~input_o ))) # (!\binary[2]~input_o  & ((\binary[3]~input_o ))))) # (!\binary[4]~input_o  & (((!\binary[2]~input_o  & !\binary[1]~input_o )) # 
+// (!\binary[3]~input_o )))
 
-	.dataa(\binary[2]~input_o ),
-	.datab(\binary[0]~input_o ),
-	.datac(\binary[3]~input_o ),
-	.datad(\binary[1]~input_o ),
+	.dataa(\binary[4]~input_o ),
+	.datab(\binary[2]~input_o ),
+	.datac(\binary[1]~input_o ),
+	.datad(\binary[3]~input_o ),
 	.cin(gnd),
 	.combout(\inst3|inst5~combout ),
 	.cout());
@@ -256,12 +256,12 @@ defparam \inst3|inst5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \inst3|inst7 (
 // Equation(s):
-// \inst3|inst7~combout  = (\binary[3]~input_o  & ((\binary[0]~input_o ) # ((\binary[1]~input_o ) # (!\binary[2]~input_o )))) # (!\binary[3]~input_o  & ((\binary[0]~input_o  $ (\binary[2]~input_o )) # (!\binary[1]~input_o )))
+// \inst3|inst7~combout  = (\binary[1]~input_o  & ((\binary[2]~input_o ) # ((\binary[3]~input_o ) # (!\binary[4]~input_o )))) # (!\binary[1]~input_o  & ((\binary[2]~input_o  $ (\binary[4]~input_o )) # (!\binary[3]~input_o )))
 
-	.dataa(\binary[3]~input_o ),
-	.datab(\binary[0]~input_o ),
-	.datac(\binary[1]~input_o ),
-	.datad(\binary[2]~input_o ),
+	.dataa(\binary[1]~input_o ),
+	.datab(\binary[2]~input_o ),
+	.datac(\binary[3]~input_o ),
+	.datad(\binary[4]~input_o ),
 	.cin(gnd),
 	.combout(\inst3|inst7~combout ),
 	.cout());
@@ -272,12 +272,12 @@ defparam \inst3|inst7 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \inst3|inst8~0 (
 // Equation(s):
-// \inst3|inst8~0_combout  = (\binary[2]~input_o  & (!\binary[0]~input_o  & ((\binary[1]~input_o ) # (!\binary[3]~input_o )))) # (!\binary[2]~input_o  & (\binary[0]~input_o  & ((\binary[3]~input_o ) # (!\binary[1]~input_o ))))
+// \inst3|inst8~0_combout  = (\binary[4]~input_o  & (!\binary[2]~input_o  & ((\binary[3]~input_o ) # (!\binary[1]~input_o )))) # (!\binary[4]~input_o  & (\binary[2]~input_o  & ((\binary[1]~input_o ) # (!\binary[3]~input_o ))))
 
-	.dataa(\binary[3]~input_o ),
-	.datab(\binary[1]~input_o ),
-	.datac(\binary[2]~input_o ),
-	.datad(\binary[0]~input_o ),
+	.dataa(\binary[1]~input_o ),
+	.datab(\binary[3]~input_o ),
+	.datac(\binary[4]~input_o ),
+	.datad(\binary[2]~input_o ),
 	.cin(gnd),
 	.combout(\inst3|inst8~0_combout ),
 	.cout());
@@ -288,13 +288,13 @@ defparam \inst3|inst8~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \inst3|inst9 (
 // Equation(s):
-// \inst3|inst9~combout  = (\binary[1]~input_o  & ((\binary[0]~input_o  & ((\binary[2]~input_o ) # (\binary[3]~input_o ))) # (!\binary[0]~input_o  & ((!\binary[3]~input_o ) # (!\binary[2]~input_o ))))) # (!\binary[1]~input_o  & (\binary[3]~input_o  $ 
-// (((\binary[0]~input_o ) # (!\binary[2]~input_o )))))
+// \inst3|inst9~combout  = (\binary[3]~input_o  & ((\binary[2]~input_o  & ((\binary[4]~input_o ) # (\binary[1]~input_o ))) # (!\binary[2]~input_o  & ((!\binary[1]~input_o ) # (!\binary[4]~input_o ))))) # (!\binary[3]~input_o  & (\binary[1]~input_o  $ 
+// (((\binary[2]~input_o ) # (!\binary[4]~input_o )))))
 
-	.dataa(\binary[1]~input_o ),
-	.datab(\binary[0]~input_o ),
-	.datac(\binary[2]~input_o ),
-	.datad(\binary[3]~input_o ),
+	.dataa(\binary[3]~input_o ),
+	.datab(\binary[2]~input_o ),
+	.datac(\binary[4]~input_o ),
+	.datad(\binary[1]~input_o ),
 	.cin(gnd),
 	.combout(\inst3|inst9~combout ),
 	.cout());
@@ -304,7 +304,7 @@ defparam \inst3|inst9 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_io_ibuf inst1(
-	.i(binary[4]),
+	.i(binary[0]),
 	.ibar(gnd),
 	.o(\inst1~o ));
 // synopsys translate_off

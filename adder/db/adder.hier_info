@@ -8,11 +8,11 @@ BCD[5] <= dabble:inst.Out3
 BCD[6] <= <GND>
 BCD[7] <= <GND>
 BCD[8] <= inst4.OUT
-binary[0] => dabble:inst.In0
-binary[1] => dabble:inst.In1
-binary[2] => dabble:inst.In2
-binary[3] => dabble:inst3.In0
-binary[4] => inst1.DATA
+binary[0] => inst1.DATA
+binary[1] => dabble:inst3.In0
+binary[2] => dabble:inst.In0
+binary[3] => dabble:inst.In1
+binary[4] => dabble:inst.In2
 binary[5] => inst4.DATA
 
 

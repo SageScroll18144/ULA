@@ -32,11 +32,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "binary[1]",
-					"strict" : false
-				},
-				{
-					"name" : "binary[0]",
+					"name" : "binary[3]",
 					"strict" : false
 				},
 				{
@@ -44,7 +40,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "binary[3]",
+					"name" : "binary[4]",
+					"strict" : false
+				},
+				{
+					"name" : "binary[1]",
 					"strict" : false
 				},
 				{
@@ -52,7 +52,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "binary[4]",
+					"name" : "binary[0]",
 					"strict" : false
 				}
 			]

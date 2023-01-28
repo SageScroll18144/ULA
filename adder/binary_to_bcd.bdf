@@ -24,7 +24,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 168 -104 184 64)
 	(text "INPUT" (rect 6 125 16 154)(font "Arial" (font_size 6))(vertical))
-	(text "binary[5..0]" (rect 6 5 17 61)(font "Arial" )(vertical))
+	(text "binary[5..0]" (rect 6 5 17 60)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 1328 528 1344 704)
 	(text "OUTPUT" (rect 6 1 16 41)(font "Arial" (font_size 6))(vertical))
-	(text "BCD[5..0]" (rect 6 87 19 135)(font "Intel Clear" )(vertical))
+	(text "BCD[8..0]" (rect 8 85 21 133)(font "Intel Clear" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -200,13 +200,89 @@ https://fpgasoftware.intel.com/eula.
 		(rectangle (rect 16 16 80 112))
 	)
 )
-(connector
-	(pt 320 472)
-	(pt 320 432)
+(symbol
+	(rect 544 272 592 304)
+	(text "ALT_INBUF" (rect 1 0 54 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 27 34)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "i" (rect 2 7 10 18)(font "Courier New" (bold))(invisible))
+		(text "i" (rect 2 7 10 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "o" (rect 32 7 40 18)(font "Courier New" (bold))(invisible))
+		(text "o" (rect 32 7 40 18)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 32 16))
+	)
 )
-(connector
-	(pt 1256 480)
-	(pt 1256 432)
+(symbol
+	(rect 648 408 696 440)
+	(text "ALT_INBUF" (rect 1 0 54 10)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 21 28 34)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "i" (rect 2 7 10 18)(font "Courier New" (bold))(invisible))
+		(text "i" (rect 2 7 10 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "o" (rect 32 7 40 18)(font "Courier New" (bold))(invisible))
+		(text "o" (rect 32 7 40 18)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
+(symbol
+	(rect 1168 8 1200 40)
+	(text "GND" (rect 2 6 24 16)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 5 -2 29 11)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 32)
+		(output)
+		(text "1" (rect 18 0 26 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 6 21 14 32)(font "Courier New" (bold))(invisible))
+		(line (pt 16 24)(pt 16 32))
+	)
+	(drawing
+		(line (pt 24 24)(pt 16 16))
+		(line (pt 16 16)(pt 8 24))
+		(line (pt 24 24)(pt 8 24))
+	)
+	(rotate180)
+)
+(symbol
+	(rect 1216 8 1248 40)
+	(text "GND" (rect 2 6 24 16)(font "Arial" (font_size 6)))
+	(text "inst6" (rect 5 -2 30 11)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 32)
+		(output)
+		(text "1" (rect 18 0 26 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 6 21 14 32)(font "Courier New" (bold))(invisible))
+		(line (pt 16 24)(pt 16 32))
+	)
+	(drawing
+		(line (pt 24 24)(pt 16 16))
+		(line (pt 16 16)(pt 8 24))
+		(line (pt 24 24)(pt 8 24))
+	)
+	(rotate180)
 )
 (connector
 	(text "binary[5]" (rect 301 456 348 469)(font "Intel Clear" ))
@@ -214,23 +290,9 @@ https://fpgasoftware.intel.com/eula.
 	(pt 320 472)
 )
 (connector
-	(pt 1256 432)
-	(pt 320 432)
-)
-(connector
-	(pt 1336 24)
-	(pt 1336 480)
-	(bus)
-)
-(connector
 	(pt 1336 480)
 	(pt 1336 528)
 	(bus)
-)
-(connector
-	(text "BCD[5]" (rect 1264 464 1300 477)(font "Intel Clear" ))
-	(pt 1336 480)
-	(pt 1256 480)
 )
 (connector
 	(pt 176 472)
@@ -281,14 +343,198 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
+	(text "binary[3]" (rect 184 176 231 189)(font "Intel Clear" ))
+	(pt 480 192)
 	(pt 176 192)
+)
+(connector
+	(pt 416 152)
+	(pt 448 152)
+)
+(connector
+	(pt 448 152)
+	(pt 448 176)
+)
+(connector
+	(pt 448 176)
+	(pt 480 176)
+)
+(connector
+	(pt 416 136)
+	(pt 456 136)
+)
+(connector
+	(pt 456 136)
+	(pt 456 160)
+)
+(connector
+	(pt 456 160)
+	(pt 480 160)
+)
+(connector
+	(pt 416 120)
+	(pt 464 120)
+)
+(connector
+	(pt 464 144)
+	(pt 464 120)
+)
+(connector
+	(pt 464 144)
+	(pt 480 144)
+)
+(connector
+	(pt 576 192)
+	(pt 600 192)
+)
+(connector
+	(pt 600 192)
+	(pt 600 216)
+)
+(connector
+	(pt 608 176)
+	(pt 576 176)
+)
+(connector
+	(pt 608 176)
+	(pt 608 200)
+)
+(connector
+	(pt 576 160)
+	(pt 616 160)
+)
+(connector
+	(pt 616 160)
+	(pt 616 184)
+)
+(connector
+	(pt 1336 200)
+	(pt 1336 216)
+	(bus)
+)
+(connector
+	(pt 1336 184)
+	(pt 1336 200)
+	(bus)
+)
+(connector
+	(pt 320 424)
+	(pt 320 472)
+)
+(connector
+	(pt 320 424)
+	(pt 648 424)
+)
+(connector
+	(pt 696 424)
+	(pt 1256 424)
+)
+(connector
+	(pt 1256 424)
+	(pt 1256 480)
+)
+(connector
+	(pt 176 192)
+	(pt 176 288)
+	(bus)
+)
+(connector
+	(pt 176 288)
 	(pt 176 472)
 	(bus)
 )
 (connector
-	(text "binary[3]" (rect 184 176 231 189)(font "Intel Clear" ))
-	(pt 480 192)
-	(pt 176 192)
+	(text "binary[4]" (rect 184 272 231 285)(font "Intel Clear" ))
+	(pt 544 288)
+	(pt 176 288)
+)
+(connector
+	(pt 1336 216)
+	(pt 1336 288)
+	(bus)
+)
+(connector
+	(pt 1336 288)
+	(pt 1336 480)
+	(bus)
+)
+(connector
+	(text "BCD[8]" (rect 1264 464 1300 477)(font "Intel Clear" ))
+	(pt 1336 480)
+	(pt 1256 480)
+)
+(connector
+	(pt 1336 144)
+	(pt 1336 184)
+	(bus)
+)
+(connector
+	(pt 1336 104)
+	(pt 1336 144)
+	(bus)
+)
+(connector
+	(pt 1184 88)
+	(pt 1336 88)
+)
+(connector
+	(pt 1336 88)
+	(pt 1336 104)
+	(bus)
+)
+(connector
+	(text "BCD[6]" (rect 1168 41 1181 77)(font "Intel Clear" )(vertical))
+	(pt 1184 40)
+	(pt 1184 88)
+)
+(connector
+	(pt 1232 72)
+	(pt 1336 72)
+)
+(connector
+	(pt 1336 24)
+	(pt 1336 72)
+	(bus)
+)
+(connector
+	(pt 1336 72)
+	(pt 1336 88)
+	(bus)
+)
+(connector
+	(text "BCD[7]" (rect 1216 49 1229 85)(font "Intel Clear" )(vertical))
+	(pt 1232 40)
+	(pt 1232 72)
+)
+(connector
+	(text "BCD[0]" (rect 600 272 636 285)(font "Intel Clear" ))
+	(pt 592 288)
+	(pt 1336 288)
+)
+(connector
+	(text "BCD[1]" (rect 625 200 661 213)(font "Intel Clear" ))
+	(pt 1336 216)
+	(pt 600 216)
+)
+(connector
+	(text "BCD[2]" (rect 624 184 660 197)(font "Intel Clear" ))
+	(pt 1336 200)
+	(pt 608 200)
+)
+(connector
+	(text "BCD[3]" (rect 621 160 657 173)(font "Intel Clear" ))
+	(pt 1336 184)
+	(pt 616 184)
+)
+(connector
+	(text "BCD[4]" (rect 577 128 613 141)(font "Intel Clear" ))
+	(pt 576 144)
+	(pt 1336 144)
+)
+(connector
+	(text "BCD[5]" (rect 417 88 453 101)(font "Intel Clear" ))
+	(pt 416 104)
+	(pt 1336 104)
 )
 (junction (pt 176 472))
 (junction (pt 1336 480))
@@ -296,3 +542,12 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 176 136))
 (junction (pt 176 120))
 (junction (pt 176 192))
+(junction (pt 1336 216))
+(junction (pt 1336 200))
+(junction (pt 1336 184))
+(junction (pt 176 288))
+(junction (pt 1336 288))
+(junction (pt 1336 144))
+(junction (pt 1336 104))
+(junction (pt 1336 88))
+(junction (pt 1336 72))

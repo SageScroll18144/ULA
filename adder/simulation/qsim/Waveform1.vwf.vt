@@ -19,78 +19,60 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "01/27/2023 21:08:23"
+// Generated on "01/28/2023 09:46:29"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          dabble
+// Verilog Test Bench (with test vectors) for design :                          binary_to_bcd
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module dabble_vlg_vec_tst();
+module binary_to_bcd_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg In0;
-reg In1;
-reg In2;
-reg In3;
+reg [5:0] binary;
 // wires                                               
-wire Out0;
-wire Out1;
-wire Out2;
-wire Out3;
+wire [8:0] BCD;
 
 // assign statements (if any)                          
-dabble i1 (
+binary_to_bcd i1 (
 // port map - connection between master ports and signals/registers   
-	.In0(In0),
-	.In1(In1),
-	.In2(In2),
-	.In3(In3),
-	.Out0(Out0),
-	.Out1(Out1),
-	.Out2(Out2),
-	.Out3(Out3)
+	.BCD(BCD),
+	.binary(binary)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-
-// In0
+// binary[ 5 ]
 initial
 begin
-	repeat(12)
-	begin
-		In0 = 1'b0;
-		In0 = #40000 1'b1;
-		# 40000;
-	end
-	In0 = 1'b0;
+	binary[5] = 1'b0;
 end 
-
-// In1
-always
+// binary[ 4 ]
+initial
 begin
-	In1 = 1'b0;
-	In1 = #20000 1'b1;
-	#20000;
+	binary[4] = 1'b0;
 end 
-
-// In2
-always
+// binary[ 3 ]
+initial
 begin
-	In2 = 1'b0;
-	In2 = #10000 1'b1;
-	#10000;
+	binary[3] = 1'b0;
 end 
-
-// In3
-always
+// binary[ 2 ]
+initial
 begin
-	In3 = 1'b0;
-	In3 = #5000 1'b1;
-	#5000;
+	binary[2] = 1'b0;
+end 
+// binary[ 1 ]
+initial
+begin
+	binary[1] = 1'b0;
+end 
+// binary[ 0 ]
+initial
+begin
+	binary[0] = 1'b1;
 end 
 endmodule
 

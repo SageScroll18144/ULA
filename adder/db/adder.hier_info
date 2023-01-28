@@ -1,4 +1,37 @@
-|dabble
+|binary_to_bcd
+BCD[0] <= inst1.OUT
+BCD[1] <= dabble:inst3.Out0
+BCD[2] <= dabble:inst3.Out1
+BCD[3] <= dabble:inst3.Out2
+BCD[4] <= dabble:inst3.Out3
+BCD[5] <= dabble:inst.Out3
+BCD[6] <= <GND>
+BCD[7] <= <GND>
+BCD[8] <= inst4.OUT
+binary[0] => dabble:inst.In0
+binary[1] => dabble:inst.In1
+binary[2] => dabble:inst.In2
+binary[3] => dabble:inst3.In0
+binary[4] => inst1.DATA
+binary[5] => inst4.DATA
+
+
+|binary_to_bcd|dabble:inst3
+Out3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+In2 => inst3.IN0
+In3 => inst3.IN1
+In3 => inst2.IN0
+In3 => inst.IN1
+In1 => inst2.IN1
+In1 => inst7.IN0
+In0 => inst.IN0
+In0 => inst9.IN1
+Out2 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Out1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Out0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_to_bcd|dabble:inst
 Out3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 In2 => inst3.IN0
 In3 => inst3.IN1

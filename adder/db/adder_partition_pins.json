@@ -4,35 +4,55 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Out3",
+					"name" : "BCD[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Out2",
+					"name" : "BCD[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Out1",
+					"name" : "BCD[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Out0",
+					"name" : "BCD[3]",
 					"strict" : false
 				},
 				{
-					"name" : "In1",
+					"name" : "BCD[2]",
 					"strict" : false
 				},
 				{
-					"name" : "In0",
+					"name" : "BCD[1]",
 					"strict" : false
 				},
 				{
-					"name" : "In3",
+					"name" : "BCD[0]",
 					"strict" : false
 				},
 				{
-					"name" : "In2",
+					"name" : "binary[1]",
+					"strict" : false
+				},
+				{
+					"name" : "binary[0]",
+					"strict" : false
+				},
+				{
+					"name" : "binary[2]",
+					"strict" : false
+				},
+				{
+					"name" : "binary[3]",
+					"strict" : false
+				},
+				{
+					"name" : "binary[5]",
+					"strict" : false
+				},
+				{
+					"name" : "binary[4]",
 					"strict" : false
 				}
 			]

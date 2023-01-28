@@ -19,176 +19,78 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "01/27/2023 16:10:11"
+// Generated on "01/27/2023 21:08:23"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          ula
+// Verilog Test Bench (with test vectors) for design :                          dabble
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module ula_vlg_vec_tst();
+module dabble_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [4:0] A;
-reg [4:0] B;
-reg S0;
-reg S1;
-reg S2;
+reg In0;
+reg In1;
+reg In2;
+reg In3;
 // wires                                               
-wire AHS;
-wire ALS;
-wire [4:0] Ans_And;
-wire [4:0] Ans_Xor;
-wire BHS;
-wire BLS;
-wire CHS;
-wire CLS;
-wire [4:0] comp_a_2;
-wire COMPARISON;
-wire DHS;
-wire DLS;
-wire EHS;
-wire ELS;
-wire FHS;
-wire FLS;
-wire GHS;
-wire GLS;
-wire O_a;
-wire O_B;
-wire O_C;
-wire O_D;
-wire O_E;
-wire O_F;
-wire O_G;
-wire Oa;
-wire Ob;
-wire Oc;
-wire Od;
-wire Oe;
-wire Of;
-wire Og;
-wire sign_bit_subtrator;
-wire sing_sum_ans;
-wire [5:0] subans;
-wire [5:0] sumans;
+wire Out0;
+wire Out1;
+wire Out2;
+wire Out3;
 
 // assign statements (if any)                          
-ula i1 (
+dabble i1 (
 // port map - connection between master ports and signals/registers   
-	.A(A),
-	.AHS(AHS),
-	.ALS(ALS),
-	.Ans_And(Ans_And),
-	.Ans_Xor(Ans_Xor),
-	.B(B),
-	.BHS(BHS),
-	.BLS(BLS),
-	.CHS(CHS),
-	.CLS(CLS),
-	.comp_a_2(comp_a_2),
-	.COMPARISON(COMPARISON),
-	.DHS(DHS),
-	.DLS(DLS),
-	.EHS(EHS),
-	.ELS(ELS),
-	.FHS(FHS),
-	.FLS(FLS),
-	.GHS(GHS),
-	.GLS(GLS),
-	.O_a(O_a),
-	.O_B(O_B),
-	.O_C(O_C),
-	.O_D(O_D),
-	.O_E(O_E),
-	.O_F(O_F),
-	.O_G(O_G),
-	.Oa(Oa),
-	.Ob(Ob),
-	.Oc(Oc),
-	.Od(Od),
-	.Oe(Oe),
-	.Of(Of),
-	.Og(Og),
-	.S0(S0),
-	.S1(S1),
-	.S2(S2),
-	.sign_bit_subtrator(sign_bit_subtrator),
-	.sing_sum_ans(sing_sum_ans),
-	.subans(subans),
-	.sumans(sumans)
+	.In0(In0),
+	.In1(In1),
+	.In2(In2),
+	.In3(In3),
+	.Out0(Out0),
+	.Out1(Out1),
+	.Out2(Out2),
+	.Out3(Out3)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// A[ 4 ]
+
+// In0
 initial
 begin
-	A[4] = 1'b0;
-end 
-// A[ 3 ]
-initial
-begin
-	A[3] = 1'b0;
-end 
-// A[ 2 ]
-initial
-begin
-	A[2] = 1'b0;
-end 
-// A[ 1 ]
-initial
-begin
-	A[1] = 1'b0;
-end 
-// A[ 0 ]
-initial
-begin
-	A[0] = 1'b1;
-end 
-// B[ 4 ]
-initial
-begin
-	B[4] = 1'b0;
-end 
-// B[ 3 ]
-initial
-begin
-	B[3] = 1'b0;
-end 
-// B[ 2 ]
-initial
-begin
-	B[2] = 1'b0;
-end 
-// B[ 1 ]
-initial
-begin
-	B[1] = 1'b0;
-end 
-// B[ 0 ]
-initial
-begin
-	B[0] = 1'b1;
+	repeat(12)
+	begin
+		In0 = 1'b0;
+		In0 = #40000 1'b1;
+		# 40000;
+	end
+	In0 = 1'b0;
 end 
 
-// S0
-initial
+// In1
+always
 begin
-	S0 = 1'b0;
+	In1 = 1'b0;
+	In1 = #20000 1'b1;
+	#20000;
 end 
 
-// S1
-initial
+// In2
+always
 begin
-	S1 = 1'b0;
+	In2 = 1'b0;
+	In2 = #10000 1'b1;
+	#10000;
 end 
 
-// S2
-initial
+// In3
+always
 begin
-	S2 = 1'b0;
+	In3 = 1'b0;
+	In3 = #5000 1'b1;
+	#5000;
 end 
 endmodule
 

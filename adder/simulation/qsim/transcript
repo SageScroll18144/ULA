@@ -1,32 +1,32 @@
 # do adder.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:10:13 on Jan 27,2023
+# Start time: 21:08:25 on Jan 27,2023
 # vlog -work work adder.vo 
-# -- Compiling module ula
+# -- Compiling module dabble
 # 
 # Top level modules:
-# 	ula
-# End time: 16:10:14 on Jan 27,2023, Elapsed time: 0:00:01
+# 	dabble
+# End time: 21:08:25 on Jan 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:10:14 on Jan 27,2023
+# Start time: 21:08:25 on Jan 27,2023
 # vlog -work work Waveform1.vwf.vt 
-# -- Compiling module ula_vlg_vec_tst
+# -- Compiling module dabble_vlg_vec_tst
 # 
 # Top level modules:
-# 	ula_vlg_vec_tst
-# End time: 16:10:14 on Jan 27,2023, Elapsed time: 0:00:00
+# 	dabble_vlg_vec_tst
+# End time: 21:08:25 on Jan 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ula_vlg_vec_tst 
-# Start time: 16:10:14 on Jan 27,2023
-# Loading work.ula_vlg_vec_tst
-# Loading work.ula
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.dabble_vlg_vec_tst 
+# Start time: 21:08:25 on Jan 27,2023
+# Loading work.dabble_vlg_vec_tst
+# Loading work.dabble
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # after#25
-# ** Note: $finish    : Waveform1.vwf.vt(123)
-#    Time: 1 us  Iteration: 0  Instance: /ula_vlg_vec_tst
-# End time: 16:10:14 on Jan 27,2023, Elapsed time: 0:00:00
+# ** Note: $finish    : Waveform1.vwf.vt(57)
+#    Time: 1 us  Iteration: 0  Instance: /dabble_vlg_vec_tst
+# End time: 21:08:25 on Jan 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

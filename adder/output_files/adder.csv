@@ -1,0 +1,93 @@
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+
+# Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# File: /home/lypess/Documentos/ULA/adder/output_files/adder.csv
+# Generated on: Tue Jan 31 11:08:07 2023
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+sumans[0],Output,PIN_E21,7,B7_N0,PIN_U7,,,,,,
+sumans[1],Output,PIN_E22,7,B7_N0,PIN_AD4,,,,,,
+sumans[2],Output,PIN_E25,7,B7_N1,PIN_AA4,,,,,,
+sumans[3],Output,PIN_E24,7,B7_N1,PIN_AA3,,,,,,
+sumans[4],Output,PIN_h21,7,B7_N2,PIN_AB3,,,,,,
+sumans[5],Output,PIN_G20,7,B7_N1,PIN_Y5,,,,,,
+subans[0],Output,PIN_G19,7,B7_N2,PIN_AF6,,,,,,
+subans[1],Output,PIN_F19,7,B7_N0,PIN_AH6,,,,,,
+subans[2],Output,pin_e19,7,B7_N0,PIN_AB5,,,,,,
+subans[3],Output,PIN_F21,7,B7_N0,PIN_AH4,,,,,,
+subans[4],Output,PIN_F18,7,B7_N1,PIN_AG4,,,,,,
+subans[5],Output,PIN_E18,7,B7_N1,PIN_AB11,,,,,,
+sing_sum_ans,Output,PIN_G22,7,B7_N2,PIN_W7,,,,,,
+sing_sub_ans,Output,PIN_J19,7,B7_N2,PIN_AF8,,,,,,
+GLsub,Output,,,,PIN_AB8,,,,,,
+GLS,Output,,,,PIN_AC1,,,,,,
+GHsub,Output,,,,PIN_AC8,,,,,,
+GHS,Output,,,,PIN_R6,,,,,,
+FLsub,Output,,,,PIN_AB7,,,,,,
+FLS,Output,,,,PIN_U8,,,,,,
+FHsub,Output,,,,PIN_AD8,,,,,,
+FHS,Output,,,,PIN_P1,,,,,,
+ELsub,Output,,,,PIN_AA10,,,,,,
+ELS,Output,,,,PIN_AD2,,,,,,
+EHsub,Output,,,,PIN_AB9,,,,,,
+EHS,Output,,,,PIN_T3,,,,,,
+DLsub,Output,,,,PIN_AC7,,,,,,
+DLS,Output,,,,PIN_AE1,,,,,,
+DHsub,Output,,,,PIN_AF7,,,,,,
+DHS,Output,,,,PIN_M1,,,,,,
+COMPARISON,Output,,,,PIN_AF5,,,,,,
+comp_a_2[0],Output,,,,PIN_AD7,,,,,,
+comp_a_2[1],Output,,,,PIN_V5,,,,,,
+comp_a_2[2],Output,,,,PIN_AA7,,,,,,
+comp_a_2[3],Output,,,,PIN_AD3,,,,,,
+comp_a_2[4],Output,,,,PIN_AF3,,,,,,
+CLsub,Output,,,,PIN_AD10,,,,,,
+CLS,Output,,,,PIN_T8,,,,,,
+CHsub,Output,,,,PIN_AH7,,,,,,
+CHS,Output,,,,PIN_N8,,,,,,
+BLsub,Output,,,,PIN_AG6,,,,,,
+BLS,Output,,,,PIN_V6,,,,,,
+BHsub,Output,,,,PIN_H13,,,,,,
+BHS,Output,,,,PIN_AB25,,,,,,
+Ans_Xor[0],Output,,,,PIN_AC5,,,,,,
+Ans_Xor[1],Output,,,,PIN_AA5,,,,,,
+Ans_Xor[2],Output,,,,PIN_AA6,,,,,,
+Ans_Xor[3],Output,,,,PIN_Y7,,,,,,
+Ans_Xor[4],Output,,,,PIN_AH3,,,,,,
+Ans_And[0],Output,,,,PIN_AC4,,,,,,
+Ans_And[1],Output,,,,PIN_AF2,,,,,,
+Ans_And[2],Output,,,,PIN_AE3,,,,,,
+Ans_And[3],Output,,,,PIN_AB4,,,,,,
+Ans_And[4],Output,,,,PIN_AG3,,,,,,
+ALsub,Output,,,,PIN_AG7,,,,,,
+ALS,Output,,,,PIN_AD1,,,,,,
+AHsub,Output,,,,PIN_AA8,,,,,,
+AHS,Output,,,,PIN_L2,,,,,,
+S2,Input,PIN_AB23,5,B5_N2,PIN_Y10,,,,,,
+S1,Input,PIN_AB24,5,B5_N2,PIN_AE5,,,,,,
+B[4],Input,PIN_AB25,5,B5_N1,PIN_V7,,,,,,
+B[2],Input,PIN_AB26,5,B5_N1,PIN_AE6,,,,,,
+A[4],Input,PIN_AB27,5,B5_N1,PIN_Y6,,,,,,
+A[0],Input,PIN_AB28,5,B5_N1,PIN_W3,,,,,,
+S0,Input,PIN_AC24,5,B5_N2,PIN_AE4,,,,,,
+B[3],Input,PIN_AC25,5,B5_N2,PIN_AE2,,,,,,
+B[0],Input,PIN_AC26,5,B5_N2,PIN_W4,,,,,,
+A[2],Input,PIN_AC27,5,B5_N2,PIN_W8,,,,,,
+A[1],Input,PIN_AC28,5,B5_N2,PIN_AF4,,,,,,
+B[1],Input,PIN_AD26,5,B5_N2,PIN_AB6,,,,,,
+A[3],Input,PIN_AD27,5,B5_N2,PIN_V8,,,,,,

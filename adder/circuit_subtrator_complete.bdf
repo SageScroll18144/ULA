@@ -125,17 +125,27 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
+	(pt 368 88)
 	(pt 368 232)
-	(pt 368 104)
 	(bus)
 )
 (connector
-	(pt 368 104)
-	(pt 408 104)
+	(pt 368 88)
+	(pt 408 88)
 	(bus)
 )
 (connector
 	(pt 304 88)
-	(pt 408 88)
+	(pt 328 88)
+	(bus)
+)
+(connector
+	(pt 328 88)
+	(pt 328 104)
+	(bus)
+)
+(connector
+	(pt 328 104)
+	(pt 408 104)
 	(bus)
 )

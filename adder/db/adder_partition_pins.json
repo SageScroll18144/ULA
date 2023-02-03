@@ -4,47 +4,247 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "ans",
+					"name" : "COMPARISON",
 					"strict" : false
 				},
 				{
-					"name" : "bitB[4]",
+					"name" : "AHS",
 					"strict" : false
 				},
 				{
-					"name" : "bitA[4]",
+					"name" : "CHS",
 					"strict" : false
 				},
 				{
-					"name" : "bitA[3]",
+					"name" : "DHS",
 					"strict" : false
 				},
 				{
-					"name" : "bitB[3]",
+					"name" : "EHS",
 					"strict" : false
 				},
 				{
-					"name" : "bitA[2]",
+					"name" : "FHS",
 					"strict" : false
 				},
 				{
-					"name" : "bitA[1]",
+					"name" : "GHS",
 					"strict" : false
 				},
 				{
-					"name" : "bitA[0]",
+					"name" : "ALS",
 					"strict" : false
 				},
 				{
-					"name" : "bitB[0]",
+					"name" : "BLS",
 					"strict" : false
 				},
 				{
-					"name" : "bitB[1]",
+					"name" : "CLS",
 					"strict" : false
 				},
 				{
-					"name" : "bitB[2]",
+					"name" : "DLS",
+					"strict" : false
+				},
+				{
+					"name" : "ELS",
+					"strict" : false
+				},
+				{
+					"name" : "FLS",
+					"strict" : false
+				},
+				{
+					"name" : "GLS",
+					"strict" : false
+				},
+				{
+					"name" : "sing_sum_ans",
+					"strict" : false
+				},
+				{
+					"name" : "AHsub",
+					"strict" : false
+				},
+				{
+					"name" : "DHsub",
+					"strict" : false
+				},
+				{
+					"name" : "EHsub",
+					"strict" : false
+				},
+				{
+					"name" : "FHsub",
+					"strict" : false
+				},
+				{
+					"name" : "ALsub",
+					"strict" : false
+				},
+				{
+					"name" : "BLsub",
+					"strict" : false
+				},
+				{
+					"name" : "CLsub",
+					"strict" : false
+				},
+				{
+					"name" : "DLsub",
+					"strict" : false
+				},
+				{
+					"name" : "ELsub",
+					"strict" : false
+				},
+				{
+					"name" : "FLsub",
+					"strict" : false
+				},
+				{
+					"name" : "GLsub",
+					"strict" : false
+				},
+				{
+					"name" : "sing_sub_ans",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_And[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_And[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_And[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_And[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_And[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_Xor[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_Xor[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_Xor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_Xor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ans_Xor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "arit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "arit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "arit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "arit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "arit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "arit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "comp_a_2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "comp_a_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "comp_a_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "comp_a_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "comp_a_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S2",
+					"strict" : false
+				},
+				{
+					"name" : "S1",
+					"strict" : false
+				},
+				{
+					"name" : "S0",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
 					"strict" : false
 				}
 			]

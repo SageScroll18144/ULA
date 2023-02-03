@@ -41,8 +41,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 176 32)
 		(output)
-		(text "BitAns[5..0]" (rect 0 0 66 15)(font "Intel Clear" (font_size 8)))
-		(text "BitAns[5..0]" (rect 89 27 155 42)(font "Intel Clear" (font_size 8)))
+		(text "Ansout[5..0]" (rect 0 0 69 15)(font "Intel Clear" (font_size 8)))
+		(text "Ansout[5..0]" (rect 86 27 155 42)(font "Intel Clear" (font_size 8)))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(drawing

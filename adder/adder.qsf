@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY full_adder
+set_global_assignment -name TOP_LEVEL_ENTITY ula
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:15:01  JANUARY 11, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -88,21 +88,14 @@ set_location_assignment PIN_AB25 -to B[4]
 set_location_assignment PIN_AC24 -to S0
 set_location_assignment PIN_AB24 -to S1
 set_location_assignment PIN_AB23 -to S2
-set_location_assignment PIN_E21 -to sumans[0]
-set_location_assignment PIN_E22 -to sumans[1]
-set_location_assignment PIN_E25 -to sumans[2]
-set_location_assignment PIN_E24 -to sumans[3]
-set_location_assignment PIN_H21 -to sumans[4]
-set_location_assignment PIN_G20 -to sumans[5]
-set_location_assignment PIN_G19 -to subans[0]
-set_location_assignment PIN_F19 -to subans[1]
-set_location_assignment PIN_E19 -to subans[2]
-set_location_assignment PIN_F21 -to subans[3]
-set_location_assignment PIN_F18 -to subans[4]
-set_location_assignment PIN_E18 -to subans[5]
-set_location_assignment PIN_G22 -to sing_sum_ans
-set_location_assignment PIN_J19 -to sing_sub_ans
 set_location_assignment PIN_H15 -to COMPARISON
+set_location_assignment PIN_E21 -to arit[0]
+set_location_assignment PIN_E22 -to arit[1]
+set_location_assignment PIN_E25 -to arit[2]
+set_location_assignment PIN_E24 -to arit[3]
+set_location_assignment PIN_H21 -to arit[4]
+set_location_assignment PIN_G20 -to arit[5]
+set_global_assignment -name BDF_FILE module_adder.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

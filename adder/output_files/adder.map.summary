@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Feb  2 14:38:53 2023
+Analysis & Synthesis Status : Successful - Fri Feb  3 12:56:09 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : adder
-Top-level Entity Name : comparison_MT
+Top-level Entity Name : ula
 Family : Cyclone IV E
-Total logic elements : 4
-    Total combinational functions : 4
+Total logic elements : 93
+    Total combinational functions : 93
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 11
+Total pins : 65
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

@@ -60,35 +60,31 @@
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[4]",
+					"name" : "arit[5]",
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[3]",
+					"name" : "arit[4]",
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[2]",
+					"name" : "arit[3]",
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[1]",
+					"name" : "arit[2]",
 					"strict" : false
 				},
 				{
-					"name" : "comp_a_2[0]",
+					"name" : "arit[1]",
 					"strict" : false
 				},
 				{
-					"name" : "S2",
+					"name" : "arit[0]",
 					"strict" : false
 				},
 				{
 					"name" : "S1",
-					"strict" : false
-				},
-				{
-					"name" : "S0",
 					"strict" : false
 				},
 				{
@@ -100,11 +96,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "S2",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "S0",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
 					"strict" : false
 				},
 				{
@@ -116,19 +120,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
 					"name" : "A[1]",
 					"strict" : false
 				},
 				{
 					"name" : "B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "A[0]",
-					"strict" : false
-				},
-				{
-					"name" : "B[0]",
 					"strict" : false
 				}
 			]

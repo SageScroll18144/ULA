@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adder
-Sun Feb  5 09:04:17 2023
+Sun Feb  5 10:44:07 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb  5 09:04:17 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb  5 10:44:07 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; ula                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 81                                          ;
-;     Total combinational functions  ; 81                                          ;
+; Total logic elements               ; 93                                          ;
+;     Total combinational functions  ; 93                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 40                                          ;
+; Total pins                         ; 35                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -182,6 +182,7 @@ https://fpgasoftware.intel.com/eula.
 ; dabble.bdf                       ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/dabble.bdf                     ;         ;
 ; module_adder.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/module_adder.bdf               ;         ;
 ; decoder.bdf                      ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/decoder.bdf                    ;         ;
+; fivebitstosixbits.bdf            ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/fivebitstosixbits.bdf          ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
 
 
@@ -190,30 +191,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 81         ;
+; Estimated Total logic elements              ; 93         ;
 ;                                             ;            ;
-; Total combinational functions               ; 81         ;
+; Total combinational functions               ; 93         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 54         ;
-;     -- 3 input functions                    ; 16         ;
-;     -- <=2 input functions                  ; 11         ;
+;     -- 4 input functions                    ; 61         ;
+;     -- 3 input functions                    ; 19         ;
+;     -- <=2 input functions                  ; 13         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 81         ;
+;     -- normal mode                          ; 93         ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 40         ;
+; I/O pins                                    ; 35         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[0]~input ;
 ; Maximum fan-out                             ; 16         ;
-; Total fan-out                               ; 345        ;
-; Average fan-out                             ; 2.14       ;
+; Total fan-out                               ; 382        ;
+; Average fan-out                             ; 2.34       ;
 +---------------------------------------------+------------+
 
 
@@ -222,29 +223,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+----------------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name                ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+----------------------------+--------------+
-; |ula                                  ; 81 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 40   ; 0            ; |ula                                                                  ; ula                        ; work         ;
-;    |binary_to_bcd:inst26|             ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26                                             ; binary_to_bcd              ; work         ;
-;       |dabble:inst3|                  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26|dabble:inst3                                ; dabble                     ; work         ;
-;       |dabble:inst|                   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26|dabble:inst                                 ; dabble                     ; work         ;
-;    |binary_to_bcd:inst41|             ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst41                                             ; binary_to_bcd              ; work         ;
-;       |dabble:inst3|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst41|dabble:inst3                                ; dabble                     ; work         ;
-;    |circuit_subtrator_complete:inst5| ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5                                 ; circuit_subtrator_complete ; work         ;
-;       |C2:inst|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|C2:inst                         ; C2                         ; work         ;
-;          |adder:inst11|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|C2:inst|adder:inst11            ; adder                      ; work         ;
+; |ula                                  ; 93 (58)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |ula                                                                  ; ula                        ; work         ;
+;    |C2:inst18|                        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18                                                        ; C2                         ; work         ;
+;       |adder:inst11|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst11                                           ; adder                      ; work         ;
+;       |adder:inst12|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst12                                           ; adder                      ; work         ;
+;       |adder:inst14|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst14                                           ; adder                      ; work         ;
+;    |binary_to_bcd:inst26|             ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26                                             ; binary_to_bcd              ; work         ;
+;       |dabble:inst3|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26|dabble:inst3                                ; dabble                     ; work         ;
+;       |dabble:inst|                   ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26|dabble:inst                                 ; dabble                     ; work         ;
+;    |binary_to_bcd:inst41|             ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst41                                             ; binary_to_bcd              ; work         ;
+;       |dabble:inst3|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst41|dabble:inst3                                ; dabble                     ; work         ;
+;    |circuit_subtrator_complete:inst5| ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5                                 ; circuit_subtrator_complete ; work         ;
+;       |C2:inst|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|C2:inst                         ; C2                         ; work         ;
 ;          |adder:inst12|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|C2:inst|adder:inst12            ; adder                      ; work         ;
 ;       |module_adder:inst12|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12             ; module_adder               ; work         ;
 ;          |adder:inst1|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1 ; adder                      ; work         ;
 ;          |adder:inst5|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5 ; adder                      ; work         ;
-;    |comparison_LT:inst38|             ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_LT:inst38                                             ; comparison_LT              ; work         ;
-;       |equal:inst2|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_LT:inst38|equal:inst2                                 ; equal                      ; work         ;
-;    |comparison_MT:inst37|             ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_MT:inst37                                             ; comparison_MT              ; work         ;
+;    |comparison_MT:inst37|             ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_MT:inst37                                             ; comparison_MT              ; work         ;
 ;    |decoder:inst51|                   ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst51                                                   ; decoder                    ; work         ;
 ;       |bin_7seg:inst28|               ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst51|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
 ;    |decoder:inst52|                   ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst52                                                   ; decoder                    ; work         ;
 ;       |bin_7seg:inst28|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst52|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
-;    |full_adder:inst39|                ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst39                                                ; full_adder                 ; work         ;
+;    |full_adder:inst39|                ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst39                                                ; full_adder                 ; work         ;
 ;       |adder:inst1|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst39|adder:inst1                                    ; adder                      ; work         ;
-;       |adder:inst5|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst39|adder:inst5                                    ; adder                      ; work         ;
+;       |adder:inst5|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst39|adder:inst5                                    ; adder                      ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -269,17 +271,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 40                          ;
-; cycloneiii_lcell_comb ; 83                          ;
-;     normal            ; 83                          ;
+; boundary_port         ; 35                          ;
+; cycloneiii_lcell_comb ; 94                          ;
+;     normal            ; 94                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 54                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 61                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 6.42                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 5.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -288,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -298,7 +299,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Feb  5 09:04:07 2023
+    Info: Processing started: Sun Feb  5 10:43:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder -c adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -348,16 +349,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file module_
     Info (12023): Found entity 1: module_adder
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.bdf
     Info (12023): Found entity 1: decoder
+Info (12021): Found 1 design units, including 1 entities, in source file fivebitstosixbits.bdf
+    Info (12023): Found entity 1: fivebitstosixbits
 Info (12127): Elaborating entity "ula" for the top level hierarchy
 Warning (275011): Block or symbol "AND3" of instance "inst15" overlaps another block or symbol
-Warning (275011): Block or symbol "OR3" of instance "inst47" overlaps another block or symbol
-Warning (275043): Pin "arit[5..0]" is missing source
-Warning (275008): Primitive "AND2" of instance "inst21" not used
-Warning (275008): Primitive "AND3" of instance "inst22" not used
-Warning (275008): Primitive "AND2" of instance "inst23" not used
-Warning (275008): Primitive "AND3" of instance "inst24" not used
-Warning (275008): Primitive "OR2" of instance "inst25" not used
-Warning (275008): Primitive "OR3" of instance "inst47" not used
 Info (12128): Elaborating entity "comparison_MT" for hierarchy "comparison_MT:inst37"
 Info (12128): Elaborating entity "comparison_LT" for hierarchy "comparison_LT:inst38"
 Info (12128): Elaborating entity "equal" for hierarchy "comparison_LT:inst38|equal:inst2"
@@ -372,28 +367,23 @@ Info (12128): Elaborating entity "adder" for hierarchy "circuit_subtrator_comple
 Info (12128): Elaborating entity "C2" for hierarchy "circuit_subtrator_complete:inst5|C2:inst"
 Warning (275011): Block or symbol "adder" of instance "inst11" overlaps another block or symbol
 Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:inst39"
-Info (12128): Elaborating entity "and_bitbit" for hierarchy "and_bitbit:inst48"
+Info (12128): Elaborating entity "fivebitstosixbits" for hierarchy "fivebitstosixbits:inst1"
 Info (12128): Elaborating entity "xor_bitbit" for hierarchy "xor_bitbit:inst50"
+Info (12128): Elaborating entity "and_bitbit" for hierarchy "and_bitbit:inst48"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "BH" is stuck at GND
     Warning (13410): Pin "CH" is stuck at GND
-    Warning (13410): Pin "arit[5]" is stuck at GND
-    Warning (13410): Pin "arit[4]" is stuck at GND
-    Warning (13410): Pin "arit[3]" is stuck at GND
-    Warning (13410): Pin "arit[2]" is stuck at GND
-    Warning (13410): Pin "arit[1]" is stuck at GND
-    Warning (13410): Pin "arit[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 128 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 81 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 93 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 431 megabytes
-    Info: Processing ended: Sun Feb  5 09:04:17 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Processing ended: Sun Feb  5 10:44:07 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 

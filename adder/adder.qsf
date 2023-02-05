@@ -97,7 +97,23 @@ set_location_assignment PIN_H21 -to arit[4]
 set_location_assignment PIN_G20 -to arit[5]
 set_global_assignment -name BDF_FILE module_adder.bdf
 set_global_assignment -name BDF_FILE decoder.bdf
+set_global_assignment -name BDF_FILE fivebitstosixbits.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_M24 -to AH
+set_location_assignment PIN_Y22 -to BH
+set_location_assignment PIN_W21 -to CH
+set_location_assignment PIN_W22 -to DH
+set_location_assignment PIN_W25 -to EH
+set_location_assignment PIN_U23 -to FH
+set_location_assignment PIN_U24 -to GH
+set_location_assignment PIN_G18 -to AL
+set_location_assignment PIN_F22 -to BL
+set_location_assignment PIN_E17 -to CL
+set_location_assignment PIN_L26 -to DL
+set_location_assignment PIN_L25 -to EL
+set_location_assignment PIN_J22 -to FL
+set_location_assignment PIN_H22 -to GL
+set_location_assignment PIN_W28 -to Signed
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

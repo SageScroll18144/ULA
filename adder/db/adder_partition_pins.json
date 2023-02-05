@@ -8,171 +8,55 @@
 					"strict" : false
 				},
 				{
-					"name" : "AHS",
+					"name" : "Signed",
 					"strict" : false
 				},
 				{
-					"name" : "CHS",
+					"name" : "AH",
 					"strict" : false
 				},
 				{
-					"name" : "DHS",
+					"name" : "DH",
 					"strict" : false
 				},
 				{
-					"name" : "EHS",
+					"name" : "EH",
 					"strict" : false
 				},
 				{
-					"name" : "FHS",
+					"name" : "FH",
 					"strict" : false
 				},
 				{
-					"name" : "GHS",
+					"name" : "GH",
 					"strict" : false
 				},
 				{
-					"name" : "ALS",
+					"name" : "AL",
 					"strict" : false
 				},
 				{
-					"name" : "BLS",
+					"name" : "BL",
 					"strict" : false
 				},
 				{
-					"name" : "CLS",
+					"name" : "CL",
 					"strict" : false
 				},
 				{
-					"name" : "DLS",
+					"name" : "DL",
 					"strict" : false
 				},
 				{
-					"name" : "ELS",
+					"name" : "EL",
 					"strict" : false
 				},
 				{
-					"name" : "FLS",
+					"name" : "FL",
 					"strict" : false
 				},
 				{
-					"name" : "GLS",
-					"strict" : false
-				},
-				{
-					"name" : "sing_sum_ans",
-					"strict" : false
-				},
-				{
-					"name" : "AHsub",
-					"strict" : false
-				},
-				{
-					"name" : "DHsub",
-					"strict" : false
-				},
-				{
-					"name" : "EHsub",
-					"strict" : false
-				},
-				{
-					"name" : "FHsub",
-					"strict" : false
-				},
-				{
-					"name" : "ALsub",
-					"strict" : false
-				},
-				{
-					"name" : "BLsub",
-					"strict" : false
-				},
-				{
-					"name" : "CLsub",
-					"strict" : false
-				},
-				{
-					"name" : "DLsub",
-					"strict" : false
-				},
-				{
-					"name" : "ELsub",
-					"strict" : false
-				},
-				{
-					"name" : "FLsub",
-					"strict" : false
-				},
-				{
-					"name" : "GLsub",
-					"strict" : false
-				},
-				{
-					"name" : "sing_sub_ans",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_And[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_And[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_And[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_And[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_And[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_Xor[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_Xor[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_Xor[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_Xor[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Ans_Xor[0]",
-					"strict" : false
-				},
-				{
-					"name" : "arit[5]",
-					"strict" : false
-				},
-				{
-					"name" : "arit[4]",
-					"strict" : false
-				},
-				{
-					"name" : "arit[3]",
-					"strict" : false
-				},
-				{
-					"name" : "arit[2]",
-					"strict" : false
-				},
-				{
-					"name" : "arit[1]",
-					"strict" : false
-				},
-				{
-					"name" : "arit[0]",
+					"name" : "GL",
 					"strict" : false
 				},
 				{
@@ -212,6 +96,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "B[4]",
+					"strict" : false
+				},
+				{
 					"name" : "B[3]",
 					"strict" : false
 				},
@@ -220,15 +108,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[4]",
+					"name" : "A[2]",
 					"strict" : false
 				},
 				{
 					"name" : "B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[2]",
 					"strict" : false
 				},
 				{

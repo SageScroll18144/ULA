@@ -24,7 +24,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 208 80 376 96)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "A[4..0]" (rect 5 0 37 11)(font "Arial" ))
+	(text "A[4..0]" (rect 5 0 36 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 208 104 376 120)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "B[4..0]" (rect 5 0 40 13)(font "Intel Clear" ))
+	(text "B[4..0]" (rect 5 0 39 13)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 200 296 376 312)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "Ans_And[4..0]" (rect 17 5 86 16)(font "Arial" ))
+	(text "Ans_And[5..0]" (rect 5 5 75 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -234,6 +234,24 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(rotate270)
 )
+(symbol
+	(rect 720 176 752 208)
+	(text "GND" (rect 2 6 24 16)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 5 -2 29 11)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 32)
+		(output)
+		(text "1" (rect 18 0 26 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 6 21 14 32)(font "Courier New" (bold))(invisible))
+		(line (pt 16 24)(pt 16 32))
+	)
+	(drawing
+		(line (pt 24 24)(pt 16 16))
+		(line (pt 16 16)(pt 8 24))
+		(line (pt 24 24)(pt 8 24))
+	)
+	(rotate180)
+)
 (connector
 	(pt 376 88)
 	(pt 416 88)
@@ -396,8 +414,18 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
 	(pt 656 304)
+	(pt 736 304)
+	(bus)
+)
+(connector
+	(pt 736 304)
 	(pt 808 304)
 	(bus)
+)
+(connector
+	(text "Ans_And[5]" (rect 720 237 733 297)(font "Intel Clear" )(vertical))
+	(pt 736 208)
+	(pt 736 304)
 )
 (junction (pt 416 88))
 (junction (pt 432 112))
@@ -414,3 +442,4 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 544 304))
 (junction (pt 600 304))
 (junction (pt 656 304))
+(junction (pt 736 304))

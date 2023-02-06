@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adder
-Sun Feb  5 10:44:07 2023
+Mon Feb  6 09:00:54 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb  5 10:44:07 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb  6 09:00:54 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; ula                                         ;
@@ -195,9 +195,9 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Total combinational functions               ; 93         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 61         ;
-;     -- 3 input functions                    ; 19         ;
-;     -- <=2 input functions                  ; 13         ;
+;     -- 4 input functions                    ; 64         ;
+;     -- 3 input functions                    ; 17         ;
+;     -- <=2 input functions                  ; 12         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
 ;     -- normal mode                          ; 93         ;
@@ -213,8 +213,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[0]~input ;
 ; Maximum fan-out                             ; 16         ;
-; Total fan-out                               ; 382        ;
-; Average fan-out                             ; 2.34       ;
+; Total fan-out                               ; 386        ;
+; Average fan-out                             ; 2.37       ;
 +---------------------------------------------+------------+
 
 
@@ -224,9 +224,8 @@ https://fpgasoftware.intel.com/eula.
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name                ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+----------------------------+--------------+
 ; |ula                                  ; 93 (58)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |ula                                                                  ; ula                        ; work         ;
-;    |C2:inst18|                        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18                                                        ; C2                         ; work         ;
+;    |C2:inst18|                        ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18                                                        ; C2                         ; work         ;
 ;       |adder:inst11|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst11                                           ; adder                      ; work         ;
-;       |adder:inst12|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst12                                           ; adder                      ; work         ;
 ;       |adder:inst14|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst14                                           ; adder                      ; work         ;
 ;    |binary_to_bcd:inst26|             ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26                                             ; binary_to_bcd              ; work         ;
 ;       |dabble:inst3|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26|dabble:inst3                                ; dabble                     ; work         ;
@@ -239,14 +238,16 @@ https://fpgasoftware.intel.com/eula.
 ;       |module_adder:inst12|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12             ; module_adder               ; work         ;
 ;          |adder:inst1|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1 ; adder                      ; work         ;
 ;          |adder:inst5|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5 ; adder                      ; work         ;
+;    |comparison_LT:inst38|             ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_LT:inst38                                             ; comparison_LT              ; work         ;
+;       |equal:inst2|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_LT:inst38|equal:inst2                                 ; equal                      ; work         ;
 ;    |comparison_MT:inst37|             ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_MT:inst37                                             ; comparison_MT              ; work         ;
 ;    |decoder:inst51|                   ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst51                                                   ; decoder                    ; work         ;
 ;       |bin_7seg:inst28|               ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst51|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
 ;    |decoder:inst52|                   ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst52                                                   ; decoder                    ; work         ;
 ;       |bin_7seg:inst28|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst52|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
-;    |full_adder:inst39|                ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst39                                                ; full_adder                 ; work         ;
-;       |adder:inst1|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst39|adder:inst1                                    ; adder                      ; work         ;
-;       |adder:inst5|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst39|adder:inst5                                    ; adder                      ; work         ;
+;    |full_adder:inst13|                ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst13                                                ; full_adder                 ; work         ;
+;       |adder:inst1|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst13|adder:inst1                                    ; adder                      ; work         ;
+;       |adder:inst5|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|full_adder:inst13|adder:inst5                                    ; adder                      ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -272,15 +273,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 35                          ;
-; cycloneiii_lcell_comb ; 94                          ;
-;     normal            ; 94                          ;
+; cycloneiii_lcell_comb ; 95                          ;
+;     normal            ; 95                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 19                          ;
-;         4 data inputs ; 61                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 5.79                        ;
+; Average LUT depth     ; 5.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -289,7 +291,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -299,7 +301,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Feb  5 10:43:59 2023
+    Info: Processing started: Mon Feb  6 09:00:44 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder -c adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -366,7 +368,7 @@ Info (12128): Elaborating entity "module_adder" for hierarchy "circuit_subtrator
 Info (12128): Elaborating entity "adder" for hierarchy "circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst"
 Info (12128): Elaborating entity "C2" for hierarchy "circuit_subtrator_complete:inst5|C2:inst"
 Warning (275011): Block or symbol "adder" of instance "inst11" overlaps another block or symbol
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:inst39"
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:inst13"
 Info (12128): Elaborating entity "fivebitstosixbits" for hierarchy "fivebitstosixbits:inst1"
 Info (12128): Elaborating entity "xor_bitbit" for hierarchy "xor_bitbit:inst50"
 Info (12128): Elaborating entity "and_bitbit" for hierarchy "and_bitbit:inst48"
@@ -382,8 +384,8 @@ Info (21057): Implemented 128 device resources after synthesis - the final resou
     Info (21061): Implemented 93 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 431 megabytes
-    Info: Processing ended: Sun Feb  5 10:44:07 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Processing ended: Mon Feb  6 09:00:54 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:26
 
 

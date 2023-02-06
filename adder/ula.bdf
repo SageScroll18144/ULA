@@ -158,6 +158,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2472 -1712 2536 -1696))
 )
 (pin
 	(output)
@@ -175,6 +176,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2536 -1136 2600 -1120))
 )
 (pin
 	(output)
@@ -192,6 +194,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2592 -1136 2656 -1120))
 )
 (pin
 	(output)
@@ -209,6 +212,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2648 -1136 2712 -1120))
 )
 (pin
 	(output)
@@ -226,6 +230,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2704 -1136 2768 -1120))
 )
 (pin
 	(output)
@@ -243,6 +248,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2768 -1136 2832 -1120))
 )
 (pin
 	(output)
@@ -260,6 +266,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2824 -1136 2888 -1120))
 )
 (pin
 	(output)
@@ -277,6 +284,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2880 -1136 2944 -1120))
 )
 (pin
 	(output)
@@ -294,6 +302,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2536 -1536 2600 -1520))
 )
 (pin
 	(output)
@@ -311,6 +320,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2600 -1536 2656 -1520))
 )
 (pin
 	(output)
@@ -328,6 +338,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2664 -1536 2720 -1520))
 )
 (pin
 	(output)
@@ -345,6 +356,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2728 -1536 2784 -1520))
 )
 (pin
 	(output)
@@ -362,6 +374,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2792 -1536 2848 -1520))
 )
 (pin
 	(output)
@@ -379,6 +392,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2856 -1536 2912 -1520))
 )
 (pin
 	(output)
@@ -396,6 +410,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 12 98)(pt 8 94))
 	)
 	(rotate90)
+	(annotation_block (location)(rect 2920 -1536 2984 -1520))
 )
 (symbol
 	(rect 104 112 136 160)
@@ -1288,35 +1303,6 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(drawing
 		(rectangle (rect 16 16 112 80))
-	)
-)
-(symbol
-	(rect 904 -736 1048 -640)
-	(text "full_adder" (rect 5 0 65 15)(font "Intel Clear" (font_size 8)))
-	(text "inst39" (rect 8 79 39 92)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Bi[4..0]" (rect 0 0 40 15)(font "Intel Clear" (font_size 8)))
-		(text "Bi[4..0]" (rect 21 27 61 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Ai[4..0]" (rect 0 0 41 15)(font "Intel Clear" (font_size 8)))
-		(text "Ai[4..0]" (rect 21 43 62 58)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "Ans[5..0]" (rect 0 0 50 15)(font "Intel Clear" (font_size 8)))
-		(text "Ans[5..0]" (rect 73 27 123 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 144 32)(pt 128 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 128 80))
 	)
 )
 (symbol
@@ -2619,6 +2605,61 @@ https://fpgasoftware.intel.com/eula.
 		(arc (pt 49 40)(pt 25 29)(rect -6 29 57 92))
 		(arc (pt 25 51)(pt 49 40)(rect -6 -11 57 52))
 	)
+)
+(symbol
+	(rect 904 -736 1048 -640)
+	(text "full_adder" (rect 5 0 65 15)(font "Intel Clear" (font_size 8)))
+	(text "inst13" (rect 8 79 39 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Bi[4..0]" (rect 0 0 40 15)(font "Intel Clear" (font_size 8)))
+		(text "Bi[4..0]" (rect 21 27 61 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Ai[4..0]" (rect 0 0 41 15)(font "Intel Clear" (font_size 8)))
+		(text "Ai[4..0]" (rect 21 43 62 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "Ans[5..0]" (rect 0 0 50 15)(font "Intel Clear" (font_size 8)))
+		(text "Ans[5..0]" (rect 73 27 123 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 144 32)(pt 128 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 80))
+	)
+)
+(symbol
+	(rect 2456 -1184 2488 -1136)
+	(text "NOT" (rect 0 26 10 47)(font "Arial" (font_size 6))(vertical))
+	(text "inst29" (rect 21 14 34 45)(font "Intel Clear" )(vertical))
+	(port
+		(pt 16 48)
+		(input)
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 7 32 18 46)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 48)(pt 16 35))
+	)
+	(port
+		(pt 16 0)
+		(output)
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 7 -5 18 16)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 9)(pt 16 0))
+	)
+	(drawing
+		(line (pt 25 35)(pt 7 35))
+		(line (pt 7 35)(pt 16 17))
+		(line (pt 25 35)(pt 16 17))
+		(circle (rect 12 9 20 17))
+	)
+	(rotate90)
 )
 (connector
 	(pt 88 176)
@@ -3985,18 +4026,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 2880 -1072)
 )
 (connector
-	(pt 2472 -1144)
-	(pt 2464 -1144)
-)
-(connector
-	(pt 2472 -1136)
-	(pt 2472 -1144)
-)
-(connector
-	(pt 2464 -1144)
-	(pt 2464 -1712)
-)
-(connector
 	(pt 2248 -968)
 	(pt 2248 -1392)
 )
@@ -4270,6 +4299,18 @@ https://fpgasoftware.intel.com/eula.
 	(pt 2344 -656)
 	(pt 2384 -656)
 	(bus)
+)
+(connector
+	(pt 2464 -1208)
+	(pt 2472 -1208)
+)
+(connector
+	(pt 2464 -1712)
+	(pt 2464 -1208)
+)
+(connector
+	(pt 2472 -1208)
+	(pt 2472 -1184)
 )
 (junction (pt 248 176))
 (junction (pt 168 176))

@@ -1,31 +1,32 @@
 # do adder.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:14:31 on Feb 05,2023
+# Start time: 09:25:04 on Feb 06,2023
 # vlog -work work adder.vo 
-# -- Compiling module fivebitstosixbits
+# -- Compiling module ula
 # 
 # Top level modules:
-# 	fivebitstosixbits
-# End time: 10:14:31 on Feb 05,2023, Elapsed time: 0:00:00
+# 	ula
+# End time: 09:25:04 on Feb 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:14:31 on Feb 05,2023
+# Start time: 09:25:04 on Feb 06,2023
 # vlog -work work Waveform1.vwf.vt 
-# -- Compiling module fivebitstosixbits_vlg_vec_tst
+# -- Compiling module ula_vlg_vec_tst
 # 
 # Top level modules:
-# 	fivebitstosixbits_vlg_vec_tst
-# End time: 10:14:32 on Feb 05,2023, Elapsed time: 0:00:01
+# 	ula_vlg_vec_tst
+# End time: 09:25:04 on Feb 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.fivebitstosixbits_vlg_vec_tst 
-# Start time: 10:14:32 on Feb 05,2023
-# Loading work.fivebitstosixbits_vlg_vec_tst
-# Loading work.fivebitstosixbits
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ula_vlg_vec_tst 
+# Start time: 09:25:04 on Feb 06,2023
+# Loading work.ula_vlg_vec_tst
+# Loading work.ula
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
 # after#25
-# ** Note: $finish    : Waveform1.vwf.vt(45)
-#    Time: 1 us  Iteration: 0  Instance: /fivebitstosixbits_vlg_vec_tst
-# End time: 10:14:32 on Feb 05,2023, Elapsed time: 0:00:00
+# ** Note: $finish    : Waveform1.vwf.vt(85)
+#    Time: 1 us  Iteration: 0  Instance: /ula_vlg_vec_tst
+# End time: 09:25:05 on Feb 06,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -16,6 +16,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "CH",
+					"strict" : false
+				},
+				{
 					"name" : "DH",
 					"strict" : false
 				},
@@ -25,10 +29,6 @@
 				},
 				{
 					"name" : "FH",
-					"strict" : false
-				},
-				{
-					"name" : "GH",
 					"strict" : false
 				},
 				{
@@ -84,15 +84,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "S2",
-					"strict" : false
-				},
-				{
 					"name" : "S1",
-					"strict" : false
-				},
-				{
-					"name" : "S0",
 					"strict" : false
 				},
 				{
@@ -104,27 +96,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "S2",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
-					"strict" : false
-				},
-				{
-					"name" : "B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[1]",
-					"strict" : false
-				},
-				{
-					"name" : "B[1]",
+					"name" : "S0",
 					"strict" : false
 				},
 				{
@@ -133,6 +109,30 @@
 				},
 				{
 					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
 					"strict" : false
 				}
 			]

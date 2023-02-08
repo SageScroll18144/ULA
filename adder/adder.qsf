@@ -113,6 +113,8 @@ set_location_assignment PIN_L25 -to EL
 set_location_assignment PIN_J22 -to FL
 set_location_assignment PIN_H22 -to GL
 set_location_assignment PIN_W28 -to Signed
+set_global_assignment -name BDF_FILE c2_module.bdf
+set_global_assignment -name BDF_FILE Comparison_module.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

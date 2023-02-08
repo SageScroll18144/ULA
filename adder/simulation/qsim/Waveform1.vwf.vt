@@ -19,138 +19,82 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/07/2023 21:19:32"
+// Generated on "02/08/2023 10:29:24"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          ula
+// Verilog Test Bench (with test vectors) for design :                          Comparison_module
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module ula_vlg_vec_tst();
+module Comparison_module_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [4:0] A;
-reg [4:0] B;
-reg S0;
-reg S1;
-reg S2;
+reg [4:0] BitA;
+reg [4:0] BitB;
 // wires                                               
-wire AH;
-wire AL;
-wire [5:0] arit;
-wire BH;
-wire BL;
-wire CH;
-wire CL;
-wire COMPARISON;
-wire DH;
-wire DL;
-wire EH;
-wire EL;
-wire FH;
-wire FL;
-wire GH;
-wire GL;
-wire Signed;
+wire Ans;
 
 // assign statements (if any)                          
-ula i1 (
+Comparison_module i1 (
 // port map - connection between master ports and signals/registers   
-	.A(A),
-	.AH(AH),
-	.AL(AL),
-	.arit(arit),
-	.B(B),
-	.BH(BH),
-	.BL(BL),
-	.CH(CH),
-	.CL(CL),
-	.COMPARISON(COMPARISON),
-	.DH(DH),
-	.DL(DL),
-	.EH(EH),
-	.EL(EL),
-	.FH(FH),
-	.FL(FL),
-	.GH(GH),
-	.GL(GL),
-	.S0(S0),
-	.S1(S1),
-	.S2(S2),
-	.\Signed (Signed)
+	.Ans(Ans),
+	.BitA(BitA),
+	.BitB(BitB)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// A[ 4 ]
+// BitA[ 4 ]
 initial
 begin
-	A[4] = 1'b0;
+	BitA[4] = 1'b0;
 end 
-// A[ 3 ]
+// BitA[ 3 ]
 initial
 begin
-	A[3] = 1'b0;
+	BitA[3] = 1'b0;
 end 
-// A[ 2 ]
+// BitA[ 2 ]
 initial
 begin
-	A[2] = 1'b0;
+	BitA[2] = 1'b0;
 end 
-// A[ 1 ]
+// BitA[ 1 ]
 initial
 begin
-	A[1] = 1'b1;
+	BitA[1] = 1'b0;
 end 
-// A[ 0 ]
+// BitA[ 0 ]
 initial
 begin
-	A[0] = 1'b0;
+	BitA[0] = 1'b1;
 end 
-// B[ 4 ]
+// BitB[ 4 ]
 initial
 begin
-	B[4] = 1'b0;
+	BitB[4] = 1'b1;
 end 
-// B[ 3 ]
+// BitB[ 3 ]
 initial
 begin
-	B[3] = 1'b0;
+	BitB[3] = 1'b0;
 end 
-// B[ 2 ]
+// BitB[ 2 ]
 initial
 begin
-	B[2] = 1'b0;
+	BitB[2] = 1'b0;
 end 
-// B[ 1 ]
+// BitB[ 1 ]
 initial
 begin
-	B[1] = 1'b0;
+	BitB[1] = 1'b1;
 end 
-// B[ 0 ]
+// BitB[ 0 ]
 initial
 begin
-	B[0] = 1'b0;
-end 
-
-// S0
-initial
-begin
-	S0 = 1'b0;
-end 
-
-// S1
-initial
-begin
-	S1 = 1'b0;
-end 
-
-// S2
-initial
-begin
-	S2 = 1'b0;
+	BitB[0] = 1'b0;
 end 
 endmodule
 

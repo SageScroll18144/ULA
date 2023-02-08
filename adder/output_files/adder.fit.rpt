@@ -1,5 +1,5 @@
 Fitter report for adder
-Sun Feb  5 10:44:16 2023
+Wed Feb  8 11:42:35 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -62,15 +62,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Feb  5 10:44:16 2023       ;
+; Fitter Status                      ; Successful - Wed Feb  8 11:42:35 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; ula                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 93 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 93 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 153 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 153 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 35 / 529 ( 7 % )                            ;
@@ -163,8 +163,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 174 ) ; 0.00 % ( 0 / 174 )         ; 0.00 % ( 0 / 174 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 174 ) ; 0.00 % ( 0 / 174 )         ; 0.00 % ( 0 / 174 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 234 ) ; 0.00 % ( 0 / 234 )         ; 0.00 % ( 0 / 234 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 234 ) ; 0.00 % ( 0 / 234 )         ; 0.00 % ( 0 / 234 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -187,7 +187,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 164 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 224 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -198,126 +198,126 @@ https://fpgasoftware.intel.com/eula.
 The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/adder.pin.
 
 
-+----------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                        ;
-+---------------------------------------------+------------------------+
-; Resource                                    ; Usage                  ;
-+---------------------------------------------+------------------------+
-; Total logic elements                        ; 93 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 93                     ;
-;     -- Register only                        ; 0                      ;
-;     -- Combinational with a register        ; 0                      ;
-;                                             ;                        ;
-; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 61                     ;
-;     -- 3 input functions                    ; 19                     ;
-;     -- <=2 input functions                  ; 13                     ;
-;     -- Register only                        ; 0                      ;
-;                                             ;                        ;
-; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 93                     ;
-;     -- arithmetic mode                      ; 0                      ;
-;                                             ;                        ;
-; Total registers*                            ; 0 / 117,053 ( 0 % )    ;
-;     -- Dedicated logic registers            ; 0 / 114,480 ( 0 % )    ;
-;     -- I/O registers                        ; 0 / 2,573 ( 0 % )      ;
-;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 7 / 7,155 ( < 1 % )    ;
-; Virtual pins                                ; 0                      ;
-; I/O pins                                    ; 35 / 529 ( 7 % )       ;
-;     -- Clock pins                           ; 0 / 7 ( 0 % )          ;
-;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )          ;
-;                                             ;                        ;
-; M9Ks                                        ; 0 / 432 ( 0 % )        ;
-; Total block memory bits                     ; 0 / 3,981,312 ( 0 % )  ;
-; Total block memory implementation bits      ; 0 / 3,981,312 ( 0 % )  ;
-; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )        ;
-; PLLs                                        ; 0 / 4 ( 0 % )          ;
-; Global signals                              ; 0                      ;
-;     -- Global clocks                        ; 0 / 20 ( 0 % )         ;
-; JTAGs                                       ; 0 / 1 ( 0 % )          ;
-; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
-; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
-; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
-; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 0.1% / 0.0% / 0.1%     ;
-; Peak interconnect usage (total/H/V)         ; 1.0% / 0.7% / 1.5%     ;
-; Maximum fan-out                             ; 16                     ;
-; Highest non-global fan-out                  ; 16                     ;
-; Total fan-out                               ; 387                    ;
-; Average fan-out                             ; 2.24                   ;
-+---------------------------------------------+------------------------+
++-----------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                         ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Total logic elements                        ; 153 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 153                     ;
+;     -- Register only                        ; 0                       ;
+;     -- Combinational with a register        ; 0                       ;
+;                                             ;                         ;
+; Logic element usage by number of LUT inputs ;                         ;
+;     -- 4 input functions                    ; 113                     ;
+;     -- 3 input functions                    ; 32                      ;
+;     -- <=2 input functions                  ; 8                       ;
+;     -- Register only                        ; 0                       ;
+;                                             ;                         ;
+; Logic elements by mode                      ;                         ;
+;     -- normal mode                          ; 153                     ;
+;     -- arithmetic mode                      ; 0                       ;
+;                                             ;                         ;
+; Total registers*                            ; 0 / 117,053 ( 0 % )     ;
+;     -- Dedicated logic registers            ; 0 / 114,480 ( 0 % )     ;
+;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
+;                                             ;                         ;
+; Total LABs:  partially or completely used   ; 11 / 7,155 ( < 1 % )    ;
+; Virtual pins                                ; 0                       ;
+; I/O pins                                    ; 35 / 529 ( 7 % )        ;
+;     -- Clock pins                           ; 0 / 7 ( 0 % )           ;
+;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )           ;
+;                                             ;                         ;
+; M9Ks                                        ; 0 / 432 ( 0 % )         ;
+; Total block memory bits                     ; 0 / 3,981,312 ( 0 % )   ;
+; Total block memory implementation bits      ; 0 / 3,981,312 ( 0 % )   ;
+; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )         ;
+; PLLs                                        ; 0 / 4 ( 0 % )           ;
+; Global signals                              ; 0                       ;
+;     -- Global clocks                        ; 0 / 20 ( 0 % )          ;
+; JTAGs                                       ; 0 / 1 ( 0 % )           ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )           ;
+; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
+; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
+; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%      ;
+; Peak interconnect usage (total/H/V)         ; 1.7% / 1.3% / 2.3%      ;
+; Maximum fan-out                             ; 17                      ;
+; Highest non-global fan-out                  ; 17                      ;
+; Total fan-out                               ; 625                     ;
+; Average fan-out                             ; 2.68                    ;
++---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
-+------------------------------------------------------------------------------------------------------+
-; Fitter Partition Statistics                                                                          ;
-+---------------------------------------------+-----------------------+--------------------------------+
-; Statistic                                   ; Top                   ; hard_block:auto_generated_inst ;
-+---------------------------------------------+-----------------------+--------------------------------+
-; Difficulty Clustering Region                ; Low                   ; Low                            ;
-;                                             ;                       ;                                ;
-; Total logic elements                        ; 93 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 93                    ; 0                              ;
-;     -- Register only                        ; 0                     ; 0                              ;
-;     -- Combinational with a register        ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 61                    ; 0                              ;
-;     -- 3 input functions                    ; 19                    ; 0                              ;
-;     -- <=2 input functions                  ; 13                    ; 0                              ;
-;     -- Register only                        ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 93                    ; 0                              ;
-;     -- arithmetic mode                      ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Total registers                             ; 0                     ; 0                              ;
-;     -- Dedicated logic registers            ; 0 / 114480 ( 0 % )    ; 0 / 114480 ( 0 % )             ;
-;     -- I/O registers                        ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 7 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
-;                                             ;                       ;                                ;
-; Virtual pins                                ; 0                     ; 0                              ;
-; I/O pins                                    ; 35                    ; 0                              ;
-; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )       ; 0 / 532 ( 0 % )                ;
-; Total memory bits                           ; 0                     ; 0                              ;
-; Total RAM block bits                        ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Connections                                 ;                       ;                                ;
-;     -- Input Connections                    ; 0                     ; 0                              ;
-;     -- Registered Input Connections         ; 0                     ; 0                              ;
-;     -- Output Connections                   ; 0                     ; 0                              ;
-;     -- Registered Output Connections        ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 382                   ; 5                              ;
-;     -- Registered Connections               ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; External Connections                        ;                       ;                                ;
-;     -- Top                                  ; 0                     ; 0                              ;
-;     -- hard_block:auto_generated_inst       ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Partition Interface                         ;                       ;                                ;
-;     -- Input Ports                          ; 13                    ; 0                              ;
-;     -- Output Ports                         ; 22                    ; 0                              ;
-;     -- Bidir Ports                          ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Registered Ports                            ;                       ;                                ;
-;     -- Registered Input Ports               ; 0                     ; 0                              ;
-;     -- Registered Output Ports              ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Port Connectivity                           ;                       ;                                ;
-;     -- Input Ports driven by GND            ; 0                     ; 0                              ;
-;     -- Output Ports driven by GND           ; 0                     ; 0                              ;
-;     -- Input Ports driven by VCC            ; 0                     ; 0                              ;
-;     -- Output Ports driven by VCC           ; 0                     ; 0                              ;
-;     -- Input Ports with no Source           ; 0                     ; 0                              ;
-;     -- Output Ports with no Source          ; 0                     ; 0                              ;
-;     -- Input Ports with no Fanout           ; 0                     ; 0                              ;
-;     -- Output Ports with no Fanout          ; 0                     ; 0                              ;
-+---------------------------------------------+-----------------------+--------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                           ;
++---------------------------------------------+------------------------+--------------------------------+
+; Statistic                                   ; Top                    ; hard_block:auto_generated_inst ;
++---------------------------------------------+------------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low                    ; Low                            ;
+;                                             ;                        ;                                ;
+; Total logic elements                        ; 153 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 153                    ; 0                              ;
+;     -- Register only                        ; 0                      ; 0                              ;
+;     -- Combinational with a register        ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Logic element usage by number of LUT inputs ;                        ;                                ;
+;     -- 4 input functions                    ; 113                    ; 0                              ;
+;     -- 3 input functions                    ; 32                     ; 0                              ;
+;     -- <=2 input functions                  ; 8                      ; 0                              ;
+;     -- Register only                        ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Logic elements by mode                      ;                        ;                                ;
+;     -- normal mode                          ; 153                    ; 0                              ;
+;     -- arithmetic mode                      ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Total registers                             ; 0                      ; 0                              ;
+;     -- Dedicated logic registers            ; 0 / 114480 ( 0 % )     ; 0 / 114480 ( 0 % )             ;
+;     -- I/O registers                        ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Total LABs:  partially or completely used   ; 11 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+;                                             ;                        ;                                ;
+; Virtual pins                                ; 0                      ; 0                              ;
+; I/O pins                                    ; 35                     ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )        ; 0 / 532 ( 0 % )                ;
+; Total memory bits                           ; 0                      ; 0                              ;
+; Total RAM block bits                        ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Connections                                 ;                        ;                                ;
+;     -- Input Connections                    ; 0                      ; 0                              ;
+;     -- Registered Input Connections         ; 0                      ; 0                              ;
+;     -- Output Connections                   ; 0                      ; 0                              ;
+;     -- Registered Output Connections        ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Internal Connections                        ;                        ;                                ;
+;     -- Total Connections                    ; 620                    ; 5                              ;
+;     -- Registered Connections               ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; External Connections                        ;                        ;                                ;
+;     -- Top                                  ; 0                      ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Partition Interface                         ;                        ;                                ;
+;     -- Input Ports                          ; 13                     ; 0                              ;
+;     -- Output Ports                         ; 22                     ; 0                              ;
+;     -- Bidir Ports                          ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Registered Ports                            ;                        ;                                ;
+;     -- Registered Input Ports               ; 0                      ; 0                              ;
+;     -- Registered Output Ports              ; 0                      ; 0                              ;
+;                                             ;                        ;                                ;
+; Port Connectivity                           ;                        ;                                ;
+;     -- Input Ports driven by GND            ; 0                      ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                      ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                      ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                      ; 0                              ;
+;     -- Input Ports with no Source           ; 0                      ; 0                              ;
+;     -- Output Ports with no Source          ; 0                      ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                      ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                      ; 0                              ;
++---------------------------------------------+------------------------+--------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -325,19 +325,19 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; A[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A[1] ; AC28  ; 5        ; 115          ; 14           ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A[2] ; AC27  ; 5        ; 115          ; 15           ; 7            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A[4] ; AB27  ; 5        ; 115          ; 18           ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[0] ; AC26  ; 5        ; 115          ; 11           ; 7            ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[1] ; AD26  ; 5        ; 115          ; 10           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[2] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 13                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[3] ; AC25  ; 5        ; 115          ; 4            ; 21           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[1] ; AC28  ; 5        ; 115          ; 14           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[2] ; AC27  ; 5        ; 115          ; 15           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[4] ; AB27  ; 5        ; 115          ; 18           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[0] ; AC26  ; 5        ; 115          ; 11           ; 7            ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[1] ; AD26  ; 5        ; 115          ; 10           ; 0            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[2] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[3] ; AC25  ; 5        ; 115          ; 4            ; 21           ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; B[4] ; AB25  ; 5        ; 115          ; 16           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; S0   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; S1   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; S2   ; AB23  ; 5        ; 115          ; 7            ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; S0   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; S1   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; S2   ; AB23  ; 5        ; 115          ; 7            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -346,21 +346,21 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; AH         ; G18   ; 7        ; 69           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; AL         ; M24   ; 6        ; 115          ; 41           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; BH         ; F22   ; 7        ; 107          ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; BL         ; Y22   ; 5        ; 115          ; 30           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; CH         ; E17   ; 7        ; 67           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; CL         ; W21   ; 5        ; 115          ; 25           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; AH         ; M24   ; 6        ; 115          ; 41           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; AL         ; G18   ; 7        ; 69           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; BH         ; Y22   ; 5        ; 115          ; 30           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; BL         ; F22   ; 7        ; 107          ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; CH         ; W21   ; 5        ; 115          ; 25           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; CL         ; E17   ; 7        ; 67           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; COMPARISON ; H15   ; 7        ; 60           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; DH         ; L26   ; 6        ; 115          ; 50           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; DL         ; W22   ; 5        ; 115          ; 30           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; EH         ; L25   ; 6        ; 115          ; 54           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; EL         ; W25   ; 5        ; 115          ; 20           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; FH         ; J22   ; 6        ; 115          ; 67           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; FL         ; U23   ; 5        ; 115          ; 22           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; GH         ; H22   ; 6        ; 115          ; 69           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; GL         ; U24   ; 5        ; 115          ; 28           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DH         ; W22   ; 5        ; 115          ; 30           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DL         ; L26   ; 6        ; 115          ; 50           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; EH         ; W25   ; 5        ; 115          ; 20           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; EL         ; L25   ; 6        ; 115          ; 54           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; FH         ; U23   ; 5        ; 115          ; 22           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; FL         ; J22   ; 6        ; 115          ; 67           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; GH         ; U24   ; 5        ; 115          ; 28           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; GL         ; H22   ; 6        ; 115          ; 69           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; Signed     ; W28   ; 5        ; 115          ; 21           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; arit[0]    ; E21   ; 7        ; 107          ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; arit[1]    ; E22   ; 7        ; 111          ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -761,7 +761,7 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; E14      ; 486        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E15      ; 467        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E16      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; E17      ; 456        ; 7        ; CH                                                        ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; E17      ; 456        ; 7        ; CL                                                        ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E18      ; 427        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E19      ; 421        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E20      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -794,7 +794,7 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; F19      ; 420        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F21      ; 408        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F22      ; 409        ; 7        ; BH                                                        ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; F22      ; 409        ; 7        ; BL                                                        ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; F23      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F24      ; 396        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F25      ; 395        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -818,7 +818,7 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; G15      ; 457        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; G16      ; 453        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G17      ; 437        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; G18      ; 452        ; 7        ; AH                                                        ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; G18      ; 452        ; 7        ; AL                                                        ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; G19      ; 451        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G20      ; 444        ; 7        ; arit[5]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; G21      ; 445        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -850,7 +850,7 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; H19      ; 446        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; H20      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H21      ; 448        ; 7        ; arit[4]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; H22      ; 399        ; 6        ; GH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; H22      ; 399        ; 6        ; GL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H23      ; 391        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H24      ; 390        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H25      ; 377        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -878,7 +878,7 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; J19      ; 447        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; J20      ;            ;          ; VCCD_PLL2                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; J21      ;            ; --       ; VCCA2                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; J22      ; 394        ; 6        ; FH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; J22      ; 394        ; 6        ; FL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; J23      ; 387        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J24      ; 386        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J25      ; 365        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -937,8 +937,8 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; L22      ; 384        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L23      ; 360        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L24      ; 359        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; L25      ; 369        ; 6        ; EH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; L26      ; 363        ; 6        ; DH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; L25      ; 369        ; 6        ; EL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; L26      ; 363        ; 6        ; DL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L27      ; 358        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L28      ; 357        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M1       ; 51         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -964,7 +964,7 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; M21      ; 368        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M22      ; 342        ; 6        ; ^MSEL2                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; M23      ; 344        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; M24      ; 347        ; 6        ; AL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; M24      ; 347        ; 6        ; AH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; M25      ; 356        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M26      ; 355        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M27      ; 354        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1103,8 +1103,8 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; U20      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U21      ; 319        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U22      ; 313        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; U23      ; 305        ; 5        ; FL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; U24      ; 316        ; 5        ; GL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; U23      ; 305        ; 5        ; FH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; U24      ; 316        ; 5        ; GH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; U25      ; 315        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U26      ; 314        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U27      ; 318        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1157,11 +1157,11 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; W18      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; W19      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W20      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; W21      ; 310        ; 5        ; CL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; W22      ; 321        ; 5        ; DL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; W21      ; 310        ; 5        ; CH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; W22      ; 321        ; 5        ; DH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; W23      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W24      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; W25      ; 300        ; 5        ; EL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; W25      ; 300        ; 5        ; EH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; W26      ; 299        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; W27      ; 301        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; W28      ; 302        ; 5        ; Signed                                                    ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -1186,7 +1186,7 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; Y19      ; 263        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y20      ;            ;          ; VCCD_PLL4                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; Y21      ;            ; --       ; VCCA4                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; Y22      ; 320        ; 5        ; BL                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; Y22      ; 320        ; 5        ; BH                                                        ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y23      ; 288        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y24      ; 287        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y25      ; 298        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1224,52 +1224,61 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; arit[2]    ; Incomplete set of assignments ;
 ; arit[1]    ; Incomplete set of assignments ;
 ; arit[0]    ; Incomplete set of assignments ;
-; S1         ; Incomplete set of assignments ;
 ; A[4]       ; Incomplete set of assignments ;
-; B[4]       ; Incomplete set of assignments ;
-; S2         ; Incomplete set of assignments ;
-; S0         ; Incomplete set of assignments ;
-; A[0]       ; Incomplete set of assignments ;
-; B[0]       ; Incomplete set of assignments ;
 ; A[2]       ; Incomplete set of assignments ;
-; B[2]       ; Incomplete set of assignments ;
 ; A[3]       ; Incomplete set of assignments ;
 ; B[3]       ; Incomplete set of assignments ;
+; B[2]       ; Incomplete set of assignments ;
+; B[4]       ; Incomplete set of assignments ;
 ; A[1]       ; Incomplete set of assignments ;
 ; B[1]       ; Incomplete set of assignments ;
+; A[0]       ; Incomplete set of assignments ;
+; B[0]       ; Incomplete set of assignments ;
+; S0         ; Incomplete set of assignments ;
+; S1         ; Incomplete set of assignments ;
+; S2         ; Incomplete set of assignments ;
 +------------+-------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                     ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+----------------------------+--------------+
-; Compilation Hierarchy Node            ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                   ; Entity Name                ; Library Name ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+----------------------------+--------------+
-; |ula                                  ; 93 (58)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 35   ; 0            ; 93 (58)      ; 0 (0)             ; 0 (0)            ; |ula                                                                  ; ula                        ; work         ;
-;    |C2:inst18|                        ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18                                                        ; C2                         ; work         ;
-;       |adder:inst11|                  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18|adder:inst11                                           ; adder                      ; work         ;
-;       |adder:inst12|                  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18|adder:inst12                                           ; adder                      ; work         ;
-;       |adder:inst14|                  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18|adder:inst14                                           ; adder                      ; work         ;
-;    |binary_to_bcd:inst26|             ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26                                             ; binary_to_bcd              ; work         ;
-;       |dabble:inst3|                  ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26|dabble:inst3                                ; dabble                     ; work         ;
-;       |dabble:inst|                   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26|dabble:inst                                 ; dabble                     ; work         ;
-;    |binary_to_bcd:inst41|             ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41                                             ; binary_to_bcd              ; work         ;
-;       |dabble:inst3|                  ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41|dabble:inst3                                ; dabble                     ; work         ;
-;    |circuit_subtrator_complete:inst5| ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5                                 ; circuit_subtrator_complete ; work         ;
-;       |C2:inst|                       ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|C2:inst                         ; C2                         ; work         ;
-;          |adder:inst12|               ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|C2:inst|adder:inst12            ; adder                      ; work         ;
-;       |module_adder:inst12|           ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12             ; module_adder               ; work         ;
-;          |adder:inst1|                ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1 ; adder                      ; work         ;
-;          |adder:inst5|                ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5 ; adder                      ; work         ;
-;    |comparison_MT:inst37|             ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |ula|comparison_MT:inst37                                             ; comparison_MT              ; work         ;
-;    |decoder:inst51|                   ; 6 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51                                                   ; decoder                    ; work         ;
-;       |bin_7seg:inst28|               ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
-;    |decoder:inst52|                   ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst52                                                   ; decoder                    ; work         ;
-;       |bin_7seg:inst28|               ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst52|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
-;    |full_adder:inst39|                ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst39                                                ; full_adder                 ; work         ;
-;       |adder:inst1|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst39|adder:inst1                                    ; adder                      ; work         ;
-;       |adder:inst5|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst39|adder:inst5                                    ; adder                      ; work         ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+----------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                       ;
++----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node             ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                    ; Entity Name                ; Library Name ;
++----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------+----------------------------+--------------+
+; |ula                                   ; 153 (68)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 35   ; 0            ; 153 (68)     ; 0 (0)             ; 0 (0)            ; |ula                                                                   ; ula                        ; work         ;
+;    |C2:inst18|                         ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18                                                         ; C2                         ; work         ;
+;       |adder:inst11|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18|adder:inst11                                            ; adder                      ; work         ;
+;       |adder:inst13|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18|adder:inst13                                            ; adder                      ; work         ;
+;    |binary_to_bcd:inst26|              ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26                                              ; binary_to_bcd              ; work         ;
+;       |dabble:inst3|                   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26|dabble:inst3                                 ; dabble                     ; work         ;
+;       |dabble:inst|                    ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26|dabble:inst                                  ; dabble                     ; work         ;
+;    |binary_to_bcd:inst41|              ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41                                              ; binary_to_bcd              ; work         ;
+;       |dabble:inst3|                   ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41|dabble:inst3                                 ; dabble                     ; work         ;
+;       |dabble:inst|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41|dabble:inst                                  ; dabble                     ; work         ;
+;    |binary_to_bcd:inst62|              ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62                                              ; binary_to_bcd              ; work         ;
+;       |dabble:inst3|                   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62|dabble:inst3                                 ; dabble                     ; work         ;
+;       |dabble:inst|                    ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62|dabble:inst                                  ; dabble                     ; work         ;
+;    |circuit_subtrator_complete:inst53| ; 12 (2)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (2)       ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53                                 ; circuit_subtrator_complete ; work         ;
+;       |Comparison_module:inst11|       ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|Comparison_module:inst11        ; Comparison_module          ; work         ;
+;       |c2_module:inst4|                ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|c2_module:inst4                 ; c2_module                  ; work         ;
+;          |adder:inst11|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11    ; adder                      ; work         ;
+;          |adder:inst12|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst12    ; adder                      ; work         ;
+;       |module_adder:inst12|            ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|module_adder:inst12             ; module_adder               ; work         ;
+;          |adder:inst1|                 ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1 ; adder                      ; work         ;
+;          |adder:inst5|                 ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5 ; adder                      ; work         ;
+;          |adder:inst6|                 ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst6 ; adder                      ; work         ;
+;    |comparison_MT:inst37|              ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |ula|comparison_MT:inst37                                              ; comparison_MT              ; work         ;
+;    |decoder:inst51|                    ; 15 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51                                                    ; decoder                    ; work         ;
+;       |bin_7seg:inst28|                ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51|bin_7seg:inst28                                    ; bin_7seg                   ; work         ;
+;       |bin_7seg:inst29|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51|bin_7seg:inst29                                    ; bin_7seg                   ; work         ;
+;    |decoder:inst52|                    ; 13 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst52                                                    ; decoder                    ; work         ;
+;       |bin_7seg:inst28|                ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst52|bin_7seg:inst28                                    ; bin_7seg                   ; work         ;
+;    |decoder:inst63|                    ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst63                                                    ; decoder                    ; work         ;
+;       |bin_7seg:inst28|                ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst63|bin_7seg:inst28                                    ; bin_7seg                   ; work         ;
+;    |full_adder:inst13|                 ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13                                                 ; full_adder                 ; work         ;
+;       |adder:inst1|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13|adder:inst1                                     ; adder                      ; work         ;
+;       |adder:inst5|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13|adder:inst5                                     ; adder                      ; work         ;
++----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1300,156 +1309,180 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arit[2]    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; arit[1]    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; arit[0]    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; S1         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; A[4]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; B[4]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; S2         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; S0         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; A[0]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; B[0]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[4]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; A[2]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; B[2]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; A[3]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; A[3]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; B[3]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; B[2]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[4]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; A[1]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; B[1]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; A[0]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[0]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; S0         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; S1         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; S2         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                                ;
-+---------------------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                             ; Pad To Core Index ; Setting ;
-+---------------------------------------------------------------------------------+-------------------+---------+
-; S1                                                                              ;                   ;         ;
-;      - inst10~8                                                                 ; 0                 ; 6       ;
-;      - inst44~0                                                                 ; 0                 ; 6       ;
-;      - inst40~0                                                                 ; 0                 ; 6       ;
-;      - inst14~0                                                                 ; 0                 ; 6       ;
-;      - inst14~1                                                                 ; 0                 ; 6       ;
-;      - inst14~2                                                                 ; 0                 ; 6       ;
-;      - inst19[0]                                                                ; 0                 ; 6       ;
-; A[4]                                                                            ;                   ;         ;
-;      - inst10~2                                                                 ; 0                 ; 6       ;
-;      - comparison_MT:inst37|inst                                                ; 0                 ; 6       ;
-;      - inst10~5                                                                 ; 0                 ; 6       ;
-;      - inst28~3                                                                 ; 0                 ; 6       ;
-;      - inst7[4]~0                                                               ; 0                 ; 6       ;
-; B[4]                                                                            ;                   ;         ;
-;      - inst10~2                                                                 ; 0                 ; 6       ;
-;      - comparison_MT:inst37|inst                                                ; 0                 ; 6       ;
-;      - inst10~5                                                                 ; 0                 ; 6       ;
-;      - inst28~3                                                                 ; 0                 ; 6       ;
-;      - inst28~4                                                                 ; 0                 ; 6       ;
-;      - inst7[4]~0                                                               ; 0                 ; 6       ;
-;      - C2:inst18|adder:inst14|inst1                                             ; 0                 ; 6       ;
-; S2                                                                              ;                   ;         ;
-;      - inst10~7                                                                 ; 0                 ; 6       ;
-;      - inst10~8                                                                 ; 0                 ; 6       ;
-;      - inst44~0                                                                 ; 0                 ; 6       ;
-;      - inst40~0                                                                 ; 0                 ; 6       ;
-;      - inst14~0                                                                 ; 0                 ; 6       ;
-;      - inst14~1                                                                 ; 0                 ; 6       ;
-;      - inst14~2                                                                 ; 0                 ; 6       ;
-;      - inst19[0]                                                                ; 0                 ; 6       ;
-; S0                                                                              ;                   ;         ;
-;      - inst10~7                                                                 ; 0                 ; 6       ;
-;      - inst44~0                                                                 ; 0                 ; 6       ;
-;      - inst40~0                                                                 ; 0                 ; 6       ;
-;      - inst14~0                                                                 ; 0                 ; 6       ;
-;      - inst14~1                                                                 ; 0                 ; 6       ;
-;      - inst14~2                                                                 ; 0                 ; 6       ;
-;      - inst19[0]                                                                ; 0                 ; 6       ;
-; A[0]                                                                            ;                   ;         ;
-;      - inst10~3                                                                 ; 0                 ; 6       ;
-;      - inst10~6                                                                 ; 0                 ; 6       ;
-;      - inst28~0                                                                 ; 0                 ; 6       ;
-;      - full_adder:inst39|adder:inst1|inst4~0                                    ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst1   ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
-;      - inst16[1]                                                                ; 0                 ; 6       ;
-;      - inst16[0]                                                                ; 0                 ; 6       ;
-;      - inst17[0]                                                                ; 0                 ; 6       ;
-;      - inst7[0]~10                                                              ; 0                 ; 6       ;
-;      - inst62~2                                                                 ; 0                 ; 6       ;
-; B[0]                                                                            ;                   ;         ;
-;      - inst10~3                                                                 ; 1                 ; 6       ;
-;      - inst10~6                                                                 ; 1                 ; 6       ;
-;      - inst28~0                                                                 ; 1                 ; 6       ;
-;      - full_adder:inst39|adder:inst1|inst4~0                                    ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst1   ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst4~0 ; 1                 ; 6       ;
-;      - C2:inst18|adder:inst11|inst3                                             ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|C2:inst|adder:inst12|inst3              ; 1                 ; 6       ;
-;      - inst16[1]                                                                ; 1                 ; 6       ;
-;      - inst16[0]                                                                ; 1                 ; 6       ;
-;      - inst17[0]                                                                ; 1                 ; 6       ;
-;      - C2:inst18|adder:inst12|inst1                                             ; 1                 ; 6       ;
-;      - inst7[1]~9                                                               ; 1                 ; 6       ;
-;      - inst19[0]                                                                ; 1                 ; 6       ;
-;      - inst7[0]~10                                                              ; 1                 ; 6       ;
-;      - inst62~2                                                                 ; 1                 ; 6       ;
-; A[2]                                                                            ;                   ;         ;
-;      - comparison_MT:inst37|inst12~0                                            ; 1                 ; 6       ;
-;      - inst28~1                                                                 ; 1                 ; 6       ;
-;      - binary_to_bcd:inst26|dabble:inst|inst4~0                                 ; 1                 ; 6       ;
-;      - full_adder:inst39|adder:inst5|inst4~0                                    ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5|inst1   ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5|inst4~0 ; 1                 ; 6       ;
-;      - inst16[2]~3                                                              ; 1                 ; 6       ;
-;      - inst7[2]~5                                                               ; 1                 ; 6       ;
-;      - inst10~9                                                                 ; 1                 ; 6       ;
-; B[2]                                                                            ;                   ;         ;
-;      - comparison_MT:inst37|inst12~0                                            ; 0                 ; 6       ;
-;      - inst28~1                                                                 ; 0                 ; 6       ;
-;      - binary_to_bcd:inst26|dabble:inst|inst4~0                                 ; 0                 ; 6       ;
-;      - full_adder:inst39|adder:inst5|inst4~0                                    ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5|inst1   ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|C2:inst|adder:inst12|inst3              ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5|inst4~0 ; 0                 ; 6       ;
-;      - inst16[2]~3                                                              ; 0                 ; 6       ;
-;      - C2:inst18|adder:inst14|inst1                                             ; 0                 ; 6       ;
-;      - inst19[3]                                                                ; 0                 ; 6       ;
-;      - C2:inst18|adder:inst12|inst1                                             ; 0                 ; 6       ;
-;      - inst7[2]~5                                                               ; 0                 ; 6       ;
-;      - inst10~9                                                                 ; 0                 ; 6       ;
-; A[3]                                                                            ;                   ;         ;
-;      - comparison_MT:inst37|inst8~0                                             ; 0                 ; 6       ;
-;      - inst10~4                                                                 ; 0                 ; 6       ;
-;      - inst28~2                                                                 ; 0                 ; 6       ;
-;      - inst16[4]~2                                                              ; 0                 ; 6       ;
-;      - inst21[3]                                                                ; 0                 ; 6       ;
-;      - inst16[3]                                                                ; 0                 ; 6       ;
-; B[3]                                                                            ;                   ;         ;
-;      - comparison_MT:inst37|inst8~0                                             ; 1                 ; 6       ;
-;      - inst10~4                                                                 ; 1                 ; 6       ;
-;      - inst28~2                                                                 ; 1                 ; 6       ;
-;      - inst16[4]~2                                                              ; 1                 ; 6       ;
-;      - C2:inst18|adder:inst14|inst1                                             ; 1                 ; 6       ;
-;      - inst21[3]                                                                ; 1                 ; 6       ;
-;      - inst19[3]                                                                ; 1                 ; 6       ;
-;      - inst16[3]                                                                ; 1                 ; 6       ;
-; A[1]                                                                            ;                   ;         ;
-;      - comparison_MT:inst37|inst15~0                                            ; 0                 ; 6       ;
-;      - inst28~0                                                                 ; 0                 ; 6       ;
-;      - full_adder:inst39|adder:inst1|inst4~0                                    ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst1   ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
-;      - inst7[1]~8                                                               ; 0                 ; 6       ;
-;      - inst10~9                                                                 ; 0                 ; 6       ;
-; B[1]                                                                            ;                   ;         ;
-;      - comparison_MT:inst37|inst15~0                                            ; 0                 ; 6       ;
-;      - inst28~0                                                                 ; 0                 ; 6       ;
-;      - full_adder:inst39|adder:inst1|inst4~0                                    ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst1   ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
-;      - C2:inst18|adder:inst11|inst3                                             ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst5|C2:inst|adder:inst12|inst3              ; 0                 ; 6       ;
-;      - C2:inst18|adder:inst12|inst1                                             ; 0                 ; 6       ;
-;      - inst7[1]~8                                                               ; 0                 ; 6       ;
-;      - inst7[1]~9                                                               ; 0                 ; 6       ;
-;      - inst10~9                                                                 ; 0                 ; 6       ;
-+---------------------------------------------------------------------------------+-------------------+---------+
++----------------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                                 ;
++----------------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                              ; Pad To Core Index ; Setting ;
++----------------------------------------------------------------------------------+-------------------+---------+
+; A[4]                                                                             ;                   ;         ;
+;      - comparison_MT:inst37|inst                                                 ; 1                 ; 6       ;
+;      - inst10~2                                                                  ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|inst17~1                                ; 1                 ; 6       ;
+;      - inst77                                                                    ; 1                 ; 6       ;
+;      - inst7[4]~2                                                                ; 1                 ; 6       ;
+;      - inst10~10                                                                 ; 1                 ; 6       ;
+; A[2]                                                                             ;                   ;         ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~0       ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst9~0                                              ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~1       ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst12~0                                             ; 1                 ; 6       ;
+;      - binary_to_bcd:inst26|dabble:inst|inst4~0                                  ; 1                 ; 6       ;
+;      - full_adder:inst13|adder:inst5|inst4~0                                     ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5|inst4~0 ; 1                 ; 6       ;
+;      - inst7[2]~5                                                                ; 1                 ; 6       ;
+;      - inst16[2]~5                                                               ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5|inst1   ; 1                 ; 6       ;
+; A[3]                                                                             ;                   ;         ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~0       ; 1                 ; 6       ;
+;      - inst10~2                                                                  ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst9~0                                              ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~1       ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst8~0                                              ; 1                 ; 6       ;
+;      - inst16[4]~4                                                               ; 1                 ; 6       ;
+;      - inst21[3]                                                                 ; 1                 ; 6       ;
+;      - inst16[3]                                                                 ; 1                 ; 6       ;
+;      - inst7[3]~10                                                               ; 1                 ; 6       ;
+; B[3]                                                                             ;                   ;         ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~0       ; 1                 ; 6       ;
+;      - inst10~2                                                                  ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst9~0                                              ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~1       ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst8~0                                              ; 1                 ; 6       ;
+;      - inst16[4]~4                                                               ; 1                 ; 6       ;
+;      - C2:inst18|adder:inst13|inst3                                              ; 1                 ; 6       ;
+;      - binary_to_bcd:inst62|dabble:inst|inst5                                    ; 1                 ; 6       ;
+;      - inst19[3]                                                                 ; 1                 ; 6       ;
+;      - inst21[3]                                                                 ; 1                 ; 6       ;
+;      - inst16[3]                                                                 ; 1                 ; 6       ;
+;      - inst7[3]~10                                                               ; 1                 ; 6       ;
+; B[2]                                                                             ;                   ;         ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~0       ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst9~0                                              ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~1       ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst12~0                                             ; 0                 ; 6       ;
+;      - binary_to_bcd:inst26|dabble:inst|inst4~0                                  ; 0                 ; 6       ;
+;      - full_adder:inst13|adder:inst5|inst4~0                                     ; 0                 ; 6       ;
+;      - C2:inst18|adder:inst13|inst3                                              ; 0                 ; 6       ;
+;      - binary_to_bcd:inst62|dabble:inst|inst5                                    ; 0                 ; 6       ;
+;      - inst19[3]                                                                 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5|inst4~0 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst6|inst1   ; 0                 ; 6       ;
+;      - inst7[2]~5                                                                ; 0                 ; 6       ;
+;      - inst16[2]~5                                                               ; 0                 ; 6       ;
+;      - inst19[2]~3                                                               ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5|inst1   ; 0                 ; 6       ;
+; B[4]                                                                             ;                   ;         ;
+;      - comparison_MT:inst37|inst                                                 ; 1                 ; 6       ;
+;      - inst10~2                                                                  ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|inst17~0                                ; 1                 ; 6       ;
+;      - inst19[4]~2                                                               ; 1                 ; 6       ;
+;      - inst7[4]~2                                                                ; 1                 ; 6       ;
+;      - binary_to_bcd:inst62|dabble:inst|inst6                                    ; 1                 ; 6       ;
+;      - inst10~10                                                                 ; 1                 ; 6       ;
+; A[1]                                                                             ;                   ;         ;
+;      - comparison_MT:inst37|inst15~0                                             ; 0                 ; 6       ;
+;      - inst10~3                                                                  ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~2       ; 0                 ; 6       ;
+;      - full_adder:inst13|adder:inst1|inst4~0                                     ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11|inst3      ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
+;      - inst17[1]~1                                                               ; 0                 ; 6       ;
+;      - inst7[1]~7                                                                ; 0                 ; 6       ;
+;      - inst10~8                                                                  ; 0                 ; 6       ;
+;      - inst23[1]                                                                 ; 0                 ; 6       ;
+; B[1]                                                                             ;                   ;         ;
+;      - comparison_MT:inst37|inst15~0                                             ; 0                 ; 6       ;
+;      - inst10~3                                                                  ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~2       ; 0                 ; 6       ;
+;      - full_adder:inst13|adder:inst1|inst4~0                                     ; 0                 ; 6       ;
+;      - C2:inst18|adder:inst11|inst3                                              ; 0                 ; 6       ;
+;      - C2:inst18|adder:inst13|inst3                                              ; 0                 ; 6       ;
+;      - inst19[1]                                                                 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11|inst3      ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
+;      - inst17[1]~1                                                               ; 0                 ; 6       ;
+;      - inst7[1]~7                                                                ; 0                 ; 6       ;
+;      - inst10~8                                                                  ; 0                 ; 6       ;
+;      - inst19[2]~3                                                               ; 0                 ; 6       ;
+;      - inst23[1]                                                                 ; 0                 ; 6       ;
+; A[0]                                                                             ;                   ;         ;
+;      - inst10~5                                                                  ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~2       ; 0                 ; 6       ;
+;      - full_adder:inst13|adder:inst1|inst4~0                                     ; 0                 ; 6       ;
+;      - inst16[1]                                                                 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11|inst3      ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
+;      - inst17[1]~0                                                               ; 0                 ; 6       ;
+;      - inst17[0]                                                                 ; 0                 ; 6       ;
+;      - inst16[0]                                                                 ; 0                 ; 6       ;
+;      - inst7[0]~8                                                                ; 0                 ; 6       ;
+;      - inst10~8                                                                  ; 0                 ; 6       ;
+;      - inst10~9                                                                  ; 0                 ; 6       ;
+; B[0]                                                                             ;                   ;         ;
+;      - inst10~5                                                                  ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~2       ; 1                 ; 6       ;
+;      - full_adder:inst13|adder:inst1|inst4~0                                     ; 1                 ; 6       ;
+;      - inst16[1]                                                                 ; 1                 ; 6       ;
+;      - C2:inst18|adder:inst11|inst3                                              ; 1                 ; 6       ;
+;      - C2:inst18|adder:inst13|inst3                                              ; 1                 ; 6       ;
+;      - inst19[1]                                                                 ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11|inst3      ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1|inst4~0 ; 1                 ; 6       ;
+;      - inst17[1]~0                                                               ; 1                 ; 6       ;
+;      - inst19[0]                                                                 ; 1                 ; 6       ;
+;      - inst17[0]                                                                 ; 1                 ; 6       ;
+;      - inst16[0]                                                                 ; 1                 ; 6       ;
+;      - inst7[0]~8                                                                ; 1                 ; 6       ;
+;      - inst10~8                                                                  ; 1                 ; 6       ;
+;      - inst19[2]~3                                                               ; 1                 ; 6       ;
+;      - inst10~9                                                                  ; 1                 ; 6       ;
+; S0                                                                               ;                   ;         ;
+;      - inst4~0                                                                   ; 0                 ; 6       ;
+;      - inst10~6                                                                  ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|inst17~0                                ; 0                 ; 6       ;
+;      - inst44~0                                                                  ; 0                 ; 6       ;
+;      - inst40~0                                                                  ; 0                 ; 6       ;
+;      - inst14~0                                                                  ; 0                 ; 6       ;
+;      - inst19[0]                                                                 ; 0                 ; 6       ;
+;      - inst14~1                                                                  ; 0                 ; 6       ;
+;      - inst14~2                                                                  ; 0                 ; 6       ;
+; S1                                                                               ;                   ;         ;
+;      - inst4~0                                                                   ; 0                 ; 6       ;
+;      - inst10~7                                                                  ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|inst17~0                                ; 0                 ; 6       ;
+;      - inst44~0                                                                  ; 0                 ; 6       ;
+;      - inst40~0                                                                  ; 0                 ; 6       ;
+;      - inst14~0                                                                  ; 0                 ; 6       ;
+;      - inst19[0]                                                                 ; 0                 ; 6       ;
+;      - inst14~1                                                                  ; 0                 ; 6       ;
+;      - inst14~2                                                                  ; 0                 ; 6       ;
+; S2                                                                               ;                   ;         ;
+;      - inst4~0                                                                   ; 0                 ; 6       ;
+;      - inst10~7                                                                  ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst53|inst17~0                                ; 0                 ; 6       ;
+;      - inst44~0                                                                  ; 0                 ; 6       ;
+;      - inst40~0                                                                  ; 0                 ; 6       ;
+;      - inst14~0                                                                  ; 0                 ; 6       ;
+;      - inst19[0]                                                                 ; 0                 ; 6       ;
+;      - inst14~1                                                                  ; 0                 ; 6       ;
+;      - inst14~2                                                                  ; 0                 ; 6       ;
++----------------------------------------------------------------------------------+-------------------+---------+
 
 
 +-------------------------------------------------+
@@ -1457,112 +1490,122 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 114 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 21 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 136 / 209,544 ( < 1 % ) ;
-; Direct links          ; 33 / 342,891 ( < 1 % )  ;
+; Block interconnects   ; 175 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 20 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 210 / 209,544 ( < 1 % ) ;
+; Direct links          ; 47 / 342,891 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )          ;
-; Local interconnects   ; 35 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 13 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 48 / 289,782 ( < 1 % )  ;
+; Local interconnects   ; 65 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 14 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 100 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 13.29) ; Number of LABs  (Total = 7) ;
-+---------------------------------------------+-----------------------------+
-; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 1                           ;
-; 14                                          ; 2                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 3                           ;
-+---------------------------------------------+-----------------------------+
-
-
 +----------------------------------------------------------------------------+
-; LAB Signals Sourced                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 13.29) ; Number of LABs  (Total = 7) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 1                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 1                           ;
-; 14                                           ; 2                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 3                           ;
-+----------------------------------------------+-----------------------------+
+; LAB Logic Elements                                                         ;
++---------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 13.91) ; Number of LABs  (Total = 11) ;
++---------------------------------------------+------------------------------+
+; 1                                           ; 1                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 2                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 7                            ;
++---------------------------------------------+------------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                       ;
-+-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 9.29) ; Number of LABs  (Total = 7) ;
-+-------------------------------------------------+-----------------------------+
-; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 1                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 0                           ;
-; 6                                               ; 0                           ;
-; 7                                               ; 1                           ;
-; 8                                               ; 0                           ;
-; 9                                               ; 0                           ;
-; 10                                              ; 2                           ;
-; 11                                              ; 1                           ;
-; 12                                              ; 2                           ;
-+-------------------------------------------------+-----------------------------+
++-----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Signals Sourced  (Average = 13.91) ; Number of LABs  (Total = 11) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 1                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 2                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 7                            ;
++----------------------------------------------+------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 11.86) ; Number of LABs  (Total = 7) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 1                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 2                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 1                           ;
-; 13                                           ; 1                           ;
-; 14                                           ; 1                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 0                           ;
-; 17                                           ; 0                           ;
-; 18                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 9.55) ; Number of LABs  (Total = 11) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 1                            ;
+; 2                                               ; 0                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 0                            ;
+; 5                                               ; 0                            ;
+; 6                                               ; 0                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 2                            ;
+; 10                                              ; 2                            ;
+; 11                                              ; 1                            ;
+; 12                                              ; 0                            ;
+; 13                                              ; 2                            ;
+; 14                                              ; 1                            ;
++-------------------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 12.64) ; Number of LABs  (Total = 11) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 0                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 1                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 2                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 1                            ;
++----------------------------------------------+------------------------------+
 
 
 +------------------------------------------+
@@ -1648,19 +1691,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arit[2]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; arit[1]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; arit[0]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; S1                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[4]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; B[4]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; S2                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; S0                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; A[0]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; B[0]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[2]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; B[2]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[3]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[3]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; B[2]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; B[4]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[1]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[1]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; A[0]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; B[0]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; S0                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; S1                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; S2                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 
 
@@ -1737,7 +1780,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1746,7 +1789,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
@@ -1758,8 +1801,8 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1769 megabytes
-    Info: Processing ended: Sun Feb  5 10:44:17 2023
+    Info: Peak virtual memory: 1767 megabytes
+    Info: Processing ended: Wed Feb  8 11:42:35 2023
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:17
 

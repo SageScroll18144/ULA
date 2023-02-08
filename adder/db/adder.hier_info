@@ -3,28 +3,28 @@ COMPARISON <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 A[0] => comparison_MT:inst37.bitA[0]
 A[0] => comparison_LT:inst38.bitA[0]
 A[0] => equal:inst11.BIT_A[0]
-A[0] => circuit_subtrator_complete:inst5.BitA[0]
+A[0] => circuit_subtrator_complete:inst53.BitA[0]
 A[0] => full_adder:inst13.Ai[0]
 A[0] => xor_bitbit:inst50.A[0]
 A[0] => and_bitbit:inst48.A[0]
 A[1] => comparison_MT:inst37.bitA[1]
 A[1] => comparison_LT:inst38.bitA[1]
 A[1] => equal:inst11.BIT_A[1]
-A[1] => circuit_subtrator_complete:inst5.BitA[1]
+A[1] => circuit_subtrator_complete:inst53.BitA[1]
 A[1] => full_adder:inst13.Ai[1]
 A[1] => xor_bitbit:inst50.A[1]
 A[1] => and_bitbit:inst48.A[1]
 A[2] => comparison_MT:inst37.bitA[2]
 A[2] => comparison_LT:inst38.bitA[2]
 A[2] => equal:inst11.BIT_A[2]
-A[2] => circuit_subtrator_complete:inst5.BitA[2]
+A[2] => circuit_subtrator_complete:inst53.BitA[2]
 A[2] => full_adder:inst13.Ai[2]
 A[2] => xor_bitbit:inst50.A[2]
 A[2] => and_bitbit:inst48.A[2]
 A[3] => comparison_MT:inst37.bitA[3]
 A[3] => comparison_LT:inst38.bitA[3]
 A[3] => equal:inst11.BIT_A[3]
-A[3] => circuit_subtrator_complete:inst5.BitA[3]
+A[3] => circuit_subtrator_complete:inst53.BitA[3]
 A[3] => full_adder:inst13.Ai[3]
 A[3] => xor_bitbit:inst50.A[3]
 A[3] => and_bitbit:inst48.A[3]
@@ -33,7 +33,7 @@ A[4] => inst12.IN1
 A[4] => comparison_LT:inst38.bitA[4]
 A[4] => inst36.IN0
 A[4] => equal:inst11.BIT_A[4]
-A[4] => circuit_subtrator_complete:inst5.BitA[4]
+A[4] => circuit_subtrator_complete:inst53.BitA[4]
 A[4] => inst42.IN0
 A[4] => inst45.IN0
 A[4] => full_adder:inst13.Ai[4]
@@ -43,7 +43,7 @@ B[0] => comparison_MT:inst37.bitB[0]
 B[0] => comparison_LT:inst38.bitB[0]
 B[0] => equal:inst11.BIT_B[0]
 B[0] => C2:inst18.Number[0]
-B[0] => circuit_subtrator_complete:inst5.BitB[0]
+B[0] => circuit_subtrator_complete:inst53.BitB[0]
 B[0] => full_adder:inst13.Bi[0]
 B[0] => xor_bitbit:inst50.B[0]
 B[0] => and_bitbit:inst48.B[0]
@@ -51,7 +51,7 @@ B[1] => comparison_MT:inst37.bitB[1]
 B[1] => comparison_LT:inst38.bitB[1]
 B[1] => equal:inst11.BIT_B[1]
 B[1] => C2:inst18.Number[1]
-B[1] => circuit_subtrator_complete:inst5.BitB[1]
+B[1] => circuit_subtrator_complete:inst53.BitB[1]
 B[1] => full_adder:inst13.Bi[1]
 B[1] => xor_bitbit:inst50.B[1]
 B[1] => and_bitbit:inst48.B[1]
@@ -59,7 +59,7 @@ B[2] => comparison_MT:inst37.bitB[2]
 B[2] => comparison_LT:inst38.bitB[2]
 B[2] => equal:inst11.BIT_B[2]
 B[2] => C2:inst18.Number[2]
-B[2] => circuit_subtrator_complete:inst5.BitB[2]
+B[2] => circuit_subtrator_complete:inst53.BitB[2]
 B[2] => full_adder:inst13.Bi[2]
 B[2] => xor_bitbit:inst50.B[2]
 B[2] => and_bitbit:inst48.B[2]
@@ -67,7 +67,7 @@ B[3] => comparison_MT:inst37.bitB[3]
 B[3] => comparison_LT:inst38.bitB[3]
 B[3] => equal:inst11.BIT_B[3]
 B[3] => C2:inst18.Number[3]
-B[3] => circuit_subtrator_complete:inst5.BitB[3]
+B[3] => circuit_subtrator_complete:inst53.BitB[3]
 B[3] => full_adder:inst13.Bi[3]
 B[3] => xor_bitbit:inst50.B[3]
 B[3] => and_bitbit:inst48.B[3]
@@ -77,7 +77,7 @@ B[4] => comparison_LT:inst38.bitB[4]
 B[4] => inst36.IN1
 B[4] => equal:inst11.BIT_B[4]
 B[4] => C2:inst18.Number[4]
-B[4] => circuit_subtrator_complete:inst5.BitB[4]
+B[4] => circuit_subtrator_complete:inst53.BitB[4]
 B[4] => inst42.IN1
 B[4] => inst45.IN1
 B[4] => full_adder:inst13.Bi[4]
@@ -639,39 +639,133 @@ Out1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 Out0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5
-Ansout[0] <= inst13[0].DB_MAX_OUTPUT_PORT_TYPE
-Ansout[1] <= inst13[1].DB_MAX_OUTPUT_PORT_TYPE
-Ansout[2] <= inst13[2].DB_MAX_OUTPUT_PORT_TYPE
-Ansout[3] <= inst13[3].DB_MAX_OUTPUT_PORT_TYPE
-Ansout[4] <= <GND>
-Ansout[5] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+|ula|circuit_subtrator_complete:inst53
+Ansout25 <= c2_module:inst4.c2_sub_ans[5]
+BitA[0] => Comparison_module:inst11.BitA[0]
 BitA[0] => module_adder:inst12.Ai[0]
-BitA[0] => comparison_MT:inst2.bitB[0]
+BitA[1] => Comparison_module:inst11.BitA[1]
 BitA[1] => module_adder:inst12.Ai[1]
-BitA[1] => comparison_MT:inst2.bitB[1]
+BitA[2] => Comparison_module:inst11.BitA[2]
 BitA[2] => module_adder:inst12.Ai[2]
-BitA[2] => comparison_MT:inst2.bitB[2]
+BitA[3] => Comparison_module:inst11.BitA[3]
 BitA[3] => module_adder:inst12.Ai[3]
-BitA[3] => comparison_MT:inst2.bitB[3]
+BitA[4] => Comparison_module:inst11.BitA[4]
+BitA[4] => inst8.IN1
 BitA[4] => module_adder:inst12.Ai[4]
-BitA[4] => inst9.IN1
-BitA[4] => comparison_MT:inst2.bitB[4]
-BitA[4] => inst7.IN0
+BitB[0] => Comparison_module:inst11.BitB[0]
 BitB[0] => C2:inst.Number[0]
-BitB[0] => comparison_MT:inst2.bitA[0]
+BitB[1] => Comparison_module:inst11.BitB[1]
 BitB[1] => C2:inst.Number[1]
-BitB[1] => comparison_MT:inst2.bitA[1]
+BitB[2] => Comparison_module:inst11.BitB[2]
 BitB[2] => C2:inst.Number[2]
-BitB[2] => comparison_MT:inst2.bitA[2]
+BitB[3] => Comparison_module:inst11.BitB[3]
 BitB[3] => C2:inst.Number[3]
-BitB[3] => comparison_MT:inst2.bitA[3]
+BitB[4] => Comparison_module:inst11.BitB[4]
+BitB[4] => inst9.IN1
 BitB[4] => C2:inst.Number[4]
-BitB[4] => inst6.IN0
-BitB[4] => comparison_MT:inst2.bitA[4]
+sinal => inst10.IN0
+Ansout24 <= c2_module:inst4.c2_sub_ans[4]
+Ansout23 <= c2_module:inst4.c2_sub_ans[3]
+Ansout22 <= c2_module:inst4.c2_sub_ans[2]
+Ansout21 <= c2_module:inst4.c2_sub_ans[1]
+Ansout20 <= c2_module:inst4.c2_sub_ans[0]
 
 
-|ula|circuit_subtrator_complete:inst5|module_adder:inst12
+|ula|circuit_subtrator_complete:inst53|c2_module:inst4
+c2_sub_ans[0] <= inst19[0].DB_MAX_OUTPUT_PORT_TYPE
+c2_sub_ans[1] <= inst19[1].DB_MAX_OUTPUT_PORT_TYPE
+c2_sub_ans[2] <= inst19[2].DB_MAX_OUTPUT_PORT_TYPE
+c2_sub_ans[3] <= inst19[3].DB_MAX_OUTPUT_PORT_TYPE
+c2_sub_ans[4] <= inst19[4].DB_MAX_OUTPUT_PORT_TYPE
+c2_sub_ans[5] <= inst19[5].DB_MAX_OUTPUT_PORT_TYPE
+hell[0] => inst3.IN0
+hell[0] => inst14[0].IN0
+hell[1] => inst1.IN0
+hell[1] => inst14[1].IN0
+hell[2] => inst4.IN0
+hell[2] => inst14[2].IN0
+hell[3] => inst5.IN0
+hell[3] => inst14[3].IN0
+hell[4] => inst14[4].IN0
+hell[5] => inst4324235234.IN1
+hell[5] => inst14[5].IN0
+
+
+|ula|circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst8
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN1
+B => inst2.IN1
+Ci => inst1.IN1
+Ci => inst3.IN1
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN1
+B => inst2.IN1
+Ci => inst1.IN1
+Ci => inst3.IN1
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst12
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN1
+B => inst2.IN1
+Ci => inst1.IN1
+Ci => inst3.IN1
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst13
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN1
+B => inst2.IN1
+Ci => inst1.IN1
+Ci => inst3.IN1
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|circuit_subtrator_complete:inst53|Comparison_module:inst11
+Ans <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+BitB[0] => inst14.IN0
+BitB[1] => inst11.IN0
+BitB[1] => inst15.IN0
+BitB[2] => inst8.IN0
+BitB[2] => inst5.IN0
+BitB[3] => inst10.IN0
+BitB[3] => inst7.IN0
+BitB[3] => inst.IN0
+BitB[4] => ~NO_FANOUT~
+BitA[0] => inst12.IN0
+BitA[1] => inst9.IN1
+BitA[1] => inst15.IN1
+BitA[2] => inst8.IN1
+BitA[2] => inst4.IN1
+BitA[3] => inst10.IN1
+BitA[3] => inst7.IN1
+BitA[3] => inst2.IN1
+BitA[4] => ~NO_FANOUT~
+
+
+|ula|circuit_subtrator_complete:inst53|module_adder:inst12
 Ans[0] <= adder:inst.S
 Ans[1] <= adder:inst1.S
 Ans[2] <= adder:inst5.S
@@ -688,7 +782,7 @@ Bi[3] => adder:inst6.B
 Bi[4] => ~NO_FANOUT~
 
 
-|ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst
+|ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -701,7 +795,7 @@ Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1
+|ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -714,7 +808,7 @@ Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5
+|ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -727,7 +821,7 @@ Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst6
+|ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst6
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -740,7 +834,7 @@ Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5|C2:inst
+|ula|circuit_subtrator_complete:inst53|C2:inst
 Negative_number[0] <= adder:inst5.S
 Negative_number[1] <= adder:inst11.S
 Negative_number[2] <= adder:inst12.S
@@ -753,7 +847,7 @@ Number[3] => inst3.IN0
 Number[4] => inst4.IN0
 
 
-|ula|circuit_subtrator_complete:inst5|C2:inst|adder:inst5
+|ula|circuit_subtrator_complete:inst53|C2:inst|adder:inst5
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -766,7 +860,7 @@ Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5|C2:inst|adder:inst11
+|ula|circuit_subtrator_complete:inst53|C2:inst|adder:inst11
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -779,7 +873,7 @@ Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5|C2:inst|adder:inst12
+|ula|circuit_subtrator_complete:inst53|C2:inst|adder:inst12
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -792,7 +886,7 @@ Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5|C2:inst|adder:inst13
+|ula|circuit_subtrator_complete:inst53|C2:inst|adder:inst13
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -805,7 +899,7 @@ Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula|circuit_subtrator_complete:inst5|C2:inst|adder:inst14
+|ula|circuit_subtrator_complete:inst53|C2:inst|adder:inst14
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -816,28 +910,6 @@ B => inst2.IN1
 Ci => inst1.IN1
 Ci => inst3.IN1
 Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ula|circuit_subtrator_complete:inst5|comparison_MT:inst2
-ans <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-bitB[0] => inst16.IN0
-bitB[1] => inst15.IN0
-bitB[1] => inst11.IN0
-bitB[2] => inst12.IN0
-bitB[2] => inst10.IN0
-bitB[3] => inst8.IN0
-bitB[3] => inst6.IN0
-bitB[4] => inst.IN0
-bitB[4] => inst3.IN0
-bitA[0] => inst14.IN2
-bitA[1] => inst15.IN1
-bitA[1] => inst20.IN1
-bitA[2] => inst12.IN1
-bitA[2] => inst9.IN1
-bitA[3] => inst8.IN1
-bitA[3] => inst4.IN1
-bitA[4] => inst.IN1
-bitA[4] => inst2.IN0
 
 
 |ula|decoder:inst51

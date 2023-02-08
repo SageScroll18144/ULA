@@ -32,6 +32,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "GH",
+					"strict" : false
+				},
+				{
 					"name" : "AL",
 					"strict" : false
 				},
@@ -84,10 +88,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "S1",
-					"strict" : false
-				},
-				{
 					"name" : "A[4]",
 					"strict" : false
 				},
@@ -96,11 +96,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "S0",
+					"strict" : false
+				},
+				{
+					"name" : "S1",
+					"strict" : false
+				},
+				{
 					"name" : "S2",
 					"strict" : false
 				},
 				{
-					"name" : "S0",
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
@@ -112,14 +124,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
-					"strict" : false
-				},
-				{
-					"name" : "B[2]",
-					"strict" : false
-				},
-				{
 					"name" : "A[3]",
 					"strict" : false
 				},
@@ -128,11 +132,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "A[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "B[2]",
 					"strict" : false
 				}
 			]

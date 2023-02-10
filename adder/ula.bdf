@@ -2837,9 +2837,9 @@ https://fpgasoftware.intel.com/eula.
 	(rotate90)
 )
 (symbol
-	(rect 920 -536 1104 -440)
+	(rect 920 -536 1088 -440)
 	(text "circuit_subtrator_complete" (rect 5 0 160 15)(font "Intel Clear" (font_size 8)))
-	(text "inst53" (rect 8 79 39 92)(font "Intel Clear" ))
+	(text "inst5" (rect 8 79 32 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -2862,14 +2862,14 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 184 32)
+		(pt 168 32)
 		(output)
-		(text "Ansout2[5..0]" (rect 0 0 77 15)(font "Intel Clear" (font_size 8)))
-		(text "Ansout2[5..0]" (rect 86 27 163 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
+		(text "vsfout[5..0]" (rect 0 0 64 15)(font "Intel Clear" (font_size 8)))
+		(text "vsfout[5..0]" (rect 83 27 147 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 168 80))
+		(rectangle (rect 16 16 152 80))
 	)
 )
 (connector
@@ -4755,11 +4755,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 2416 -1248)
 )
 (connector
-	(pt 1104 -504)
-	(pt 1112 -504)
-	(bus)
-)
-(connector
 	(pt 1112 -504)
 	(pt 1112 -488)
 	(bus)
@@ -4788,6 +4783,11 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 1360 -496)
 	(pt 1360 -464)
+)
+(connector
+	(pt 1088 -504)
+	(pt 1112 -504)
+	(bus)
 )
 (junction (pt 248 176))
 (junction (pt 168 176))

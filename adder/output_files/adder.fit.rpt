@@ -1,5 +1,5 @@
 Fitter report for adder
-Wed Feb  8 11:42:35 2023
+Wed Feb  8 14:49:55 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -62,15 +62,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Feb  8 11:42:35 2023       ;
+; Fitter Status                      ; Successful - Wed Feb  8 14:49:55 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; ula                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 153 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 153 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 170 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 170 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 35 / 529 ( 7 % )                            ;
@@ -163,8 +163,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 234 ) ; 0.00 % ( 0 / 234 )         ; 0.00 % ( 0 / 234 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 234 ) ; 0.00 % ( 0 / 234 )         ; 0.00 % ( 0 / 234 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 251 ) ; 0.00 % ( 0 / 251 )         ; 0.00 % ( 0 / 251 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 251 ) ; 0.00 % ( 0 / 251 )         ; 0.00 % ( 0 / 251 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -187,7 +187,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 224 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 241 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -203,26 +203,26 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 153 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 153                     ;
+; Total logic elements                        ; 170 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 170                     ;
 ;     -- Register only                        ; 0                       ;
 ;     -- Combinational with a register        ; 0                       ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 113                     ;
-;     -- 3 input functions                    ; 32                      ;
-;     -- <=2 input functions                  ; 8                       ;
+;     -- 4 input functions                    ; 124                     ;
+;     -- 3 input functions                    ; 31                      ;
+;     -- <=2 input functions                  ; 15                      ;
 ;     -- Register only                        ; 0                       ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 153                     ;
+;     -- normal mode                          ; 170                     ;
 ;     -- arithmetic mode                      ; 0                       ;
 ;                                             ;                         ;
 ; Total registers*                            ; 0 / 117,053 ( 0 % )     ;
 ;     -- Dedicated logic registers            ; 0 / 114,480 ( 0 % )     ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 11 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 13 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 35 / 529 ( 7 % )        ;
 ;     -- Clock pins                           ; 0 / 7 ( 0 % )           ;
@@ -241,11 +241,11 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%      ;
-; Peak interconnect usage (total/H/V)         ; 1.7% / 1.3% / 2.3%      ;
+; Peak interconnect usage (total/H/V)         ; 2.2% / 1.8% / 2.8%      ;
 ; Maximum fan-out                             ; 17                      ;
 ; Highest non-global fan-out                  ; 17                      ;
-; Total fan-out                               ; 625                     ;
-; Average fan-out                             ; 2.68                    ;
+; Total fan-out                               ; 680                     ;
+; Average fan-out                             ; 2.72                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -258,26 +258,26 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 153 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 153                    ; 0                              ;
+; Total logic elements                        ; 170 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 170                    ; 0                              ;
 ;     -- Register only                        ; 0                      ; 0                              ;
 ;     -- Combinational with a register        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 113                    ; 0                              ;
-;     -- 3 input functions                    ; 32                     ; 0                              ;
-;     -- <=2 input functions                  ; 8                      ; 0                              ;
+;     -- 4 input functions                    ; 124                    ; 0                              ;
+;     -- 3 input functions                    ; 31                     ; 0                              ;
+;     -- <=2 input functions                  ; 15                     ; 0                              ;
 ;     -- Register only                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 153                    ; 0                              ;
+;     -- normal mode                          ; 170                    ; 0                              ;
 ;     -- arithmetic mode                      ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Total registers                             ; 0                      ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 114480 ( 0 % )     ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 11 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 13 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 35                     ; 0                              ;
@@ -292,7 +292,7 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 620                    ; 5                              ;
+;     -- Total Connections                    ; 675                    ; 5                              ;
 ;     -- Registered Connections               ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
@@ -326,17 +326,17 @@ The pin-out file can be found in /home/lypess/Documentos/ULA/adder/output_files/
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; A[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A[1] ; AC28  ; 5        ; 115          ; 14           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[1] ; AC28  ; 5        ; 115          ; 14           ; 0            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; A[2] ; AC27  ; 5        ; 115          ; 15           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A[4] ; AB27  ; 5        ; 115          ; 18           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[0] ; AC26  ; 5        ; 115          ; 11           ; 7            ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[1] ; AD26  ; 5        ; 115          ; 10           ; 0            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[2] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[3] ; AC25  ; 5        ; 115          ; 4            ; 21           ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[4] ; AB27  ; 5        ; 115          ; 18           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[0] ; AC26  ; 5        ; 115          ; 11           ; 7            ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[1] ; AD26  ; 5        ; 115          ; 10           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[2] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[3] ; AC25  ; 5        ; 115          ; 4            ; 21           ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; B[4] ; AB25  ; 5        ; 115          ; 16           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; S0   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; S1   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; S0   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; S1   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; S2   ; AB23  ; 5        ; 115          ; 7            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -1224,61 +1224,61 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; arit[2]    ; Incomplete set of assignments ;
 ; arit[1]    ; Incomplete set of assignments ;
 ; arit[0]    ; Incomplete set of assignments ;
+; S1         ; Incomplete set of assignments ;
 ; A[4]       ; Incomplete set of assignments ;
+; B[4]       ; Incomplete set of assignments ;
+; S2         ; Incomplete set of assignments ;
+; S0         ; Incomplete set of assignments ;
 ; A[2]       ; Incomplete set of assignments ;
 ; A[3]       ; Incomplete set of assignments ;
 ; B[3]       ; Incomplete set of assignments ;
 ; B[2]       ; Incomplete set of assignments ;
-; B[4]       ; Incomplete set of assignments ;
 ; A[1]       ; Incomplete set of assignments ;
 ; B[1]       ; Incomplete set of assignments ;
 ; A[0]       ; Incomplete set of assignments ;
 ; B[0]       ; Incomplete set of assignments ;
-; S0         ; Incomplete set of assignments ;
-; S1         ; Incomplete set of assignments ;
-; S2         ; Incomplete set of assignments ;
 +------------+-------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                       ;
-+----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------+----------------------------+--------------+
-; Compilation Hierarchy Node             ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                    ; Entity Name                ; Library Name ;
-+----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------+----------------------------+--------------+
-; |ula                                   ; 153 (68)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 35   ; 0            ; 153 (68)     ; 0 (0)             ; 0 (0)            ; |ula                                                                   ; ula                        ; work         ;
-;    |C2:inst18|                         ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18                                                         ; C2                         ; work         ;
-;       |adder:inst11|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18|adder:inst11                                            ; adder                      ; work         ;
-;       |adder:inst13|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|C2:inst18|adder:inst13                                            ; adder                      ; work         ;
-;    |binary_to_bcd:inst26|              ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26                                              ; binary_to_bcd              ; work         ;
-;       |dabble:inst3|                   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26|dabble:inst3                                 ; dabble                     ; work         ;
-;       |dabble:inst|                    ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26|dabble:inst                                  ; dabble                     ; work         ;
-;    |binary_to_bcd:inst41|              ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41                                              ; binary_to_bcd              ; work         ;
-;       |dabble:inst3|                   ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41|dabble:inst3                                 ; dabble                     ; work         ;
-;       |dabble:inst|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41|dabble:inst                                  ; dabble                     ; work         ;
-;    |binary_to_bcd:inst62|              ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62                                              ; binary_to_bcd              ; work         ;
-;       |dabble:inst3|                   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62|dabble:inst3                                 ; dabble                     ; work         ;
-;       |dabble:inst|                    ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62|dabble:inst                                  ; dabble                     ; work         ;
-;    |circuit_subtrator_complete:inst53| ; 12 (2)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (2)       ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53                                 ; circuit_subtrator_complete ; work         ;
-;       |Comparison_module:inst11|       ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|Comparison_module:inst11        ; Comparison_module          ; work         ;
-;       |c2_module:inst4|                ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|c2_module:inst4                 ; c2_module                  ; work         ;
-;          |adder:inst11|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11    ; adder                      ; work         ;
-;          |adder:inst12|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst12    ; adder                      ; work         ;
-;       |module_adder:inst12|            ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|module_adder:inst12             ; module_adder               ; work         ;
-;          |adder:inst1|                 ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1 ; adder                      ; work         ;
-;          |adder:inst5|                 ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5 ; adder                      ; work         ;
-;          |adder:inst6|                 ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst6 ; adder                      ; work         ;
-;    |comparison_MT:inst37|              ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |ula|comparison_MT:inst37                                              ; comparison_MT              ; work         ;
-;    |decoder:inst51|                    ; 15 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51                                                    ; decoder                    ; work         ;
-;       |bin_7seg:inst28|                ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51|bin_7seg:inst28                                    ; bin_7seg                   ; work         ;
-;       |bin_7seg:inst29|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51|bin_7seg:inst29                                    ; bin_7seg                   ; work         ;
-;    |decoder:inst52|                    ; 13 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst52                                                    ; decoder                    ; work         ;
-;       |bin_7seg:inst28|                ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst52|bin_7seg:inst28                                    ; bin_7seg                   ; work         ;
-;    |decoder:inst63|                    ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst63                                                    ; decoder                    ; work         ;
-;       |bin_7seg:inst28|                ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst63|bin_7seg:inst28                                    ; bin_7seg                   ; work         ;
-;    |full_adder:inst13|                 ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13                                                 ; full_adder                 ; work         ;
-;       |adder:inst1|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13|adder:inst1                                     ; adder                      ; work         ;
-;       |adder:inst5|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13|adder:inst5                                     ; adder                      ; work         ;
-+----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------+----------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                     ;
++---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node            ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                   ; Entity Name                ; Library Name ;
++---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+----------------------------+--------------+
+; |ula                                  ; 170 (69)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 35   ; 0            ; 170 (69)     ; 0 (0)             ; 0 (0)            ; |ula                                                                  ; ula                        ; work         ;
+;    |binary_to_bcd:inst26|             ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26                                             ; binary_to_bcd              ; work         ;
+;       |dabble:inst3|                  ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26|dabble:inst3                                ; dabble                     ; work         ;
+;       |dabble:inst|                   ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst26|dabble:inst                                 ; dabble                     ; work         ;
+;    |binary_to_bcd:inst41|             ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41                                             ; binary_to_bcd              ; work         ;
+;       |dabble:inst3|                  ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41|dabble:inst3                                ; dabble                     ; work         ;
+;       |dabble:inst|                   ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst41|dabble:inst                                 ; dabble                     ; work         ;
+;    |binary_to_bcd:inst62|             ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62                                             ; binary_to_bcd              ; work         ;
+;       |dabble:inst3|                  ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62|dabble:inst3                                ; dabble                     ; work         ;
+;       |dabble:inst|                   ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |ula|binary_to_bcd:inst62|dabble:inst                                 ; dabble                     ; work         ;
+;    |circuit_subtrator_complete:inst5| ; 25 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (13)      ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5                                 ; circuit_subtrator_complete ; work         ;
+;       |Comparison_module:inst11|      ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|Comparison_module:inst11        ; Comparison_module          ; work         ;
+;       |c2_module:inst4|               ; 3 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (2)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|c2_module:inst4                 ; c2_module                  ; work         ;
+;          |adder:inst12|               ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|c2_module:inst4|adder:inst12    ; adder                      ; work         ;
+;       |equal_module:inst26|           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|equal_module:inst26             ; equal_module               ; work         ;
+;       |equal_module:inst27|           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|equal_module:inst27             ; equal_module               ; work         ;
+;       |equal_module:inst29|           ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|equal_module:inst29             ; equal_module               ; work         ;
+;       |module_adder:inst12|           ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12             ; module_adder               ; work         ;
+;          |adder:inst1|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1 ; adder                      ; work         ;
+;          |adder:inst5|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5 ; adder                      ; work         ;
+;    |comparison_LT:inst38|             ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |ula|comparison_LT:inst38                                             ; comparison_LT              ; work         ;
+;       |equal:inst2|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|comparison_LT:inst38|equal:inst2                                 ; equal                      ; work         ;
+;    |comparison_MT:inst37|             ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |ula|comparison_MT:inst37                                             ; comparison_MT              ; work         ;
+;    |decoder:inst51|                   ; 13 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51                                                   ; decoder                    ; work         ;
+;       |bin_7seg:inst28|               ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst51|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
+;    |decoder:inst52|                   ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst52                                                   ; decoder                    ; work         ;
+;       |bin_7seg:inst28|               ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst52|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
+;    |decoder:inst63|                   ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst63                                                   ; decoder                    ; work         ;
+;       |bin_7seg:inst28|               ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |ula|decoder:inst63|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
+;    |full_adder:inst13|                ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13                                                ; full_adder                 ; work         ;
+;       |adder:inst1|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13|adder:inst1                                    ; adder                      ; work         ;
+;       |adder:inst5|                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13|adder:inst5                                    ; adder                      ; work         ;
+;       |adder:inst|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ula|full_adder:inst13|adder:inst                                     ; adder                      ; work         ;
++---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1309,180 +1309,181 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arit[2]    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; arit[1]    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; arit[0]    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; S1         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; A[4]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; A[2]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; A[3]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; B[3]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; B[2]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; B[4]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; A[1]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; S2         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; S0         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; A[2]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; A[3]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[3]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[2]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[1]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; B[1]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; A[0]       ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; B[0]       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; S0         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; S1         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; S2         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                                 ;
-+----------------------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                              ; Pad To Core Index ; Setting ;
-+----------------------------------------------------------------------------------+-------------------+---------+
-; A[4]                                                                             ;                   ;         ;
-;      - comparison_MT:inst37|inst                                                 ; 1                 ; 6       ;
-;      - inst10~2                                                                  ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|inst17~1                                ; 1                 ; 6       ;
-;      - inst77                                                                    ; 1                 ; 6       ;
-;      - inst7[4]~2                                                                ; 1                 ; 6       ;
-;      - inst10~10                                                                 ; 1                 ; 6       ;
-; A[2]                                                                             ;                   ;         ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~0       ; 1                 ; 6       ;
-;      - comparison_MT:inst37|inst9~0                                              ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~1       ; 1                 ; 6       ;
-;      - comparison_MT:inst37|inst12~0                                             ; 1                 ; 6       ;
-;      - binary_to_bcd:inst26|dabble:inst|inst4~0                                  ; 1                 ; 6       ;
-;      - full_adder:inst13|adder:inst5|inst4~0                                     ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5|inst4~0 ; 1                 ; 6       ;
-;      - inst7[2]~5                                                                ; 1                 ; 6       ;
-;      - inst16[2]~5                                                               ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5|inst1   ; 1                 ; 6       ;
-; A[3]                                                                             ;                   ;         ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~0       ; 1                 ; 6       ;
-;      - inst10~2                                                                  ; 1                 ; 6       ;
-;      - comparison_MT:inst37|inst9~0                                              ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~1       ; 1                 ; 6       ;
-;      - comparison_MT:inst37|inst8~0                                              ; 1                 ; 6       ;
-;      - inst16[4]~4                                                               ; 1                 ; 6       ;
-;      - inst21[3]                                                                 ; 1                 ; 6       ;
-;      - inst16[3]                                                                 ; 1                 ; 6       ;
-;      - inst7[3]~10                                                               ; 1                 ; 6       ;
-; B[3]                                                                             ;                   ;         ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~0       ; 1                 ; 6       ;
-;      - inst10~2                                                                  ; 1                 ; 6       ;
-;      - comparison_MT:inst37|inst9~0                                              ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~1       ; 1                 ; 6       ;
-;      - comparison_MT:inst37|inst8~0                                              ; 1                 ; 6       ;
-;      - inst16[4]~4                                                               ; 1                 ; 6       ;
-;      - C2:inst18|adder:inst13|inst3                                              ; 1                 ; 6       ;
-;      - binary_to_bcd:inst62|dabble:inst|inst5                                    ; 1                 ; 6       ;
-;      - inst19[3]                                                                 ; 1                 ; 6       ;
-;      - inst21[3]                                                                 ; 1                 ; 6       ;
-;      - inst16[3]                                                                 ; 1                 ; 6       ;
-;      - inst7[3]~10                                                               ; 1                 ; 6       ;
-; B[2]                                                                             ;                   ;         ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~0       ; 0                 ; 6       ;
-;      - comparison_MT:inst37|inst9~0                                              ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~1       ; 0                 ; 6       ;
-;      - comparison_MT:inst37|inst12~0                                             ; 0                 ; 6       ;
-;      - binary_to_bcd:inst26|dabble:inst|inst4~0                                  ; 0                 ; 6       ;
-;      - full_adder:inst13|adder:inst5|inst4~0                                     ; 0                 ; 6       ;
-;      - C2:inst18|adder:inst13|inst3                                              ; 0                 ; 6       ;
-;      - binary_to_bcd:inst62|dabble:inst|inst5                                    ; 0                 ; 6       ;
-;      - inst19[3]                                                                 ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5|inst4~0 ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst6|inst1   ; 0                 ; 6       ;
-;      - inst7[2]~5                                                                ; 0                 ; 6       ;
-;      - inst16[2]~5                                                               ; 0                 ; 6       ;
-;      - inst19[2]~3                                                               ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst5|inst1   ; 0                 ; 6       ;
-; B[4]                                                                             ;                   ;         ;
-;      - comparison_MT:inst37|inst                                                 ; 1                 ; 6       ;
-;      - inst10~2                                                                  ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|inst17~0                                ; 1                 ; 6       ;
-;      - inst19[4]~2                                                               ; 1                 ; 6       ;
-;      - inst7[4]~2                                                                ; 1                 ; 6       ;
-;      - binary_to_bcd:inst62|dabble:inst|inst6                                    ; 1                 ; 6       ;
-;      - inst10~10                                                                 ; 1                 ; 6       ;
-; A[1]                                                                             ;                   ;         ;
-;      - comparison_MT:inst37|inst15~0                                             ; 0                 ; 6       ;
-;      - inst10~3                                                                  ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~2       ; 0                 ; 6       ;
-;      - full_adder:inst13|adder:inst1|inst4~0                                     ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11|inst3      ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
-;      - inst17[1]~1                                                               ; 0                 ; 6       ;
-;      - inst7[1]~7                                                                ; 0                 ; 6       ;
-;      - inst10~8                                                                  ; 0                 ; 6       ;
-;      - inst23[1]                                                                 ; 0                 ; 6       ;
-; B[1]                                                                             ;                   ;         ;
-;      - comparison_MT:inst37|inst15~0                                             ; 0                 ; 6       ;
-;      - inst10~3                                                                  ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~2       ; 0                 ; 6       ;
-;      - full_adder:inst13|adder:inst1|inst4~0                                     ; 0                 ; 6       ;
-;      - C2:inst18|adder:inst11|inst3                                              ; 0                 ; 6       ;
-;      - C2:inst18|adder:inst13|inst3                                              ; 0                 ; 6       ;
-;      - inst19[1]                                                                 ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11|inst3      ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
-;      - inst17[1]~1                                                               ; 0                 ; 6       ;
-;      - inst7[1]~7                                                                ; 0                 ; 6       ;
-;      - inst10~8                                                                  ; 0                 ; 6       ;
-;      - inst19[2]~3                                                               ; 0                 ; 6       ;
-;      - inst23[1]                                                                 ; 0                 ; 6       ;
-; A[0]                                                                             ;                   ;         ;
-;      - inst10~5                                                                  ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~2       ; 0                 ; 6       ;
-;      - full_adder:inst13|adder:inst1|inst4~0                                     ; 0                 ; 6       ;
-;      - inst16[1]                                                                 ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11|inst3      ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
-;      - inst17[1]~0                                                               ; 0                 ; 6       ;
-;      - inst17[0]                                                                 ; 0                 ; 6       ;
-;      - inst16[0]                                                                 ; 0                 ; 6       ;
-;      - inst7[0]~8                                                                ; 0                 ; 6       ;
-;      - inst10~8                                                                  ; 0                 ; 6       ;
-;      - inst10~9                                                                  ; 0                 ; 6       ;
-; B[0]                                                                             ;                   ;         ;
-;      - inst10~5                                                                  ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|Comparison_module:inst11|inst16~2       ; 1                 ; 6       ;
-;      - full_adder:inst13|adder:inst1|inst4~0                                     ; 1                 ; 6       ;
-;      - inst16[1]                                                                 ; 1                 ; 6       ;
-;      - C2:inst18|adder:inst11|inst3                                              ; 1                 ; 6       ;
-;      - C2:inst18|adder:inst13|inst3                                              ; 1                 ; 6       ;
-;      - inst19[1]                                                                 ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|c2_module:inst4|adder:inst11|inst3      ; 1                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|module_adder:inst12|adder:inst1|inst4~0 ; 1                 ; 6       ;
-;      - inst17[1]~0                                                               ; 1                 ; 6       ;
-;      - inst19[0]                                                                 ; 1                 ; 6       ;
-;      - inst17[0]                                                                 ; 1                 ; 6       ;
-;      - inst16[0]                                                                 ; 1                 ; 6       ;
-;      - inst7[0]~8                                                                ; 1                 ; 6       ;
-;      - inst10~8                                                                  ; 1                 ; 6       ;
-;      - inst19[2]~3                                                               ; 1                 ; 6       ;
-;      - inst10~9                                                                  ; 1                 ; 6       ;
-; S0                                                                               ;                   ;         ;
-;      - inst4~0                                                                   ; 0                 ; 6       ;
-;      - inst10~6                                                                  ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|inst17~0                                ; 0                 ; 6       ;
-;      - inst44~0                                                                  ; 0                 ; 6       ;
-;      - inst40~0                                                                  ; 0                 ; 6       ;
-;      - inst14~0                                                                  ; 0                 ; 6       ;
-;      - inst19[0]                                                                 ; 0                 ; 6       ;
-;      - inst14~1                                                                  ; 0                 ; 6       ;
-;      - inst14~2                                                                  ; 0                 ; 6       ;
-; S1                                                                               ;                   ;         ;
-;      - inst4~0                                                                   ; 0                 ; 6       ;
-;      - inst10~7                                                                  ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|inst17~0                                ; 0                 ; 6       ;
-;      - inst44~0                                                                  ; 0                 ; 6       ;
-;      - inst40~0                                                                  ; 0                 ; 6       ;
-;      - inst14~0                                                                  ; 0                 ; 6       ;
-;      - inst19[0]                                                                 ; 0                 ; 6       ;
-;      - inst14~1                                                                  ; 0                 ; 6       ;
-;      - inst14~2                                                                  ; 0                 ; 6       ;
-; S2                                                                               ;                   ;         ;
-;      - inst4~0                                                                   ; 0                 ; 6       ;
-;      - inst10~7                                                                  ; 0                 ; 6       ;
-;      - circuit_subtrator_complete:inst53|inst17~0                                ; 0                 ; 6       ;
-;      - inst44~0                                                                  ; 0                 ; 6       ;
-;      - inst40~0                                                                  ; 0                 ; 6       ;
-;      - inst14~0                                                                  ; 0                 ; 6       ;
-;      - inst19[0]                                                                 ; 0                 ; 6       ;
-;      - inst14~1                                                                  ; 0                 ; 6       ;
-;      - inst14~2                                                                  ; 0                 ; 6       ;
-+----------------------------------------------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                                ;
++---------------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                             ; Pad To Core Index ; Setting ;
++---------------------------------------------------------------------------------+-------------------+---------+
+; S1                                                                              ;                   ;         ;
+;      - inst10~6                                                                 ; 0                 ; 6       ;
+;      - inst44~0                                                                 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[5]~1                             ; 0                 ; 6       ;
+;      - inst40~0                                                                 ; 0                 ; 6       ;
+;      - inst14~0                                                                 ; 0                 ; 6       ;
+;      - inst19[0]                                                                ; 0                 ; 6       ;
+;      - inst14~1                                                                 ; 0                 ; 6       ;
+;      - inst14~2                                                                 ; 0                 ; 6       ;
+; A[4]                                                                            ;                   ;         ;
+;      - inst10~0                                                                 ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst                                                ; 1                 ; 6       ;
+;      - inst10~1                                                                 ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[5]~2                             ; 1                 ; 6       ;
+;      - inst77                                                                   ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst21[4]~4                             ; 1                 ; 6       ;
+;      - inst7[4]~2                                                               ; 1                 ; 6       ;
+; B[4]                                                                            ;                   ;         ;
+;      - inst10~0                                                                 ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst                                                ; 1                 ; 6       ;
+;      - inst10~1                                                                 ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[5]~1                             ; 1                 ; 6       ;
+;      - inst19[4]~0                                                              ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst21[4]~4                             ; 1                 ; 6       ;
+;      - inst7[4]~2                                                               ; 1                 ; 6       ;
+; S2                                                                              ;                   ;         ;
+;      - inst10~5                                                                 ; 0                 ; 6       ;
+;      - inst10~6                                                                 ; 0                 ; 6       ;
+;      - inst44~0                                                                 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[5]~1                             ; 0                 ; 6       ;
+;      - inst40~0                                                                 ; 0                 ; 6       ;
+;      - inst14~0                                                                 ; 0                 ; 6       ;
+;      - inst19[0]                                                                ; 0                 ; 6       ;
+;      - inst14~1                                                                 ; 0                 ; 6       ;
+;      - inst14~2                                                                 ; 0                 ; 6       ;
+; S0                                                                              ;                   ;         ;
+;      - inst10~5                                                                 ; 0                 ; 6       ;
+;      - inst44~0                                                                 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[5]~1                             ; 0                 ; 6       ;
+;      - inst40~0                                                                 ; 0                 ; 6       ;
+;      - inst14~0                                                                 ; 0                 ; 6       ;
+;      - inst19[0]                                                                ; 0                 ; 6       ;
+;      - inst14~1                                                                 ; 0                 ; 6       ;
+;      - inst14~2                                                                 ; 0                 ; 6       ;
+; A[2]                                                                            ;                   ;         ;
+;      - comparison_MT:inst37|inst9~0                                             ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst21~0                                            ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst27|inst1~0             ; 0                 ; 6       ;
+;      - binary_to_bcd:inst26|dabble:inst|inst4~0                                 ; 0                 ; 6       ;
+;      - full_adder:inst13|adder:inst5|inst4~0                                    ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst12~0                                            ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5|inst4~0 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst21[2]~2                             ; 0                 ; 6       ;
+;      - inst7[2]~3                                                               ; 0                 ; 6       ;
+;      - inst16[2]~5                                                              ; 0                 ; 6       ;
+; A[3]                                                                            ;                   ;         ;
+;      - comparison_MT:inst37|inst9~0                                             ; 0                 ; 6       ;
+;      - inst10~1                                                                 ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst21~0                                            ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst27|inst1~0             ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|Comparison_module:inst11|inst16~1       ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst8~0                                             ; 0                 ; 6       ;
+;      - inst16[4]~4                                                              ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst21[3]~0                             ; 0                 ; 6       ;
+;      - inst21[3]                                                                ; 0                 ; 6       ;
+;      - inst16[3]                                                                ; 0                 ; 6       ;
+;      - inst7[3]~7                                                               ; 0                 ; 6       ;
+; B[3]                                                                            ;                   ;         ;
+;      - comparison_MT:inst37|inst9~0                                             ; 0                 ; 6       ;
+;      - inst10~1                                                                 ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst21~0                                            ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~0             ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|Comparison_module:inst11|inst16~1       ; 0                 ; 6       ;
+;      - binary_to_bcd:inst62|dabble:inst|inst5                                   ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst8~0                                             ; 0                 ; 6       ;
+;      - inst16[4]~4                                                              ; 0                 ; 6       ;
+;      - inst19[3]                                                                ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst21[3]~0                             ; 0                 ; 6       ;
+;      - inst17[1]~1                                                              ; 0                 ; 6       ;
+;      - inst21[3]                                                                ; 0                 ; 6       ;
+;      - inst16[3]                                                                ; 0                 ; 6       ;
+;      - inst7[3]~7                                                               ; 0                 ; 6       ;
+; B[2]                                                                            ;                   ;         ;
+;      - comparison_MT:inst37|inst9~0                                             ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst21~0                                            ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~0             ; 1                 ; 6       ;
+;      - binary_to_bcd:inst62|dabble:inst|inst5                                   ; 1                 ; 6       ;
+;      - binary_to_bcd:inst26|dabble:inst|inst4~0                                 ; 1                 ; 6       ;
+;      - full_adder:inst13|adder:inst5|inst4~0                                    ; 1                 ; 6       ;
+;      - binary_to_bcd:inst62|dabble:inst|inst9                                   ; 1                 ; 6       ;
+;      - inst19[3]                                                                ; 1                 ; 6       ;
+;      - binary_to_bcd:inst62|dabble:inst|inst6                                   ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst12~0                                            ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~2             ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5|inst4~0 ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst21[2]~2                             ; 1                 ; 6       ;
+;      - inst17[1]~1                                                              ; 1                 ; 6       ;
+;      - inst7[2]~3                                                               ; 1                 ; 6       ;
+;      - inst7[2]~4                                                               ; 1                 ; 6       ;
+;      - inst16[2]~5                                                              ; 1                 ; 6       ;
+; A[1]                                                                            ;                   ;         ;
+;      - comparison_MT:inst37|inst21~1                                            ; 1                 ; 6       ;
+;      - comparison_MT:inst37|inst15~0                                            ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst26|inst1~0             ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst27|inst1~0             ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|Comparison_module:inst11|inst16~0       ; 1                 ; 6       ;
+;      - full_adder:inst13|adder:inst1|inst4~0                                    ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst4~0 ; 1                 ; 6       ;
+;      - inst17[1]~1                                                              ; 1                 ; 6       ;
+;      - inst7[1]~8                                                               ; 1                 ; 6       ;
+; B[1]                                                                            ;                   ;         ;
+;      - comparison_MT:inst37|inst21~1                                            ; 0                 ; 6       ;
+;      - comparison_MT:inst37|inst15~0                                            ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst26|inst1~0             ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~0             ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|Comparison_module:inst11|inst16~0       ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~1             ; 0                 ; 6       ;
+;      - full_adder:inst13|adder:inst1|inst4~0                                    ; 0                 ; 6       ;
+;      - inst19[1]                                                                ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~2             ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
+;      - inst17[1]~3                                                              ; 0                 ; 6       ;
+;      - inst7[1]~8                                                               ; 0                 ; 6       ;
+; A[0]                                                                            ;                   ;         ;
+;      - comparison_MT:inst37|inst14~0                                            ; 0                 ; 6       ;
+;      - comparison_LT:inst38|equal:inst2|inst                                    ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst26|inst1~0             ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst27|inst1~0             ; 0                 ; 6       ;
+;      - full_adder:inst13|adder:inst1|inst4~0                                    ; 0                 ; 6       ;
+;      - inst16[1]                                                                ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst4~0 ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[1]                               ; 0                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[0]                               ; 0                 ; 6       ;
+;      - inst17[0]~5                                                              ; 0                 ; 6       ;
+;      - inst16[0]                                                                ; 0                 ; 6       ;
+;      - full_adder:inst13|adder:inst|inst2                                       ; 0                 ; 6       ;
+; B[0]                                                                            ;                   ;         ;
+;      - comparison_MT:inst37|inst14~0                                            ; 1                 ; 6       ;
+;      - comparison_LT:inst38|equal:inst2|inst                                    ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst26|inst1~0             ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~0             ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~1             ; 1                 ; 6       ;
+;      - full_adder:inst13|adder:inst1|inst4~0                                    ; 1                 ; 6       ;
+;      - inst19[1]                                                                ; 1                 ; 6       ;
+;      - inst16[1]                                                                ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|equal_module:inst29|inst1~2             ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1|inst4~0 ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[1]                               ; 1                 ; 6       ;
+;      - circuit_subtrator_complete:inst5|inst20[0]                               ; 1                 ; 6       ;
+;      - inst19[0]                                                                ; 1                 ; 6       ;
+;      - inst17[0]~5                                                              ; 1                 ; 6       ;
+;      - inst16[0]                                                                ; 1                 ; 6       ;
+;      - full_adder:inst13|adder:inst|inst2                                       ; 1                 ; 6       ;
++---------------------------------------------------------------------------------+-------------------+---------+
 
 
 +-------------------------------------------------+
@@ -1490,24 +1491,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 175 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 20 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 210 / 209,544 ( < 1 % ) ;
-; Direct links          ; 47 / 342,891 ( < 1 % )  ;
+; Block interconnects   ; 198 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 22 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 209 / 209,544 ( < 1 % ) ;
+; Direct links          ; 30 / 342,891 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )          ;
-; Local interconnects   ; 65 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 14 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 100 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 69 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 16 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 133 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.91) ; Number of LABs  (Total = 11) ;
+; Number of Logic Elements  (Average = 13.08) ; Number of LABs  (Total = 13) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 1                            ;
-; 2                                           ; 0                            ;
+; 2                                           ; 1                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
@@ -1515,24 +1516,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
+; 10                                          ; 1                            ;
 ; 11                                          ; 0                            ;
 ; 12                                          ; 0                            ;
-; 13                                          ; 2                            ;
+; 13                                          ; 0                            ;
 ; 14                                          ; 1                            ;
-; 15                                          ; 0                            ;
-; 16                                          ; 7                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 8                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.91) ; Number of LABs  (Total = 11) ;
+; Number of Signals Sourced  (Average = 13.08) ; Number of LABs  (Total = 13) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 1                            ;
-; 2                                            ; 0                            ;
+; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
@@ -1540,71 +1541,78 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 0                            ;
+; 10                                           ; 1                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 2                            ;
+; 13                                           ; 0                            ;
 ; 14                                           ; 1                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 7                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 8                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 9.55) ; Number of LABs  (Total = 11) ;
+; Number of Signals Sourced Out  (Average = 9.46) ; Number of LABs  (Total = 13) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
 ; 1                                               ; 1                            ;
-; 2                                               ; 0                            ;
+; 2                                               ; 1                            ;
 ; 3                                               ; 0                            ;
 ; 4                                               ; 0                            ;
 ; 5                                               ; 0                            ;
-; 6                                               ; 0                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 1                            ;
-; 9                                               ; 2                            ;
-; 10                                              ; 2                            ;
-; 11                                              ; 1                            ;
+; 6                                               ; 2                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 0                            ;
+; 9                                               ; 0                            ;
+; 10                                              ; 3                            ;
+; 11                                              ; 2                            ;
 ; 12                                              ; 0                            ;
-; 13                                              ; 2                            ;
-; 14                                              ; 1                            ;
+; 13                                              ; 1                            ;
+; 14                                              ; 2                            ;
+; 15                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 12.64) ; Number of LABs  (Total = 11) ;
+; Number of Distinct Inputs  (Average = 12.62) ; Number of LABs  (Total = 13) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 1                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
-; 8                                            ; 1                            ;
+; 8                                            ; 2                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 2                            ;
+; 10                                           ; 3                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 0                            ;
+; 12                                           ; 1                            ;
 ; 13                                           ; 1                            ;
 ; 14                                           ; 1                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 1                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 0                            ;
 ; 17                                           ; 1                            ;
 ; 18                                           ; 0                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
 ; 21                                           ; 0                            ;
-; 22                                           ; 0                            ;
+; 22                                           ; 1                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 0                            ;
 ; 25                                           ; 0                            ;
-; 26                                           ; 1                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1691,19 +1699,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arit[2]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; arit[1]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; arit[0]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; S1                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[4]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; B[4]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; S2                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; S0                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[2]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[3]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[3]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[2]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; B[4]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[1]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[1]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[0]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[0]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; S0                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; S1                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; S2                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 
 
@@ -1780,7 +1788,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1789,7 +1797,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
+    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
@@ -1801,9 +1809,9 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1767 megabytes
-    Info: Processing ended: Wed Feb  8 11:42:35 2023
+    Info: Peak virtual memory: 1775 megabytes
+    Info: Processing ended: Wed Feb  8 14:49:56 2023
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:16
 
 

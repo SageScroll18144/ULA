@@ -88,7 +88,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "S2",
+					"strict" : false
+				},
+				{
 					"name" : "S1",
+					"strict" : false
+				},
+				{
+					"name" : "S0",
 					"strict" : false
 				},
 				{
@@ -100,15 +108,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "S2",
-					"strict" : false
-				},
-				{
-					"name" : "S0",
-					"strict" : false
-				},
-				{
-					"name" : "A[2]",
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{
@@ -116,11 +116,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
+					"name" : "A[2]",
 					"strict" : false
 				},
 				{

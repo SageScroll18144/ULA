@@ -1,6 +1,6 @@
 EDA Netlist Writer report for adder
-Fri Feb 10 18:29:34 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Mon Feb 13 13:48:12 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Feb 10 18:29:34 2023 ;
+; EDA Netlist Writer Status ; Successful - Mon Feb 13 13:48:12 2023 ;
 ; Revision Name             ; adder                                 ;
 ; Top-level Entity Name     ; ula                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Simulation Generated Files                                                     ;
-+--------------------------------------------------------------------------------+
-; Generated Files                                                                ;
-+--------------------------------------------------------------------------------+
-; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/simulation/modelsim/adder.vo ;
-+--------------------------------------------------------------------------------+
++----------------------------------------------------------------+
+; Simulation Generated Files                                     ;
++----------------------------------------------------------------+
+; Generated Files                                                ;
++----------------------------------------------------------------+
+; /home/lypess/Documentos/ULA/adder/simulation/modelsim/adder.vo ;
++----------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,15 +80,15 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Feb 10 18:29:32 2023
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Mon Feb 13 13:48:11 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off adder -c adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file adder.vo in folder "D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file adder.vo in folder "/home/lypess/Documentos/ULA/adder/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Fri Feb 10 18:29:34 2023
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 610 megabytes
+    Info: Processing ended: Mon Feb 13 13:48:12 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

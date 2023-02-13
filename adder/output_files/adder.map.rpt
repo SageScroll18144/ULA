@@ -1,6 +1,6 @@
 Analysis & Synthesis report for adder
-Fri Feb 10 18:29:01 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Mon Feb 13 13:47:57 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -43,8 +43,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 10 18:28:59 2023       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 13 13:47:57 2023       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; ula                                         ;
 ; Family                             ; Cyclone IV E                                ;
@@ -151,8 +151,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,34 +162,34 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
-; binary_to_bcd.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/binary_to_bcd.bdf              ;         ;
-; bin_7seg.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/bin_7seg.bdf                   ;         ;
-; circuit_subtrator_complete.bdf   ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/circuit_subtrator_complete.bdf ;         ;
-; adder.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/adder.bdf                      ;         ;
-; full_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/full_adder.bdf                 ;         ;
-; C2.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/C2.bdf                         ;         ;
-; equal.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/equal.bdf                      ;         ;
-; comparison_MT.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/comparison_MT.bdf              ;         ;
-; comparison_LT.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/comparison_LT.bdf              ;         ;
-; ula.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/ula.bdf                        ;         ;
-; and_bitbit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/and_bitbit.bdf                 ;         ;
-; xor_bitbit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/xor_bitbit.bdf                 ;         ;
-; dabble.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/dabble.bdf                     ;         ;
-; module_adder.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/module_adder.bdf               ;         ;
-; decoder.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/decoder.bdf                    ;         ;
-; fivebitstosixbits.bdf            ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/fivebitstosixbits.bdf          ;         ;
-; c2_module.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/c2_module.bdf                  ;         ;
-; Comparison_module.bdf            ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/Comparison_module.bdf          ;         ;
-; equal_module.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/equal_module.bdf               ;         ;
-; set_v.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/set_v.bdf                      ;         ;
-; invert.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/invert.bdf                     ;         ;
-; C2_FINAL.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Users/apsbpc/Downloads/ULA-main/ULA-main/adder/C2_FINAL.bdf                   ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
+; binary_to_bcd.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/binary_to_bcd.bdf              ;         ;
+; bin_7seg.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/bin_7seg.bdf                   ;         ;
+; circuit_subtrator_complete.bdf   ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/circuit_subtrator_complete.bdf ;         ;
+; adder.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/adder.bdf                      ;         ;
+; full_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/full_adder.bdf                 ;         ;
+; C2.bdf                           ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/C2.bdf                         ;         ;
+; equal.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/equal.bdf                      ;         ;
+; comparison_LT.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/comparison_LT.bdf              ;         ;
+; ula.bdf                          ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/ula.bdf                        ;         ;
+; and_bitbit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/and_bitbit.bdf                 ;         ;
+; xor_bitbit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/xor_bitbit.bdf                 ;         ;
+; dabble.bdf                       ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/dabble.bdf                     ;         ;
+; module_adder.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/module_adder.bdf               ;         ;
+; decoder.bdf                      ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/decoder.bdf                    ;         ;
+; fivebitstosixbits.bdf            ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/fivebitstosixbits.bdf          ;         ;
+; c2_module.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/c2_module.bdf                  ;         ;
+; Comparison_module.bdf            ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/Comparison_module.bdf          ;         ;
+; equal_module.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/equal_module.bdf               ;         ;
+; set_v.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/set_v.bdf                      ;         ;
+; invert.bdf                       ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/invert.bdf                     ;         ;
+; C2_FINAL.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/C2_FINAL.bdf                   ;         ;
+; cmp_more_than.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/lypess/Documentos/ULA/adder/cmp_more_than.bdf              ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -201,9 +201,9 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Total combinational functions               ; 191        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 128        ;
-;     -- 3 input functions                    ; 52         ;
-;     -- <=2 input functions                  ; 11         ;
+;     -- 4 input functions                    ; 129        ;
+;     -- 3 input functions                    ; 50         ;
+;     -- <=2 input functions                  ; 12         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
 ;     -- normal mode                          ; 191        ;
@@ -218,7 +218,7 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[4]~input ;
-; Maximum fan-out                             ; 20         ;
+; Maximum fan-out                             ; 19         ;
 ; Total fan-out                               ; 746        ;
 ; Average fan-out                             ; 2.86       ;
 +---------------------------------------------+------------+
@@ -232,7 +232,7 @@ https://fpgasoftware.intel.com/eula.
 ; |ula                                  ; 191 (70)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |ula                                                                  ; ula                        ; work         ;
 ;    |C2:inst18|                        ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18                                                        ; C2                         ; work         ;
 ;       |adder:inst11|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst11                                           ; adder                      ; work         ;
-;       |adder:inst13|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst13                                           ; adder                      ; work         ;
+;       |adder:inst12|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|C2:inst18|adder:inst12                                           ; adder                      ; work         ;
 ;    |binary_to_bcd:inst26|             ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26                                             ; binary_to_bcd              ; work         ;
 ;       |dabble:inst3|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26|dabble:inst3                                ; dabble                     ; work         ;
 ;       |dabble:inst|                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst26|dabble:inst                                 ; dabble                     ; work         ;
@@ -242,7 +242,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |binary_to_bcd:inst62|             ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst62                                             ; binary_to_bcd              ; work         ;
 ;       |dabble:inst3|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst62|dabble:inst3                                ; dabble                     ; work         ;
 ;       |dabble:inst|                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|binary_to_bcd:inst62|dabble:inst                                 ; dabble                     ; work         ;
-;    |circuit_subtrator_complete:inst5| ; 40 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5                                 ; circuit_subtrator_complete ; work         ;
+;    |circuit_subtrator_complete:inst5| ; 39 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5                                 ; circuit_subtrator_complete ; work         ;
 ;       |Comparison_module:inst11|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|Comparison_module:inst11        ; Comparison_module          ; work         ;
 ;       |c2_module:inst4|               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|c2_module:inst4                 ; c2_module                  ; work         ;
 ;          |adder:inst11|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|c2_module:inst4|adder:inst11    ; adder                      ; work         ;
@@ -254,9 +254,9 @@ https://fpgasoftware.intel.com/eula.
 ;          |adder:inst1|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst1 ; adder                      ; work         ;
 ;          |adder:inst5|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst5 ; adder                      ; work         ;
 ;          |adder:inst6|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|circuit_subtrator_complete:inst5|module_adder:inst12|adder:inst6 ; adder                      ; work         ;
-;    |comparison_LT:inst38|             ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_LT:inst38                                             ; comparison_LT              ; work         ;
-;       |equal:inst2|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_LT:inst38|equal:inst2                                 ; equal                      ; work         ;
-;    |comparison_MT:inst37|             ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|comparison_MT:inst37                                             ; comparison_MT              ; work         ;
+;    |cmp_more_than:inst53|             ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|cmp_more_than:inst53                                             ; cmp_more_than              ; work         ;
+;       |Comparison_module:inst|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|cmp_more_than:inst53|Comparison_module:inst                      ; Comparison_module          ; work         ;
+;       |equal:inst4|                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|cmp_more_than:inst53|equal:inst4                                 ; equal                      ; work         ;
 ;    |decoder:inst51|                   ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst51                                                   ; decoder                    ; work         ;
 ;       |bin_7seg:inst28|               ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst51|bin_7seg:inst28                                   ; bin_7seg                   ; work         ;
 ;    |decoder:inst52|                   ; 13 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula|decoder:inst52                                                   ; decoder                    ; work         ;
@@ -296,12 +296,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     normal            ; 194                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 52                          ;
-;         4 data inputs ; 128                         ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 50                          ;
+;         4 data inputs ; 129                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 14.00                       ;
-; Average LUT depth     ; 10.53                       ;
+; Average LUT depth     ; 10.49                       ;
 +-----------------------+-----------------------------+
 
 
@@ -319,11 +319,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Feb 10 18:28:46 2023
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Mon Feb 13 13:47:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder -c adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file binary_to_bcd.bdf
     Info (12023): Found entity 1: binary_to_bcd
 Info (12021): Found 1 design units, including 1 entities, in source file bin_7seg.bdf
@@ -338,7 +338,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file full_ad
     Info (12023): Found entity 1: full_adder
 Info (12021): Found 1 design units, including 1 entities, in source file circuit_adder_complete.bdf
     Info (12023): Found entity 1: circuit_adder_complete
-Info (12021): Found 1 design units, including 1 entities, in source file c2.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file C2.bdf
     Info (12023): Found entity 1: C2
 Info (12021): Found 1 design units, including 1 entities, in source file equal.bdf
     Info (12023): Found entity 1: equal
@@ -346,9 +346,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file bitcmp.
     Info (12023): Found entity 1: bitcmp
 Info (12021): Found 1 design units, including 1 entities, in source file cmp.bdf
     Info (12023): Found entity 1: cmp
-Info (12021): Found 1 design units, including 1 entities, in source file comparison_mt.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file comparison_MT.bdf
     Info (12023): Found entity 1: comparison_MT
-Info (12021): Found 1 design units, including 1 entities, in source file comparison_lt.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file comparison_LT.bdf
     Info (12023): Found entity 1: comparison_LT
 Info (12021): Found 1 design units, including 1 entities, in source file our_mux.bdf
     Info (12023): Found entity 1: our_mux
@@ -374,7 +374,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file fivebit
     Info (12023): Found entity 1: fivebitstosixbits
 Info (12021): Found 1 design units, including 1 entities, in source file c2_module.bdf
     Info (12023): Found entity 1: c2_module
-Info (12021): Found 1 design units, including 1 entities, in source file comparison_module.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Comparison_module.bdf
     Info (12023): Found entity 1: Comparison_module
 Info (12021): Found 1 design units, including 1 entities, in source file equal_module.bdf
     Info (12023): Found entity 1: equal_module
@@ -382,13 +382,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file set_v.b
     Info (12023): Found entity 1: set_v
 Info (12021): Found 1 design units, including 1 entities, in source file invert.bdf
     Info (12023): Found entity 1: invert
-Info (12021): Found 1 design units, including 1 entities, in source file c2_final.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file C2_FINAL.bdf
     Info (12023): Found entity 1: C2_FINAL
+Info (12021): Found 1 design units, including 1 entities, in source file cmp_more_than.bdf
+    Info (12023): Found entity 1: cmp_more_than
 Info (12127): Elaborating entity "ula" for the top level hierarchy
 Warning (275011): Block or symbol "AND3" of instance "inst15" overlaps another block or symbol
-Info (12128): Elaborating entity "comparison_MT" for hierarchy "comparison_MT:inst37"
+Info (12128): Elaborating entity "cmp_more_than" for hierarchy "cmp_more_than:inst53"
+Info (12128): Elaborating entity "Comparison_module" for hierarchy "cmp_more_than:inst53|Comparison_module:inst"
+Info (12128): Elaborating entity "equal" for hierarchy "cmp_more_than:inst53|equal:inst4"
 Info (12128): Elaborating entity "comparison_LT" for hierarchy "comparison_LT:inst38"
-Info (12128): Elaborating entity "equal" for hierarchy "comparison_LT:inst38|equal:inst2"
 Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst63"
 Info (12128): Elaborating entity "bin_7seg" for hierarchy "decoder:inst63|bin_7seg:inst29"
 Warning (275008): Primitive "AND4" of instance "17" not used
@@ -402,7 +405,6 @@ Info (12128): Elaborating entity "circuit_subtrator_complete" for hierarchy "cir
 Warning (275011): Block or symbol "fivebitstosixbits" of instance "inst28" overlaps another block or symbol
 Warning (275011): Block or symbol "OR2" of instance "inst43" overlaps another block or symbol
 Warning (275008): Primitive "GND" of instance "inst35" not used
-Info (12128): Elaborating entity "Comparison_module" for hierarchy "circuit_subtrator_complete:inst5|Comparison_module:inst11"
 Info (12128): Elaborating entity "C2_FINAL" for hierarchy "circuit_subtrator_complete:inst5|C2_FINAL:inst31"
 Warning (275011): Block or symbol "adder" of instance "inst11" overlaps another block or symbol
 Info (12128): Elaborating entity "equal_module" for hierarchy "circuit_subtrator_complete:inst5|equal_module:inst29"
@@ -438,9 +440,9 @@ Info (21057): Implemented 226 device resources after synthesis - the final resou
     Info (21059): Implemented 22 output pins
     Info (21061): Implemented 191 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Fri Feb 10 18:29:01 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 430 megabytes
+    Info: Processing ended: Mon Feb 13 13:47:57 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 
